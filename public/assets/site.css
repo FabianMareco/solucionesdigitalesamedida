@@ -299,7 +299,6 @@
 .code-win pre { margin: 0; padding: 12px 14px 14px; font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: hidden; }
 .code-win .k { color: #de7c5a; } .code-win .f { color: #ffd6c8; font-weight: 600; } .code-win .s { color: #e99a7e; } .code-win .c { color: #c08f84; }
 @media (max-width: 1279px) { .hero--split .hero__media .code-win { display: none; } }
-@media (min-width: 1024px) and (max-width: 1179px) { .nav__links .nav__item:nth-child(5) { display: none; } }
 
 /* ================= v5 ================= */
 /* every section, hero included, grows with what it holds: no fixed heights, so nothing lands on the next one
@@ -362,7 +361,6 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 .nav__logo .brand { font-family: "Big Shoulders Display", var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .02em; font-size: 21px; line-height: 1; }
 @media (max-width: 1279px) { .nav__logo .brand { font-size: 17px; max-width: 170px; line-height: 1; } }
 @media (max-width: 600px) { .nav__logo .brand { font-size: 16px; max-width: 130px; } }
-@media (min-width: 1024px) and (max-width: 1179px) { .nav__actions .lang-seg .ic-i { display: none; } }
 
 /* problems: the florist photograph melts into the page, the heading set in the brand type over its soft edge */
 .pb-hero { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 440px; margin-bottom: var(--s-7); }
@@ -402,15 +400,19 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 .footer__sig .ic-i { width: 22px; height: 22px; color: var(--peach); flex: none; }
 .footer__sig { max-width: none; } .footer__sig span { white-space: nowrap; }
 
-/* Menú en notebooks: el link de Soluciones reales (2.º) siempre visible */
-@media (min-width: 1024px) and (max-width: 1399px) { .nav__links .nav__item:nth-child(5) { display: none; } }   /* Sobre mí */
-@media (min-width: 1024px) and (max-width: 1179px) { .nav__links .nav__item:nth-child(4) { display: none; } }   /* Más servicios */
-@media (min-width: 1024px) and (max-width: 1179px) { .nav__actions .lang-seg .ic-i { display: none; } }
-
-/* El portugués es más largo: un link menos en notebooks */
-@media (min-width: 1024px) and (max-width: 1399px) { html[lang^="pt"] .nav__links .nav__item:nth-child(4) { display: none; } }
+/* Menú en notebooks: Resolvamos juntos y Soluciones reales siempre visibles */
+@media (min-width: 1024px) and (max-width: 1499px) { .nav__links .nav__item:nth-child(5) { display: none; } }   /* Sobre mí */
+@media (min-width: 1024px) and (max-width: 1399px) { .nav__links .nav__item:nth-child(4) { display: none; } }   /* Más servicios */
 @media (min-width: 1024px) and (max-width: 1179px) {
-  html[lang^="pt"] .nav__links .nav__item:nth-child(3) { display: none; }
+  .nav__links .nav__item:nth-child(3) { display: none; }                                                        /* Proyectos */
+  .nav__actions .lang-seg .ic-i { display: none; }
+}
+
+/* El portugués es más largo */
+@media (min-width: 1024px) and (max-width: 1799px) { html[lang^="pt"] .nav__links .nav__item:nth-child(5) { display: none; } }
+@media (min-width: 1024px) and (max-width: 1599px) { html[lang^="pt"] .nav__links .nav__item:nth-child(4) { display: none; } }
+@media (min-width: 1024px) and (max-width: 1279px) { html[lang^="pt"] .nav__links .nav__item:nth-child(3) { display: none; } }
+@media (min-width: 1024px) and (max-width: 1179px) {
   html[lang^="pt"] .nav__links { gap: 12px; }
   html[lang^="pt"] .nav__link { padding-inline: 6px; font-size: 14px; }
   html[lang^="pt"] .nav__logo .brand { max-width: 150px; }

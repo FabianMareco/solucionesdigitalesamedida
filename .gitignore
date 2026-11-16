@@ -6,3 +6,4 @@ out/
 .DS_Store
 .data/
 .env*.local
+marketing/reel/build/

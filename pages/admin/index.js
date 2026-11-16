@@ -152,12 +152,26 @@ function ProjectForm({ initial, clientName, onSave, onCancel, onDelete }) {
   );
 }
 
+// notas largas: se ve la primera línea y el resto se abre con "ver más"
+function Notes({ text, className }) {
+  const [first, ...rest] = text.split('\n');
+  const more = rest.join('\n').trim();
+  if (!more) return <p className={className}>{first}</p>;
+  return (
+    <details className={className + ' notes'}>
+      <summary>{first} <span className="notes__more">ver más</span></summary>
+      <div className="notes__rest">{more}</div>
+    </details>
+  );
+}
+
 /* ------------------------------------------------------------------ panel */
 export default function Admin() {
   const router = useRouter();
   const [clients, setClients] = useState(null);
   const [store, setStore] = useState('');
   const [error, setError] = useState('');
+  const [notice, setNotice] = useState('');
   const [q, setQ] = useState('');
   const [filter, setFilter] = useState('todos');
   const [modal, setModal] = useState(null); // { type: 'client'|'project', data, client }
@@ -212,6 +226,22 @@ export default function Admin() {
     setClients(cs => cs.map(c => ({ ...c, projects: c.projects.map(x => (x.id === p.id ? { ...x, status } : x)) })));
     try { await api(`/api/admin/projects/${p.id}`, 'PUT', { status }); await load(); } catch (e) { setError(e.message); load(); }
   }
+  async function importFile(e) {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const r = await api('/api/admin/import', 'POST', data);
+      await load();
+      setNotice([
+        r.created.length ? `Importados: ${r.created.join(', ')}.` : 'No se importó ningún cliente nuevo.',
+        r.skipped.length ? `Ya estaban cargados: ${r.skipped.join(', ')}.` : '',
+      ].filter(Boolean).join(' '));
+    } catch (err) {
+      setError(err instanceof SyntaxError ? 'Ese archivo no es un JSON válido' : err.message);
+    }
+  }
   async function logout() {
     await fetch('/api/admin/login', { method: 'DELETE' });
     router.replace('/admin/login');
@@ -238,6 +268,10 @@ export default function Admin() {
           <div className="top__acts">
             <a className="btn btn--ghost btn--sm" href="/" target="_blank" rel="noopener">Ver la web</a>
             <button className="btn btn--ghost btn--sm" onClick={logout}>Salir</button>
+            <label className="btn btn--sm">
+              Importar
+              <input type="file" accept="application/json,.json" onChange={importFile} hidden />
+            </label>
             <button className="btn btn--primary" onClick={() => setModal({ type: 'client', data: {} })}>+ Cliente</button>
           </div>
         </div>
@@ -246,6 +280,7 @@ export default function Admin() {
       <main className="wrap main">
         {store === 'file' && <p className="note">Modo local: los datos se guardan en <code>.data/admin.json</code>. En Vercel se usan los de la base de datos.</p>}
         {error && <p className="err" role="alert">{error}</p>}
+        {notice && <p className="ok" role="status">{notice} <button className="linkbtn" onClick={() => setNotice('')}>Cerrar</button></p>}
 
         <section className="stats" aria-label="Resumen">
           <div className="stat"><b>{stats.clients}</b><span>clientes</span></div>
@@ -302,7 +337,7 @@ export default function Admin() {
                   <button className="btn btn--sm btn--ghost" onClick={() => setModal({ type: 'client', data: c })}>Editar</button>
                 </div>
               </div>
-              {c.notes && <p className="client__notes">{c.notes}</p>}
+              {c.notes && <Notes text={c.notes} className="client__notes" />}
               {c.projects.length > 0 ? (
                 <ul className="projects">
                   {c.projects.map(p => (
@@ -310,7 +345,7 @@ export default function Admin() {
                       <div className="project__main">
                         <b>{p.title}</b>
                         <span className="muted">{[p.kind, fmtDate(p.date)].filter(Boolean).join(' · ')}</span>
-                        {p.notes && <span className="project__notes">{p.notes}</span>}
+                        {p.notes && <Notes text={p.notes} className="project__notes" />}
                         <span className="project__links">
                           {p.model_url && <a href={p.model_url} target="_blank" rel="noopener">Ver modelo ↗</a>}
                           {p.quote_url && <a href={p.quote_url} target="_blank" rel="noopener">Ver presupuesto ↗</a>}
@@ -364,6 +399,7 @@ export default function Admin() {
         .top__acts { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
         .main { display: grid; gap: 20px; padding-top: 20px; padding-bottom: 64px; }
         .note { margin: 0; font-size: 13px; color: var(--muted); }
+        .ok { margin: 0; background: #e1f3e8; color: #14532d; border: 1px solid #b9dfc8; padding: 10px 12px; border-radius: 8px; font-size: 14px; }
         .stats { display: grid; gap: 10px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
         @media (max-width: 820px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
         .stat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 2px; align-content: start; }
@@ -386,12 +422,17 @@ export default function Admin() {
         .client__meta { margin: 2px 0 0; font-size: 14px; }
         .client__contact { margin: 4px 0 0; display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; font-weight: 600; }
         .client__acts { display: flex; gap: 6px; }
-        .client__notes { margin: 0; font-size: 14px; white-space: pre-wrap; background: var(--bg); border-radius: 10px; padding: 10px 12px; }
+        :global(.client__notes) { margin: 0; font-size: 14px; white-space: pre-wrap; background: var(--bg); border-radius: 10px; padding: 10px 12px; }
         .projects { list-style: none; margin: 0; padding: 0; display: grid; }
         .project { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); flex-wrap: wrap; }
         .project__main { display: grid; gap: 2px; min-width: 0; flex: 1 1 260px; }
         .project__main > span { font-size: 14px; }
-        .project__notes { white-space: pre-wrap; color: var(--ink); }
+        :global(.project__notes) { white-space: pre-wrap; color: var(--ink); margin: 2px 0 0; font-size: 14px; }
+        :global(.notes summary) { cursor: pointer; list-style: none; }
+        :global(.notes summary::-webkit-details-marker) { display: none; }
+        :global(.notes__more) { color: var(--accent); font-weight: 600; white-space: nowrap; }
+        :global(.notes[open] .notes__more) { display: none; }
+        :global(.notes__rest) { margin-top: 6px; white-space: pre-wrap; }
         .project__links { display: flex; gap: 14px; flex-wrap: wrap; font-weight: 600; }
         .project__links:empty { display: none; }
         .project__side { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }

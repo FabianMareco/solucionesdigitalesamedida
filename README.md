@@ -19,6 +19,7 @@ npm run dev
 
 Importar este repositorio en Vercel (framework: Next.js, sin configuración extra).
 
-## Pendiente
+## Contacto
 
-- `public/assets/site.js`: completar `CONTACT.whatsapp` y `CONTACT.email` (hoy vacío y de ejemplo).
+`public/assets/site.js` → `CONTACT` (WhatsApp y email) y `T` (la pauta de escritura que llega prellenada en el
+mensaje, en ES / EN / PT). Es el único archivo modificado respecto del borrador original.

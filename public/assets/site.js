@@ -1,12 +1,45 @@
 /* ---------------- contact: fill these two in ---------------- */
 const CONTACT = {
-  whatsapp: '',               // número con código de país, sin + ni espacios, ej. 5491112345678
-  email: 'hola@fabianmareco.example',
+  whatsapp: '5491123866633',  // número con código de país, sin + ni espacios, ej. 5491112345678
+  email: 'fabian.mareco.dev@gmail.com',
 };
+/* pauta de escritura: el mensaje llega prellenado con una guía corta, para que la persona
+   complete lo que hace falta saber en el primer contacto (quién es, qué le pasa, qué quiere lograr) */
+const guide = (hello, rows) => hello + '\n\n' + rows.map(([label, value]) => label + ': ' + (value || '')).join('\n');
 const T = {
-  es: { wa: 'Hola Fabián, quiero hablar sobre un proyecto.', mailSubject: 'Proyecto', topic: t => 'Hola Fabián, tengo este problema: «' + t + '». ¿Me ayudás?' },
-  en: { wa: 'Hi Fabián, I\'d like to talk about a project.', mailSubject: 'Project', topic: t => 'Hi Fabián, I have this problem: "' + t + '". Can you help me?' },
-  pt: { wa: 'Olá Fabián, quero conversar sobre um projeto.', mailSubject: 'Projeto', topic: t => 'Olá Fabián, tenho este problema: "' + t + '". Pode me ajudar?' },
+  es: {
+    mailSubject: 'Proyecto',
+    msg: t => guide('Hola Fabián, te escribo desde tu web.', [
+      ['Mi nombre y mi negocio'],
+      ['Desde dónde escribo (ciudad / país)'],
+      ['El problema', t ? '«' + t + '»' : ''],
+      ['Cómo lo resuelvo hoy'],
+      ['Qué me gustaría lograr'],
+      ['Para cuándo lo necesito'],
+    ]),
+  },
+  en: {
+    mailSubject: 'Project',
+    msg: t => guide('Hi Fabián, I\'m writing from your website.', [
+      ['My name and my business'],
+      ['Where I\'m writing from (city / country)'],
+      ['The problem', t ? '"' + t + '"' : ''],
+      ['How I handle it today'],
+      ['What I\'d like to achieve'],
+      ['When I need it by'],
+    ]),
+  },
+  pt: {
+    mailSubject: 'Projeto',
+    msg: t => guide('Olá Fabián, estou escrevendo pelo seu site.', [
+      ['Meu nome e meu negócio'],
+      ['De onde escrevo (cidade / país)'],
+      ['O problema', t ? '"' + t + '"' : ''],
+      ['Como resolvo isso hoje'],
+      ['O que eu gostaria de conseguir'],
+      ['Para quando preciso'],
+    ]),
+  },
 };
 const LANG_CODE = { es: 'es', en: 'en', pt: 'pt-BR' };
 let lang = 'es';
@@ -17,9 +50,13 @@ function contactLinks() {
   document.querySelectorAll('[data-contact="wa"]').forEach(a => {
     const t = a.closest('[data-topic]');
     const topic = t ? (lang === 'es' ? t.dataset.topic : t.dataset['topic' + cap(lang)] || t.dataset.topic) : '';
-    a.href = 'https://wa.me/' + CONTACT.whatsapp + '?text=' + encodeURIComponent(topic ? T[lang].topic(topic) : T[lang].wa);
+    a.href = 'https://wa.me/' + CONTACT.whatsapp + '?text=' + encodeURIComponent(T[lang].msg(topic));
   });
-  document.querySelectorAll('[data-contact="mail"]').forEach(a => { a.href = 'mailto:' + CONTACT.email + '?subject=' + encodeURIComponent(T[lang].mailSubject); });
+  document.querySelectorAll('[data-contact="mail"]').forEach(a => {
+    const t = a.closest('[data-topic]');
+    const topic = t ? (lang === 'es' ? t.dataset.topic : t.dataset['topic' + cap(lang)] || t.dataset.topic) : '';
+    a.href = 'mailto:' + CONTACT.email + '?subject=' + encodeURIComponent(T[lang].mailSubject) + '&body=' + encodeURIComponent(T[lang].msg(topic));
+  });
   if (!/\.example$/.test(CONTACT.email)) document.querySelectorAll('[data-contact-text="mail"]').forEach(s => { s.removeAttribute('data-en'); s.removeAttribute('data-pt'); s.textContent = CONTACT.email; });
 }
 

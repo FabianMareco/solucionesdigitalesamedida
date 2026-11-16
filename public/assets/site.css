@@ -362,7 +362,7 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 .nav__logo .brand { font-family: "Big Shoulders Display", var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .02em; font-size: 21px; line-height: 1; }
 @media (max-width: 1279px) { .nav__logo .brand { font-size: 17px; max-width: 170px; line-height: 1; } }
 @media (max-width: 600px) { .nav__logo .brand { font-size: 16px; max-width: 130px; } }
-@media (min-width: 1024px) and (max-width: 1179px) { .nav__links .nav__item:nth-child(2) { display: none; } .nav__actions .lang-seg .ic-i { display: none; } }
+@media (min-width: 1024px) and (max-width: 1179px) { .nav__actions .lang-seg .ic-i { display: none; } }
 
 /* problems: the florist photograph melts into the page, the heading set in the brand type over its soft edge */
 .pb-hero { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 440px; margin-bottom: var(--s-7); }
@@ -401,3 +401,18 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 .footer__sig { display: flex; align-items: center; gap: 10px; }
 .footer__sig .ic-i { width: 22px; height: 22px; color: var(--peach); flex: none; }
 .footer__sig { max-width: none; } .footer__sig span { white-space: nowrap; }
+
+/* Menú en notebooks: el link de Soluciones reales (2.º) siempre visible */
+@media (min-width: 1024px) and (max-width: 1399px) { .nav__links .nav__item:nth-child(5) { display: none; } }   /* Sobre mí */
+@media (min-width: 1024px) and (max-width: 1179px) { .nav__links .nav__item:nth-child(4) { display: none; } }   /* Más servicios */
+@media (min-width: 1024px) and (max-width: 1179px) { .nav__actions .lang-seg .ic-i { display: none; } }
+
+/* El portugués es más largo: un link menos en notebooks */
+@media (min-width: 1024px) and (max-width: 1399px) { html[lang^="pt"] .nav__links .nav__item:nth-child(4) { display: none; } }
+@media (min-width: 1024px) and (max-width: 1179px) {
+  html[lang^="pt"] .nav__links .nav__item:nth-child(3) { display: none; }
+  html[lang^="pt"] .nav__links { gap: 12px; }
+  html[lang^="pt"] .nav__link { padding-inline: 6px; font-size: 14px; }
+  html[lang^="pt"] .nav__logo .brand { max-width: 150px; }
+  html[lang^="pt"] .nav__actions { gap: 8px; }
+}

@@ -162,6 +162,14 @@
   .social:hover, .social:focus-visible { transform: translateY(-3px); background: var(--accent); color: var(--accent-ink); }
   .social:hover small, .social:focus-visible small { color: inherit; opacity: .8; }
   @media (max-width: 1023px) { .soc-grid { margin-top: var(--s-2); } #redes { margin-top: var(--s-7); } }
+  /* una tarjeta suelta al final ocupa la fila entera */
+  .soc-grid > .social:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  /* celular: una columna, ícono al costado, así los usuarios largos no se cortan a mitad de palabra */
+  @media (max-width: 479px) {
+    .soc-grid { grid-template-columns: 1fr; }
+    .social { flex-direction: row; align-items: center; min-height: 0; padding: var(--s-4) var(--s-5); }
+    .social > span { min-width: 0; }
+  }
   .foot-socials { display: flex; gap: 10px; margin-top: var(--s-4); }
   .foot-socials a { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: var(--ink); background: var(--surface); }
   .foot-socials a:hover { background: var(--accent); color: var(--accent-ink); }

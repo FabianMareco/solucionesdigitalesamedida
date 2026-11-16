@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="es" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-en="Custom Digital Solutions · Fabián Mareco, Full Stack Developer" data-pt="Soluções Digitais Sob Medida · Fabián Mareco, Full Stack Developer">Soluciones Digitales a Medida · Fabián Mareco, Full Stack Developer</title>
+<meta name="description" content="Soluciones digitales a medida para negocios y agencias, de Buenos Aires al mundo: agendas con seña, generadores de piezas, landings y automatizaciones. Atención en español e inglés.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Soluciones Digitales a Medida · Fabián Mareco, Full Stack Developer">
+<meta property="og:description" content="Soluciones digitales a medida para negocios y agencias, de Buenos Aires al mundo: agendas con seña, generadores de piezas, landings y automatizaciones. Atención en español e inglés.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#fdffff">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search), lang = q.get('lang');
+    try { lang = lang || localStorage.getItem('fm-lang'); } catch (e) {}
+    if (lang === 'en' || lang === 'pt') document.documentElement.dataset.startLang = lang;
+  })();
+</script>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/photo-chapters/moment.js">
+</head>
+<body>
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top" data-en="Skip to content" data-pt="Ir para o conteúdo">Ir al contenido</a>
+    <a class="nav__logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#b10f2e"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#fdffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand" data-en="Custom Digital Solutions" data-pt="Soluções Digitais Sob Medida">Soluciones Digitales a Medida</span></a>
+    <nav class="nav__links" aria-label="Principal" data-en-aria-label="Main" data-pt-aria-label="Principal">
+      <div class="nav__item"><a class="nav__link" href="#problemas" data-en="What I solve" data-pt="O que eu resolvo">Qué resuelvo</a></div>
+      <div class="nav__item"><a class="nav__link" href="#casos" data-en="Work" data-pt="Casos">Casos</a></div>
+      <div class="nav__item"><a class="nav__link" href="#proyectos" data-en="Projects" data-pt="Projetos">Proyectos</a></div>
+      <div class="nav__item"><a class="nav__link" href="servicios.html" data-en="More services" data-pt="Mais serviços">Más servicios</a></div>
+      <div class="nav__item"><a class="nav__link" href="#sobre-mi" data-en="About" data-pt="Sobre mim">Sobre mí</a></div>
+    </nav>
+    <div class="nav__actions">
+      <div class="lang-seg" role="group" aria-label="Idioma" data-en-aria-label="Language" data-pt-aria-label="Idioma"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg><button type="button" data-set-lang="es" aria-pressed="true">ES</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button><button type="button" data-set-lang="pt" aria-pressed="false">PT</button></div>
+      <div class="talk talk--right"><button class="btn btn--primary talk__btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk" data-pt="Vamos conversar">Hablemos</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div>
+    </div>
+    <div class="lang-seg lang-seg--m" role="group" aria-label="Idioma" data-en-aria-label="Language" data-pt-aria-label="Idioma"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg><button type="button" data-set-lang="es" aria-pressed="true">ES</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button><button type="button" data-set-lang="pt" aria-pressed="false">PT</button></div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menú" data-en-aria-label="Menu" data-pt-aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<!-- type: service
+     deal: hero split, nav nav-centre, close close-type, footer footer-dark, rhythm space, buttons solid, mark dots
+     palette: paleta2 from Fabián (#de7c5a #b10f2e #b10f2e #570000 #570000); type hanken
+     moments: photo-chapters in #proceso (the four steps, one photograph each) -->
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <p class="hero__kicker" data-en="From Buenos Aires to the world · Your project, wherever you are" data-pt="De Buenos Aires para o mundo · Seu projeto, onde você estiver">De Buenos Aires al mundo · Tu proyecto, estés donde estés</p>
+        <h1 id="hero-h" class="brand-title" data-en="Custom Digital Solutions" data-pt="Soluções Digitais Sob Medida">Soluciones Digitales a Medida</h1>
+        <p class="hero__role"><span data-en="Full stack web development for businesses worldwide" data-pt="Desenvolvimento web full stack para negócios do mundo todo">Desarrollo web full stack para negocios de todo el mundo</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" /></svg></p>
+        <p class="hero__big" data-en="Web tools that save your business time and money." data-pt="Ferramentas web que economizam tempo e dinheiro para o seu negócio.">Herramientas web que le ahorran tiempo y dinero a tu negocio.</p>
+        <p class="hero__lead" data-en="I spent over fifteen years serving customers across the counter. That's why I don't start by asking what website you want, but where your time goes." data-pt="Passei mais de quinze anos atendendo clientes do outro lado do balcão. Por isso não começo perguntando que site você quer, e sim onde o seu tempo se perde.">Atendí clientes del otro lado del mostrador durante más de quince años. Por eso no empiezo preguntando qué web querés, sino dónde se te va el tiempo.</p>
+        <div class="btn-row">
+          <div class="talk"><button class="btn btn--primary talk__btn" type="button" aria-expanded="false" aria-haspopup="true"><svg class="ic-i talk__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+  <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></svg><span data-en="Let's talk" data-pt="Vamos conversar">Hablemos</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div>
+          <a class="btn btn--secondary" href="#casos" data-en="See real cases" data-pt="Ver casos reais">Ver casos reales</a>
+        </div>
+        <div class="langs">
+          <span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></svg><span data-en="Projects in any language" data-pt="Projetos em qualquer idioma">Proyectos en cualquier idioma</span></span>
+          <span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg><span data-en="Support in Spanish, English and Portuguese" data-pt="Atendimento em espanhol, inglês e português">Atención en español, inglés y portugués</span></span>
+        </div>
+      </div>
+      <div class="hero__media span-6 start-7" role="img" aria-label="La pantalla de reserva de turnos de Thalia Mareco: el calendario, los horarios libres y el botón para pagar la seña" data-en-aria-label="Thalia Mareco's booking screen: the calendar, the free time slots and the button to pay the deposit" data-pt-aria-label="A tela de reservas de Thalia Mareco: o calendário, os horários livres e o botão para pagar o sinal">
+        <div class="device" aria-hidden="true">
+          <div class="device__screen">
+            <div class="bk-top"><div class="bk-brand">Thalia Mareco · Skincare</div><div class="bk-title">Limpieza facial profunda</div><div class="bk-sub">90 min · Zona Tribunales</div></div>
+            <div class="bk-month"><span>noviembre</span><span>›</span></div>
+            <div class="bk-cal">
+              <span class="h">L</span><span class="h">M</span><span class="h">M</span><span class="h">J</span><span class="h">V</span><span class="h">S</span><span class="h">D</span>
+              <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+              <span class="ok">17</span><span class="sel">18</span><span class="ok">19</span><span>20</span><span class="ok">21</span><span class="ok">22</span><span>23</span>
+            </div>
+            <div class="bk-slots"><span>11:00</span><span class="on">15:00</span><span>16:00</span><span>18:00</span></div>
+            <div class="bk-sum"><span>Martes 18 de noviembre · 15:00</span><b>Seña confirmada</b><span>Recordatorio por WhatsApp 24 h antes</span></div>
+            <div class="bk-btn">Pagar seña y reservar</div>
+          </div>
+        </div>
+        <div class="code-win" aria-hidden="true">
+          <div class="code-win__bar"><i></i><i></i><i></i><span>agenda.ts</span></div>
+<pre><code><span class="k">const</span> turno = <span class="k">await</span> <span class="f">reservar</span>({
+  clienta: <span class="s">"Ana"</span>,
+  dia: <span class="s">"mar 18"</span>,
+  hora: <span class="s">"15:00"</span>,
+  sena: <span class="k">true</span>,
+});
+<span class="c">// ✓ seña cobrada</span>
+<span class="c">// ✓ recordatorio por WhatsApp</span></code></pre>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="problemas" aria-labelledby="problemas-h">
+    <div class="wrap">
+      <div class="pb-hero">
+        <img class="pb-hero__img" src="img/florista.webp" alt="Una florista con delantal corta los tallos de un ramo envuelto en papel" data-en-alt="A florist in an apron trims the stems of a wrapped bouquet" data-pt-alt="Uma florista de avental corta os talos de um buquê embrulhado" loading="lazy">
+        <h2 id="problemas-h" class="pb-hero__title" data-en="Everyday problems, solved with a tool made just for you." data-pt="Problemas do dia a dia, resolvidos com uma ferramenta feita sob medida.">Problemas de todos los días, resueltos con una herramienta hecha a tu medida.</h2>
+      </div>
+        <ul class="rows rows--problems pb-grid">
+          <li>
+            <span class="rows__name"><q data-en="They book on WhatsApp and then don't show up." data-pt="Marcam pelo WhatsApp e depois não aparecem.">Me reservan por WhatsApp y después no vienen.</q><small data-en="Online booking with a deposit, payment receipt, automatic reminders and a panel to run it all from your phone." data-pt="Agenda online com sinal, comprovante, lembretes automáticos e um painel para controlar tudo pelo celular.">Agenda online con seña, comprobante, recordatorios automáticos y un panel para manejar todo desde el celular.</small></span>
+            <div class="row-acts"><a class="link-arrow" href="#solucion"><span data-en="Show me the solution" data-pt="Ver a solução">Ver la solución</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a><div class="talk" data-topic="Me reservan por WhatsApp y después no vienen" data-topic-en="They book on WhatsApp and then don't show up" data-topic-pt="Marcam pelo WhatsApp e depois não aparecem"><button class="btn btn--secondary talk__btn btn--sm" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk about it" data-pt="Vamos conversar sobre isso">Hablemos de esto</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div></div>
+          </li>
+          <li>
+            <span class="rows__name"><q data-en="I lose hours making every sale flyer." data-pt="Perco horas montando cada panfleto de ofertas.">Pierdo horas armando cada flyer de ofertas.</q><small data-en="A flyer generator with your brand: enter product and price, and in a minute you have the image for stories, feed and WhatsApp." data-pt="Um gerador de peças com a sua marca: você coloca produto e preço e, em um minuto, tem a imagem para stories, feed e WhatsApp.">Un generador de piezas con tu marca: cargás producto y precio, y en un minuto tenés la imagen para historias, feed y WhatsApp.</small></span>
+            <div class="row-acts"><a class="link-arrow" href="#caso-despensa"><span data-en="Show me the solution" data-pt="Ver a solução">Ver la solución</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a><div class="talk" data-topic="Pierdo horas armando cada flyer de ofertas" data-topic-en="I lose hours making every sale flyer" data-topic-pt="Perco horas montando cada panfleto de ofertas"><button class="btn btn--secondary talk__btn btn--sm" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk about it" data-pt="Vamos conversar sobre isso">Hablemos de esto</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div></div>
+          </li>
+          <li>
+            <span class="rows__name"><q data-en="I don't have a website, or mine brings no clients." data-pt="Não tenho site, ou o que tenho não traz clientes.">No tengo web, o la que tengo no me trae clientes.</q><small data-en="A fast, clear landing page with a WhatsApp button, live on your domain in a week." data-pt="Uma landing page rápida, clara e com botão de WhatsApp, publicada no seu domínio em uma semana.">Una landing rápida, clara y con botón de WhatsApp, publicada con tu dominio en una semana.</small></span>
+            <div class="row-acts"><a class="link-arrow" href="#proceso"><span data-en="See how I work" data-pt="Ver como eu trabalho">Ver cómo trabajo</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a><div class="talk" data-topic="No tengo web, o la que tengo no me trae clientes" data-topic-en="I don't have a website, or mine brings no clients" data-topic-pt="Não tenho site, ou o que tenho não traz clientes"><button class="btn btn--secondary talk__btn btn--sm" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk about it" data-pt="Vamos conversar sobre isso">Hablemos de esto</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div></div>
+          </li>
+          <li>
+            <span class="rows__name"><q data-en="I repeat the same task every day." data-pt="Repito a mesma tarefa todos os dias.">Repito la misma tarea todos los días.</q><small data-en="Tell me which one. If a web tool or AI can automate it, I'll show you how and how much time it saves you." data-pt="Me conta qual é. Se der para automatizar com uma ferramenta web ou com IA, eu mostro como e quanto tempo você economiza.">Contame cuál es. Si se puede automatizar con una herramienta web o con IA, te muestro cómo y cuánto tiempo te ahorra.</small></span>
+            <div class="row-acts"><a class="link-arrow" href="servicios.html"><span data-en="Everything I can build" data-pt="Tudo o que eu posso fazer">Todo lo que puedo hacer</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a><div class="talk" data-topic="Repito la misma tarea todos los días" data-topic-en="I repeat the same task every day" data-topic-pt="Repito a mesma tarefa todos os dias"><button class="btn btn--secondary talk__btn btn--sm" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk about it" data-pt="Vamos conversar sobre isso">Hablemos de esto</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div></div>
+          </li>
+        </ul>
+        <div class="pay"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2" />
+  <line x1="2" x2="22" y1="10" y2="10" />
+  <path d="M6 14h2" /></svg><div><b data-en="Easy payment, scope defined together" data-pt="Facilidades de pagamento e escopo sob medida">Facilidades de pago y alcance a tu medida</b><span data-en="Card, transfer or instalments. If you're not sure where to start, we figure it out together." data-pt="Cartão, transferência ou parcelado. Se você não sabe por onde começar, a gente define junto.">Tarjeta, transferencia o en cuotas. Si no sabés por dónde empezar, lo delimitamos juntos.</span></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="solucion" aria-labelledby="solucion-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="solucion-h"><span data-en="How does a problem become a solution?" data-pt="Como um problema vira uma solução?">¿Cómo se pasa del problema a la solución?</span> <span class="muted" data-en="Here's the first one on the list." data-pt="Eu mostro com o primeiro da lista.">Te lo muestro con el primero de la lista.</span></h2>
+        <p class="bridge" data-en="Thalía, a beautician, wrote to me with the same problem many businesses have: clients booked on WhatsApp and then didn't show up. This is how we solved it, step by step." data-pt="A Thalía, esteticista, me escreveu com o mesmo problema de muitos negócios: as clientes marcavam pelo WhatsApp e depois não apareciam. Foi assim que resolvemos, passo a passo.">Thalía, cosmetóloga, me escribió con el mismo problema que tienen muchos negocios: le reservaban por WhatsApp y después no venían. Así lo resolvimos, paso a paso.</p>
+      </div>
+      <div class="flow">
+        <div class="flow__track" aria-hidden="true"><i></i></div>
+        <div class="flow__step">
+          <span class="flow__num">1</span>
+          <div class="flow__pic" data-ui aria-hidden="true">
+            <div class="bub"><span data-en="Clients book on WhatsApp and then don't show up 😩" data-pt="Marcam pelo WhatsApp e depois não aparecem 😩">Me reservan por WhatsApp y después no vienen 😩</span><small>09:41</small></div>
+            <div class="bub"><span data-en="And I lose the slot and the deposit." data-pt="E eu perco o horário e o sinal.">Y pierdo el turno y la seña.</span><small>09:42</small></div>
+            <div class="bub bub--me"><span data-en="Let's talk 20 minutes and look at it together." data-pt="Vamos conversar 20 minutos e ver isso juntos.">Hablemos 20 minutos y lo vemos juntos.</span><small>09:45</small></div>
+          </div>
+          <h3 data-en="You tell me what's wrong" data-pt="Você me conta o que acontece">Me contás qué pasa</h3>
+          <p data-en="In your own words, by WhatsApp or email. No technical jargon." data-pt="Com as suas palavras, por WhatsApp ou e-mail. Sem termos técnicos.">Con tus palabras, por WhatsApp o por email. Sin palabras técnicas.</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">2</span>
+          <div class="flow__pic" data-ui aria-hidden="true">
+            <div class="chip" data-en="Booking by chat" data-pt="Reserva pelo chat">Reserva por chat</div>
+            <div class="chip-arrow"></div>
+            <div class="chip chip--hot" data-en="Deposit never collected" data-pt="O sinal não é cobrado">La seña no se cobra</div>
+            <div class="chip-arrow"></div>
+            <div class="chip" data-en="Empty slot, lost day" data-pt="Horário vazio, dia perdido">Turno vacío, día perdido</div>
+          </div>
+          <h3 data-en="We find where it breaks" data-pt="Encontramos onde o processo quebra">Encontramos dónde se rompe</h3>
+          <p data-en="We map how you work today and mark the exact point to fix." data-pt="Desenhamos como você trabalha hoje e marcamos o ponto exato a resolver.">Dibujamos cómo trabajás hoy y marcamos el punto exacto a resolver.</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">3</span>
+          <div class="flow__pic" data-ui aria-hidden="true">
+            <div class="wire"><i style="width:55%"></i><div class="w-cal"><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div><i style="width:80%"></i><i style="width:65%"></i><span class="w-btn"></span></div>
+            <div class="wire-note" data-en="Prototype on your phone" data-pt="Protótipo no seu celular">Prototipo en tu celular</div>
+          </div>
+          <h3 data-en="You try it before it's final" data-pt="Você testa antes de ficar pronto">Lo probás antes de que esté listo</h3>
+          <p data-en="Each stage is a link you open on your phone and approve." data-pt="Cada etapa é um link que você abre no celular e aprova.">Cada etapa es un link que abrís en tu celular y aprobás.</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg></span>
+          <div class="flow__pic" data-ui aria-hidden="true">
+            <div class="ok-card">
+              <div><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span data-en="Booking confirmed" data-pt="Horário confirmado">Turno confirmado</span></div>
+              <div><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span data-en="Deposit paid when booking" data-pt="Sinal cobrado na reserva">Seña cobrada al reservar</span></div>
+              <div><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span data-en="Reminder sent" data-pt="Lembrete enviado">Recordatorio enviado</span></div>
+            </div>
+          </div>
+          <h3 data-en="It works, with your brand" data-pt="Fica funcionando com a sua marca">Queda andando con tu marca</h3>
+          <p data-en="On your domain, with a panel you run from your phone." data-pt="No seu domínio, com um painel que você controla pelo celular.">En tu dominio, con un panel que manejás desde el celular.</p>
+        </div>
+      </div>
+      <a class="link-arrow flow-next" href="#casos"><span data-en="See Thalía's full case, and one more" data-pt="Ver o caso completo da Thalía, e mais um">Ver el caso completo de Thalía, y uno más</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a>
+    </div>
+  </section>
+
+  <section class="section" id="casos" aria-labelledby="casos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="casos-h" data-en="Two businesses, two problems, two tools." data-pt="Dois negócios, dois problemas, duas ferramentas.">Dos negocios, dos problemas, dos herramientas.</h2>
+      </div>
+      <div class="grid">
+        <article class="card card--open span-6">
+          <div class="case__frame" role="img" aria-label="El panel de turnos de Thalia en el celular" data-en-aria-label="Thalia's booking panel on a phone" data-pt-aria-label="O painel de horários da Thalia no celular">
+            <div class="device" aria-hidden="true"><div class="device__screen">
+              <div class="bk-top"><div class="bk-brand">Panel · Agenda</div><div class="bk-title">Martes 18</div><div class="bk-sub">3 turnos · 1 comprobante por revisar</div></div>
+              <div class="bk-sum"><span>11:00 · Limpieza facial</span><b>Seña verificada</b></div>
+              <div class="bk-sum"><span>15:00 · Peeling</span><b>Comprobante subido</b></div>
+              <div class="bk-sum"><span>18:00 · Maquillaje social</span><b>Seña del 50 % recibida</b></div>
+              <div class="bk-btn">Verificar comprobante</div>
+            </div></div>
+          </div>
+          <p class="ticket" data-en="Case 001 · Beauty & skincare · Buenos Aires" data-pt="Caso 001 · Estética e maquiagem · Buenos Aires">Caso 001 · Estética y maquillaje · CABA</p>
+          <h3 data-en="Booking system with deposits for Thalia Mareco" data-pt="Agenda de horários com sinal para Thalia Mareco">Agenda de turnos con seña para Thalia Mareco</h3>
+          <p class="case__problem" data-en="The problem: bookings by WhatsApp, no-shows and hours spent coordinating and collecting deposits by hand." data-pt="O problema: horários pelo WhatsApp, clientes que não apareciam e horas combinando e cobrando sinais à mão.">El problema: turnos por WhatsApp, clientas que no venían y horas coordinando y cobrando señas a mano.</p>
+          <ul class="case__list">
+            <li><span data-en="Clients book and pay the deposit by uploading the receipt." data-pt="A cliente reserva e paga o sinal enviando o comprovante.">La clienta reserva y paga la seña subiendo el comprobante.</span></li>
+            <li><span data-en="Automatic reminders by email and WhatsApp." data-pt="Lembretes automáticos por e-mail e WhatsApp.">Recordatorios automáticos por email y WhatsApp.</span></li>
+            <li><span data-en="Clients reschedule or cancel on their own; the 48-hour rule applies itself." data-pt="Ela remarca ou cancela sozinha; a regra das 48 horas se aplica sem discussão.">Reprograma o cancela sola; la regla de 48 horas se aplica sin discusiones.</span></li>
+            <li><span data-en="Thalia runs her calendar and clients from her phone." data-pt="A Thalia administra agenda e clientes pelo celular.">Thalia maneja agenda y clientas desde el celular.</span></li>
+          </ul>
+          <p class="stack">Next.js · TypeScript · Firebase · WhatsApp API</p>
+        </article>
+        <article class="card card--open span-6" id="caso-despensa">
+          <div class="case__frame"><img src="img/despensa.png" alt="El generador de flyers de Despensa San Ignacio con una oferta de café en grano a 48.500 guaraníes" data-en-alt="Despensa San Ignacio's flyer generator showing a coffee-beans offer at 48,500 guaraníes" data-pt-alt="O gerador de panfletos da Despensa San Ignacio com uma oferta de café em grão a 48.500 guaranis" loading="lazy"></div>
+          <p class="ticket" data-en="Case 002 · Retail · Paraguay" data-pt="Caso 002 · Comércio · Paraguai">Caso 002 · Comercio · Paraguay</p>
+          <h3 data-en="Sale-flyer generator for Despensa San Ignacio" data-pt="Gerador de peças de ofertas para a Despensa San Ignacio">Generador de piezas de ofertas para Despensa San Ignacio</h3>
+          <p class="case__problem" data-en="The problem: every daily offer was a flyer made by hand, with no designer, always in a rush." data-pt="O problema: cada oferta do dia era um panfleto feito à mão, sem designer, sempre na correria.">El problema: cada oferta del día era un flyer hecho a mano, sin diseñador, siempre a las corridas.</p>
+          <ul class="case__list">
+            <li><span data-en="Each flyer went from about twenty minutes by hand to under one." data-pt="Cada panfleto passou de uns vinte minutos à mão para menos de um.">Cada flyer pasó de unos veinte minutos a mano a menos de uno.</span></li>
+            <li><span data-en="17 templates with the store's identity." data-pt="17 modelos com a identidade do negócio.">17 plantillas con la identidad del negocio.</span></li>
+            <li><span data-en="Prices in guaraníes, in local format." data-pt="Preços em guaranis, no formato local.">Precios en guaraníes con formato local.</span></li>
+                        <li><span data-en="An AI assistant that writes the post text." data-pt="Um assistente com IA que escreve o texto da publicação.">Asistente con IA que escribe el texto de la publicación.</span></li>
+          </ul>
+          <p class="stack">Next.js · Canvas · Claude API · Vercel</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proyectos" aria-labelledby="proyectos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="proyectos-h"><span data-en="My own projects." data-pt="Projetos próprios.">Proyectos propios.</span> <span class="muted" data-en="Where code meets dance and research." data-pt="Onde o código encontra a dança e a pesquisa.">Donde el código se encuentra con la danza y la investigación.</span></h2>
+      </div>
+      <div class="grid">
+        <article class="card card--open span-6">
+          <div class="proj__frame mv" data-ui role="img" aria-label="Una vista de MUEVETE: el video de una clase y la lista de las seis clases del módulo" data-en-aria-label="A view of MUEVETE: a class video and the list of the module's six classes" data-pt-aria-label="Uma tela do MUEVETE: o vídeo de uma aula e a lista das seis aulas do módulo">
+            <span class="badge"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" /></svg><span data-en="Coming soon" data-pt="Em breve">Próximamente</span></span>
+            <div class="mv__video" aria-hidden="true"><span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg></span><small>Jazz · Clase 2</small></div>
+            <div class="mv__side" aria-hidden="true">
+              <b>MUEVETE</b>
+              <span data-en="Module 1 · 6 classes" data-pt="Módulo 1 · 6 aulas">Módulo 1 · 6 clases</span>
+              <div class="mv__bar"><i></i></div>
+              <div class="mv__lessons"><span><em data-en="Warm-up" data-pt="Aquecimento">Calentamiento</em><em>✓</em></span><span><em data-en="Isolations" data-pt="Isolamentos">Aislaciones</em><em>▶</em></span><span><em data-en="Sequence" data-pt="Sequência">Secuencia</em><em>·</em></span></div>
+            </div>
+          </div>
+          <p class="ticket" data-en="Own project · Movement and wellbeing online" data-pt="Projeto próprio · Movimento e bem-estar online">Proyecto propio · Movimiento y bienestar online</p>
+          <h3 data-en="MUEVETE: online classes" data-pt="MUEVETE: aulas online">MUEVETE: clases online</h3>
+          <p class="case__problem" data-en="Online dance and movement classes: teachers sell their classes in modules and students take them from anywhere, with its own clothing shop. This is where I joined my two crafts: I've been dancing for over twenty-five years, and I code." data-pt="Aulas online de dança e movimento: cada professor vende suas aulas em módulos e os alunos fazem de qualquer lugar, com loja de roupas própria. Aqui juntei meus dois ofícios: danço há mais de vinte e cinco anos e programo.">Clases online de danza y movimiento: cada docente vende sus clases en módulos y sus alumnos las toman desde cualquier lugar, con tienda de indumentaria propia. Acá junté mis dos oficios: bailo hace más de veinticinco años y programo.</p>
+          <ul class="case__list">
+            <li><span data-en="Courses in modules of six classes." data-pt="Cursos em módulos de seis aulas.">Cursos en módulos de seis clases.</span></li>
+                        <li><span data-en="You pay online and go straight to the videos." data-pt="Você paga online e vai direto para os vídeos.">Pagás online y entrás directo a los videos.</span></li>
+            <li><span data-en="Each teacher uploads and sells their own classes." data-pt="Cada professor sobe e vende suas próprias aulas.">Cada docente sube y vende sus propias clases.</span></li>
+          </ul>
+          <p class="stack">Next.js 15 · TypeScript · Firebase · Vercel · <a class="link-arrow" href="https://pf-nextjs-muevete.vercel.app" target="_blank" rel="noopener"><span data-en="See the demo" data-pt="Ver a demo">Ver la demo</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a></p>
+        </article>
+        <article class="card card--open span-6">
+          <div class="proj__frame vj" data-ui >
+            <div class="vj__site" aria-hidden="true"><div class="vj__nav"><i></i><i></i><i></i><i></i></div><div class="vj__body"><div class="vj__hero"></div><div class="vj__txt"><i></i><i></i><i></i><i style="width:70%"></i></div></div></div>
+            <div class="vj__lock"><div><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+  <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg><b data-en="Restricted access" data-pt="Acesso restrito">Acceso restringido</b><span data-en="Published 2027–2028" data-pt="Publicação em 2027–2028">Se publica en 2027–2028</span><button class="btn btn--sm vj__peek" type="button" data-peek><span data-en="Take a look" data-pt="Dê uma olhada">Echale un vistazo</span></button></div></div>
+          </div>
+          <p class="ticket" data-en="Academic research · ES / EN / PT" data-pt="Pesquisa acadêmica · ES / EN / PT">Investigación académica · ES / EN / PT</p>
+          <h3 data-en="Estilo Vallejos: a digital archive of a jazz master" data-pt="Estilo Vallejos: o arquivo digital de um mestre do jazz">Estilo Vallejos: el archivo digital de un maestro del jazz</h3>
+          <p class="case__problem" data-en="The site of a research project on Manuel Vallejos, an Argentine jazz dance master, which I'm part of: interviews, archive, photos and a charity shop, in Spanish, English and Portuguese. The team runs it on its own." data-pt="O site de uma pesquisa sobre Manuel Vallejos, mestre argentino de jazz dance, da qual faço parte: entrevistas, arquivo, fotos e uma loja solidária, em espanhol, inglês e português. A equipe administra tudo sozinha.">El sitio de una investigación sobre Manuel Vallejos, maestro argentino de jazz dance, de la que formo parte: entrevistas, archivo, fotos y una tienda solidaria, en español, inglés y portugués. El equipo lo administra solo.</p>
+          <ul class="case__list">
+            <li><span data-en="The team uploads photos and texts on its own, no developer needed." data-pt="A equipe sobe fotos e textos sozinha, sem depender de mim.">El equipo sube fotos y textos solo, sin depender de mí.</span></li>
+            <li><span data-en="Three languages from day one." data-pt="Três idiomas desde o primeiro dia.">Tres idiomas desde el primer día.</span></li>
+            <li><span data-en="Private until the research is published; screenshots on request." data-pt="Privado até a pesquisa ser publicada; capturas sob pedido.">Privado hasta que se publique la investigación; capturas a pedido.</span></li>
+          </ul>
+          <p class="stack">Next.js · Firebase · i18n</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proceso" data-moment="photo-chapters" aria-labelledby="proceso-h">
+    <div class="wrap mo-ph">
+      <div class="mo-ph__head"><h2 id="proceso-h" data-en="No surprises: a clear scope and progress you can see." data-pt="Sem surpresas: escopo claro e avanços que você vê.">Sin sorpresas: alcance claro y avances que ves.</h2><p data-en="Four steps, from the first chat to support." data-pt="Quatro passos, da primeira conversa ao suporte.">Cuatro pasos, de la primera charla al soporte.</p></div>
+      <ol class="mo-ph__list">
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="img/m138226685.webp" alt="Las manos de una florista recortan los tallos de un ramo sobre la mesa de trabajo" data-en-alt="A florist's hands trim the stems of a bouquet on the work table" data-pt-alt="As mãos de uma florista cortam os talos de um buquê na mesa de trabalho" width="1800" height="1200"></figure>
+          <h3 data-en="A 20-minute chat" data-pt="Conversa de 20 minutos">Charla de 20 minutos</h3>
+          <p data-en="You tell me the problem. Free and with no commitment." data-pt="Você me conta o problema. Sem custo e sem compromisso.">Me contás el problema. Sin cargo y sin compromiso.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="img/m33603558.webp" alt="Un horno de pan de piedra con las puertas abiertas y una bandeja de panes adentro" data-en-alt="A stone bread oven with its doors open and a tray of loaves inside" data-pt-alt="Um forno de pão de pedra com as portas abertas e uma assadeira de pães dentro" width="1200" height="794"></figure>
+          <h3 data-en="A proposal in 48 hours" data-pt="Proposta em 48 horas">Propuesta en 48 horas</h3>
+          <p data-en="What I'll build, how long it takes, and payment options that fit you." data-pt="O que vou fazer, em quanto tempo e uma forma de pagamento que fique confortável para você.">Qué hago, en cuánto tiempo y una forma de pago que te quede cómoda.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="img/m19113721.webp" alt="Un herrero sostiene con pinzas una barra de hierro al rojo sobre el yunque" data-en-alt="A blacksmith holds a red-hot iron bar on the anvil with tongs" data-pt-alt="Um ferreiro segura com uma tenaz uma barra de ferro em brasa sobre a bigorna" width="1800" height="1200"></figure>
+          <h3 data-en="Delivery in stages" data-pt="Entregas por etapas">Entregas por etapas</h3>
+          <p data-en="You see and test each step before we move on." data-pt="Você vê e testa cada avanço antes de seguir.">Ves y probás cada avance antes de seguir.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="img/luthier.webp" alt="Las manos de un luthier ajustan la tapa de un violín en su molde" data-en-alt="A luthier's hands fit the top of a violin in its mould" data-pt-alt="As mãos de um luthier ajustam o tampo de um violino no molde" width="1200" height="800"></figure>
+          <h3 data-en="Launch and support" data-pt="Publicação e suporte">Publicación y soporte</h3>
+          <p data-en="I leave it running, teach you to use it and stay available." data-pt="Deixo funcionando, te ensino a usar e continuo disponível.">Lo dejo andando, te enseño a usarlo y sigo disponible.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="agencias" aria-labelledby="agencias-h">
+    <div class="wrap grid grid--middle">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="agencias-h" data-en="Does your agency design, but have no one to code?" data-pt="Sua agência cria o design, mas não tem quem programe?">¿Tu agencia diseña, pero no tiene quien programe?</h2>
+          <p data-en="I work white-label for design, advertising and marketing agencies, in Spanish, English or Portuguese. And I can talk to your client without scaring them." data-pt="Trabalho em white label para agências de design, publicidade e marketing, em espanhol, inglês ou português. E sei falar com o seu cliente sem assustá-lo.">Trabajo en marca blanca para agencias de diseño, publicidad y marketing, en español, inglés o portugués. Y sé hablar con tu cliente sin asustarlo.</p>
+        </div>
+        <ul class="ticks">
+          <li data-en="With your design and on your timeline." data-pt="Com o seu design e nos seus prazos.">Con tu diseño y con tus tiempos.</li>
+          <li data-en="By the hour, by project or as monthly maintenance." data-pt="Por hora, por projeto ou com manutenção mensal.">Por hora, por proyecto o con mantenimiento mensual.</li>
+          <li data-en="Under your brand: your client never sees mine." data-pt="Com a sua marca: o seu cliente não vê a minha.">Con tu marca: tu cliente no ve la mía.</li>
+        </ul>
+        <div class="btn-row" style="margin-top:var(--s-6)"><div class="talk"><button class="btn btn--primary talk__btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's try a small project" data-pt="Vamos testar com um projeto pequeno">Probemos con un proyecto chico</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div></div>
+      </div>
+      <div class="span-6 start-7">
+        <div class="counter__photo"><img src="img/barista.webp" alt="Las manos de un barista prensan café molido junto a la máquina de espresso" data-en-alt="A barista's hands tamp ground coffee beside the espresso machine" data-pt-alt="As mãos de um barista prensam o café moído ao lado da máquina de espresso" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre-mi" aria-labelledby="sobre-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head">
+          <p class="t-label about-kicker" data-en="From Buenos Aires to the world" data-pt="De Buenos Aires para o mundo">De Buenos Aires al mundo</p>
+          <h2 id="sobre-h" data-en="Hi, I'm Fabián." data-pt="Olá, sou o Fabián.">Hola, soy Fabián.</h2>
+          <p data-en="I live in Buenos Aires and work with clients anywhere. I trained as a developer at Coderhouse and work with Next.js, React, TypeScript, Node, Firebase and MongoDB. Before coding, I spent over fifteen years serving customers, and I've been dancing for more than twenty-five. Both taught me the same thing: listen first, and rehearse until it works." data-pt="Moro em Buenos Aires e trabalho com clientes de qualquer lugar. Me formei como desenvolvedor na Coderhouse e trabalho com Next.js, React, TypeScript, Node, Firebase e MongoDB. Antes de programar, passei mais de quinze anos atendendo clientes, e danço há mais de vinte e cinco. As duas coisas me ensinaram o mesmo: escutar primeiro e ensaiar até dar certo.">Vivo en Buenos Aires y trabajo con clientes de cualquier lugar. Me formé como desarrollador en Coderhouse y trabajo con Next.js, React, TypeScript, Node, Firebase y MongoDB. Antes de programar, pasé más de quince años atendiendo clientes, y bailo hace más de veinticinco. De las dos cosas aprendí lo mismo: escuchar primero y ensayar hasta que salga bien.</p>
+        </div>
+        <dl class="facts">
+          <div><dt data-en="Based in" data-pt="Base">Base</dt><dd data-en="Buenos Aires, working worldwide" data-pt="Buenos Aires, para o mundo">Buenos Aires, para el mundo</dd></div>
+          <div><dt data-en="Projects" data-pt="Projetos">Proyectos</dt><dd data-en="In any language" data-pt="Em qualquer idioma">En cualquier idioma</dd></div>
+          <div><dt data-en="Support" data-pt="Atendimento">Atención</dt><dd data-en="Spanish, English and Portuguese" data-pt="Espanhol, inglês e português">Español, inglés y portugués</dd></div>
+          <div><dt>Stack</dt><dd>Next.js · React · TypeScript · Node</dd></div>
+        </dl>
+      </div>
+      <div class="span-6 start-7" id="redes">
+        <p class="soc-title t-label" data-en="Social media: find me online" data-pt="Redes: me encontre aqui">Redes: encontrame acá</p>
+        <div class="soc-grid">
+          <a class="social" href="https://www.instagram.com/fabianmareco.dev" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span><b>Instagram</b><small>@fabianmareco.dev</small></span></a>
+          <a class="social" href="https://www.tiktok.com/@fabianmareco.dev" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span><b>TikTok</b><small>@fabianmareco.dev</small></span></a>
+          <a class="social" href="https://www.linkedin.com/in/fabianmareco" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+  <rect width="20" height="14" x="2" y="6" rx="2" /></svg><span><b>LinkedIn</b><small>in/fabianmareco</small></span></a>
+          <a class="social" href="https://github.com/FabianMareco" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span><b>GitHub</b><small>FabianMareco</small></span></a>
+          <a class="social" data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a>
+          <a class="social" data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo</b><small data-contact-text="mail" data-en="Write to me" data-pt="Me escreva">Escribime</small></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<dialog class="peek" id="peek" aria-labelledby="peek-h">
+  <div class="peek__head">
+    <div><p class="t-label" data-en="Illustrative preview · Estilo Vallejos" data-pt="Prévia ilustrativa · Estilo Vallejos">Vista previa ilustrativa · Estilo Vallejos</p><h2 id="peek-h" data-en="A first look at the site" data-pt="Uma primeira olhada no site">Un primer vistazo al sitio</h2></div>
+    <button class="peek__close" type="button" data-peek-close aria-label="Cerrar" data-en-aria-label="Close" data-pt-aria-label="Fechar"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></svg></button>
+  </div>
+  <div class="peek__pages">
+    <figure class="pk pk--home"><div class="pk__screen"><span class="pk__nav"><i></i><i></i><i></i><em>ES · EN · PT</em></span><div class="pk__hero"><b>Manuel Vallejos</b><small data-en="Argentine jazz dance master" data-pt="Mestre do jazz dance argentino">Maestro del jazz dance argentino</small></div></div><figcaption data-en="Home: who he was and why his style matters" data-pt="Início: quem ele foi e por que o seu estilo importa">Inicio: quién fue y por qué importa su estilo</figcaption></figure>
+    <figure class="pk pk--talks"><div class="pk__screen"><span class="pk__row"><i class="pk__play"></i><i></i></span><span class="pk__row"><i class="pk__play"></i><i></i></span><span class="pk__row"><i class="pk__play"></i><i></i></span><span class="pk__row"><i class="pk__play"></i><i></i></span></div><figcaption data-en="Interviews with students, colleagues and family" data-pt="Entrevistas com alunas, colegas e família">Entrevistas a alumnas, colegas y familia</figcaption></figure>
+    <figure class="pk pk--archive"><div class="pk__screen"><span class="pk__grid"><i></i><i></i><i></i><i></i><i></i><i></i></span></div><figcaption data-en="Archive: photos, notebooks and class videos" data-pt="Arquivo: fotos, cadernos e vídeos de aula">Archivo: fotos, cuadernos y videos de clase</figcaption></figure>
+    <figure class="pk pk--shop"><div class="pk__screen"><span class="pk__cards"><i></i><i></i><i></i></span></div><figcaption data-en="Charity shop" data-pt="Loja solidária">Tienda solidaria</figcaption></figure>
+  </div>
+  <p class="peek__note" data-en="The site and the research are published in 2027–2028. Want to see it working? Ask me for a private tour." data-pt="O site e a pesquisa serão publicados em 2027–2028. Quer ver funcionando? Me peça um tour privado.">El sitio y la investigación se publican en 2027–2028. ¿Querés verlo funcionando? Pedime un recorrido privado.</p>
+</dialog>
+
+<footer class="footer closing footer--dark ground-inverse" id="contacto" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h" data-en="Where does your business lose time?" data-pt="Onde o seu negócio perde tempo?">¿Dónde se te va el tiempo en tu negocio?</h2>
+        <p data-en="Tell me in one message. I'll reply the same day with a concrete idea, and we define the scope and payment together." data-pt="Me conta em uma mensagem. Respondo no mesmo dia com uma ideia concreta, e o escopo e a forma de pagamento a gente define junto.">Contámelo en un mensaje. Te respondo en el día con una idea concreta, y el alcance y la forma de pago los definimos juntos.</p>
+      </div>
+      <div class="talk talk--up"><button class="btn btn--primary talk__btn btn--xl" type="button" aria-expanded="false" aria-haspopup="true"><svg class="ic-i talk__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+  <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></svg><span data-en="Let's talk" data-pt="Vamos conversar">Hablemos</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#b10f2e"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#fdffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand" data-en="Custom Digital Solutions" data-pt="Soluções Digitais Sob Medida">Soluciones Digitales a Medida</span></a>
+          <p class="footer__lede footer__sig"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20" />
+  <path d="m9 10 2 2 4-4" />
+  <rect x="3" y="4" width="18" height="12" rx="2" /></svg><span>Fabián Mareco · Full Stack Developer</span></p>
+        </div>
+        <div class="span-3 start-7 footer__col"><h3 data-en="Services" data-pt="Serviços">Servicios</h3><ul><li><a href="#problemas" data-en="What I solve" data-pt="O que eu resolvo">Qué resuelvo</a></li><li><a href="servicios.html" data-en="More services" data-pt="Mais serviços">Más servicios</a></li><li><a href="#agencias" data-en="For agencies" data-pt="Para agências">Para agencias</a></li><li><a href="#proyectos" data-en="Own projects" data-pt="Projetos próprios">Proyectos propios</a></li></ul></div>
+        <div class="span-3 footer__col"><h3 data-en="Contact" data-pt="Contato">Contacto</h3><ul><li><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li><li><a data-contact="mail" href="mailto:" data-en="Email" data-pt="E-mail">Correo</a></li><li><a href="https://www.linkedin.com/in/fabianmareco" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.instagram.com/fabianmareco.dev" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Fabián Mareco · Full Stack Developer. <span data-en="All rights reserved." data-pt="Todos os direitos reservados.">Todos los derechos reservados.</span></span>
+        <span class="credits"><span data-en="Photos:" data-pt="Fotos:">Fotos:</span> direct2Florist, Shixart1985 (CC BY 2.0); Kritzolina, Wald1siedel (CC BY-SA 4.0); Johann Jaritz (CC BY-SA 3.0 AT); Wikimedia Commons</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Acción rápida" data-en-aria-label="Quick action" data-pt-aria-label="Ação rápida">
+  <div class="talk talk--up"><button class="btn btn--primary talk__btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Let's talk" data-pt="Vamos conversar">Hablemos</span><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button><div class="talk__menu"><a data-contact="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><b>WhatsApp</b><small data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a><a data-contact="mail" href="mailto:"><svg class="ic-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span><b data-en="Email" data-pt="E-mail">Correo electrónico</b><small data-contact-text="mail" data-en="Reply within the day" data-pt="Resposta no mesmo dia">Respuesta en el día</small></span></a></div></div>
+</nav>
+<script src="assets/site.js"></script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>

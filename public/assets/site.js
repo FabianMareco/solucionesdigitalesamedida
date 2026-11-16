@@ -84,10 +84,33 @@ function setLang(next) {
     el.setAttribute(at, next === 'es' ? el.dataset[k] : (el.getAttribute('data-' + next + '-' + at) || el.getAttribute('data-en-' + at)));
   }));
   document.querySelectorAll('[data-set-lang]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.setLang === next)));
+  document.querySelectorAll('.lang-dd__cur').forEach(c => { c.textContent = next.toUpperCase(); });
   contactLinks();
   try { localStorage.setItem('fm-lang', next); } catch (e) {}
 }
 document.querySelectorAll('[data-set-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang)));
+
+/* ---------------- selector de idioma desplegable (escritorio) ---------------- */
+function closeLangMenus(except) {
+  document.querySelectorAll('.lang-dd.is-open').forEach(d => { if (d === except) return; d.classList.remove('is-open'); d.querySelector('.lang-dd__btn').setAttribute('aria-expanded', 'false'); });
+}
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.lang-dd__btn');
+  if (btn) {
+    const dd = btn.closest('.lang-dd'), open = !dd.classList.contains('is-open');
+    closeLangMenus(dd); dd.classList.toggle('is-open', open); btn.setAttribute('aria-expanded', String(open));
+    if (open) (dd.querySelector('[aria-pressed="true"]') || dd.querySelector('[data-set-lang]')).focus({ preventScroll: true });
+    return;
+  }
+  const opt = e.target.closest('.lang-dd [data-set-lang]');
+  if (opt) { const dd = opt.closest('.lang-dd'); closeLangMenus(); dd.querySelector('.lang-dd__btn').focus({ preventScroll: true }); return; }
+  if (!e.target.closest('.lang-dd')) closeLangMenus();
+});
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  const dd = document.querySelector('.lang-dd.is-open');
+  if (dd) { closeLangMenus(); dd.querySelector('.lang-dd__btn').focus(); }
+});
 
 /* ---------------- Estilo Vallejos: "take a look" ---------------- */
 const peek = document.getElementById('peek');

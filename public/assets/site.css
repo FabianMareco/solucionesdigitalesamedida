@@ -400,21 +400,40 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 .footer__sig .ic-i { width: 22px; height: 22px; color: var(--peach); flex: none; }
 .footer__sig { max-width: none; } .footer__sig span { white-space: nowrap; }
 
-/* Menú en notebooks: Resolvamos juntos y Soluciones reales siempre visibles */
-@media (min-width: 1024px) and (max-width: 1499px) { .nav__links .nav__item:nth-child(5) { display: none; } }   /* Sobre mí */
-@media (min-width: 1024px) and (max-width: 1399px) { .nav__links .nav__item:nth-child(4) { display: none; } }   /* Más servicios */
+/* Menú: cuatro links (Resolvamos juntos · Soluciones reales · Más servicios · Para agencias), siempre visibles.
+   En notebooks angostas se compacta en vez de ocultar links. */
 @media (min-width: 1024px) and (max-width: 1179px) {
-  .nav__links .nav__item:nth-child(3) { display: none; }                                                        /* Proyectos */
-  .nav__actions .lang-seg .ic-i { display: none; }
+  .nav__links { gap: 12px; }
+  .nav__link { padding-inline: 6px; font-size: 14px; }
+  .nav__logo .brand { max-width: 150px; }
+  .nav__actions { gap: 8px; }
 }
 
-/* El portugués es más largo */
-@media (min-width: 1024px) and (max-width: 1799px) { html[lang^="pt"] .nav__links .nav__item:nth-child(5) { display: none; } }
-@media (min-width: 1024px) and (max-width: 1599px) { html[lang^="pt"] .nav__links .nav__item:nth-child(4) { display: none; } }
-@media (min-width: 1024px) and (max-width: 1279px) { html[lang^="pt"] .nav__links .nav__item:nth-child(3) { display: none; } }
-@media (min-width: 1024px) and (max-width: 1179px) {
-  html[lang^="pt"] .nav__links { gap: 12px; }
-  html[lang^="pt"] .nav__link { padding-inline: 6px; font-size: 14px; }
-  html[lang^="pt"] .nav__logo .brand { max-width: 150px; }
-  html[lang^="pt"] .nav__actions { gap: 8px; }
+/* Selector de idioma desplegable (escritorio): muestra solo el idioma actual */
+.lang-dd { position: relative; display: inline-flex; }
+.lang-dd__btn { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 10px 0 12px; border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent); border-radius: 999px; background: transparent; color: var(--ink); font: 600 13px/1 var(--font-text); letter-spacing: .04em; cursor: pointer; }
+.lang-dd__btn:hover { border-color: color-mix(in srgb, var(--ink) 40%, transparent); }
+.lang-dd__btn .ic-i { width: 16px; height: 16px; color: var(--muted); }
+.lang-dd__chev { transition: transform .2s; }
+.lang-dd__btn[aria-expanded="true"] .lang-dd__chev { transform: rotate(180deg); }
+.lang-dd__menu { position: absolute; z-index: 60; top: calc(100% + 10px); right: 0; min-width: 180px; padding: 6px; border-radius: var(--r-md); background: var(--p-bg); color: var(--p-ink); box-shadow: 0 24px 60px -20px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.06); display: none; gap: 2px; }
+.lang-dd.is-open .lang-dd__menu { display: grid; }
+.lang-dd__menu button { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 12px; border: 0; border-radius: calc(var(--r-md) - 4px); background: transparent; color: inherit; font: 500 15px/1.2 var(--font-text); text-align: left; cursor: pointer; }
+.lang-dd__menu button:hover, .lang-dd__menu button:focus-visible { background: var(--p-surface); }
+.lang-dd__menu button[aria-pressed="true"] { font-weight: 700; }
+.lang-dd__menu button[aria-pressed="true"]::after { content: "✓"; color: var(--p-accent); }
+@media (max-width: 1023px) { .nav__actions .lang-dd { display: none; } }
+
+/* Notebooks: los links se centran en el espacio libre entre el logo y los botones, no en la pantalla, así no se meten debajo */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nav--centre .nav__bar { display: flex; gap: 16px; }
+  .nav--centre .nav__links { flex: 1 1 auto; justify-content: center; min-width: 0; }
 }
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .lang-dd__btn > .ic-i:first-child { display: none; }   /* el globito: el botón ya dice ES / EN / PT */
+  .lang-dd__btn { padding-inline: 12px 8px; }
+  .nav--centre .nav__links { gap: 2px; }
+  .nav--centre .nav__link { padding-inline: 4px; }
+}
+/* portugués en las notebooks más angostas: medio punto menos de letra en el menú */
+@media (min-width: 1024px) and (max-width: 1099px) { html[lang^="pt"] .nav--centre .nav__link { font-size: 13.5px; } }

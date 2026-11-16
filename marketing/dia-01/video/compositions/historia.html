@@ -1,0 +1,131 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Hanken Grotesk", sans-serif; }
+    .h-title { position: absolute; left: 120px; right: 192px; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 94px; line-height: .92; }
+    .h-title .w { display: inline-block; }
+    /* ANTES (arriba) */
+    #h-antes { position: absolute; left: 0; top: 0; width: 1080px; height: 1000px; background: var(--noche); overflow: hidden; z-index: 2; }
+    #h-noche-wrap { position: absolute; left: 250px; top: 300px; transform-origin: 50% 0%; width: 1080px; height: 1080px; }
+    #h-noche-wrap video { width: 100%; height: 100%; display: block; }
+    #h-t1 { top: 314px; color: var(--crema); }
+    #h-t1 .acento { color: var(--salmon); }
+    .h-roll { position: relative; display: inline-block; }
+    .h-roll span { display: inline-block; }
+    #h-hr2 { position: absolute; left: 0; top: 0; }
+    #h-chat { position: absolute; left: 120px; top: 0; width: 470px; height: 1000px; }
+    .bub { position: absolute; left: 0; top: 880px; padding: 18px 26px; border-radius: 26px 26px 26px 6px; background: #ffffff; color: #1d1d1f; font-size: 32px; font-weight: 500; line-height: 1.15; box-shadow: 0 14px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    #h-t-mismo { top: 870px; color: var(--crema); }
+    /* AHORA (abajo, luego pantalla completa) */
+    #h-ahora { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: var(--dia); z-index: 1; }
+    #h-dia-wrap { position: absolute; left: 0; top: 260px; width: 1080px; height: 1080px; transform-origin: 50% 0%; }
+    #h-dia-wrap video { width: 100%; height: 100%; display: block; }
+    #h-t2 { top: 34px; color: var(--tinta); font-size: 64px; }
+    #h-t-distinta { top: 34px; color: var(--carmesi); }
+    #h-t3 { top: 314px; color: var(--tinta); }
+    #h-t4 { top: 314px; color: var(--tinta); }
+    #h-t4 .acento { color: var(--carmesi); }
+    .nt { position: absolute; left: 120px; width: 660px; display: flex; gap: 20px; align-items: center; padding: 20px 24px; border-radius: 28px; background: #ffffff; box-shadow: 0 18px 40px rgba(40,0,0,.18); }
+    .nt-ic { flex: none; width: 70px; height: 70px; border-radius: 18px; background: var(--carmesi); display: grid; place-items: center; }
+    .nt-ic svg { width: 44px; height: 44px; }
+    .nt-hd { display: flex; gap: 12px; font-size: 28px; color: #7a6b66; }
+    .nt-hd b { color: var(--tinta); font-weight: 700; }
+    .nt-t { font-size: 34px; font-weight: 800; color: #1d1d1f; line-height: 1.1; }
+    .nt-b { font-size: 29px; color: #3d3533; line-height: 1.2; }
+  </style>
+  <div id="root" data-composition-id="historia" data-width="1080" data-height="1920">
+
+    <!-- AHORA: pantalla completa debajo; arranca corrida 960 px hacia abajo (mitad inferior) -->
+    <div id="h-ahora" data-layout-allow-overflow>
+      <div id="h-dia-wrap"><video id="h-v-dia" class="clip" data-start="0" data-duration="21.8" data-track-index="3" muted playsinline src="assets/escenas/descanso.webm"></video></div>
+      <h2 id="h-t2" class="h-title"><span class="w">Mientras</span> <span class="w">tanto,</span> <span class="w">tu</span> <span class="w">agenda:</span></h2>
+      <h2 id="h-t-distinta" class="h-title"><span class="w">Distinta</span> <span class="w">noche.</span></h2>
+      <h2 id="h-t3" class="h-title"><span class="w">Tu</span> <span class="w">agenda</span> <span class="w">reserva,</span> <span class="w">cobra</span> <span class="w">la</span> <span class="w">seña</span> <span class="w">y</span> <span class="w">avisa</span> <span class="w">sola.</span></h2>
+      <h2 id="h-t4" class="h-title"><span class="w">Tu</span> <span class="w">negocio</span> <span class="w">atiende.</span><br><span class="w">Vos</span> <span class="w acento">descansás.</span></h2>
+
+      <!-- Notificaciones de la agenda (nombres y horarios de ejemplo, sin montos) -->
+      <div class="nt" data-layout-allow-overlap id="h-n1" style="top:108px"><div class="nt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div><div class="nt-hd"><b>Agenda</b><span>ahora</span></div><div class="nt-t">Nueva reserva</div><div class="nt-b">Martes 15:00 · Limpieza facial</div></div></div>
+      <div class="nt" data-layout-allow-overlap id="h-n2" style="top:108px"><div class="nt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div><div class="nt-hd"><b>Agenda</b><span>ahora</span></div><div class="nt-t">Seña confirmada</div><div class="nt-b">Comprobante recibido</div></div></div>
+      <div class="nt" data-layout-allow-overlap id="h-n3" style="top:108px"><div class="nt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div><div class="nt-hd"><b>Agenda</b><span>ahora</span></div><div class="nt-t">Recordatorio enviado</div><div class="nt-b">A Ana, para mañana</div></div></div>
+      <div class="nt" data-layout-allow-overlap id="h-n4" style="top:640px"><div class="nt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div><div class="nt-hd"><b>Agenda</b><span>ahora</span></div><div class="nt-t">Nueva reserva</div><div class="nt-b">Jueves 11:00 · Peeling</div></div></div>
+      <div class="nt" data-layout-allow-overlap id="h-n5" style="top:640px"><div class="nt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div><div class="nt-hd"><b>Agenda</b><span>ahora</span></div><div class="nt-t">Turno reprogramado</div><div class="nt-b">Sofía lo cambió sola</div></div></div>
+    </div>
+
+    <!-- ANTES: mitad superior -->
+    <div id="h-antes" data-layout-allow-overflow>
+      <div id="h-noche-wrap" data-layout-allow-overflow><video id="h-v-noche" class="clip" data-start="0" data-duration="13.4" data-track-index="2" muted playsinline src="assets/escenas/noche.webm"></video></div>
+      <h1 id="h-t1" class="h-title"><span class="w">Son</span> <span class="w">las</span> <span class="w acento h-roll"><span id="h-hr1">23:14.</span><span id="h-hr2">23:41.</span></span><br><span class="w">Y</span> <span class="w">seguís</span> <span class="w">contestando</span><br><span class="w">WhatsApp.</span></h1>
+      <div id="h-chat">
+        <div class="bub" id="h-b1">¿Tenés turno mañana?</div>
+        <div class="bub" id="h-b2">¿Cuánto sale la limpieza?</div>
+        <div class="bub" id="h-b3">¿Hola? ¿Estás?</div>
+        <div class="bub" id="h-b4">¿Me pasás el alias?</div>
+        <div class="bub" id="h-b5">Al final mañana no puedo</div>
+      </div>
+      <h2 id="h-t-mismo" class="h-title"><span class="w">Mismo</span> <span class="w">negocio.</span></h2>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const words = (sel, at, step = 0.067) => {
+        tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, ease: "power4.out", stagger: step }, at);
+      };
+      const out = (sel, at) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power3.in" }, at);
+
+      // Estado inicial (cuadro 0 = portada): pantalla partida, título de arriba ya visible.
+      tl.fromTo("#h-ahora", { y: 1000 }, { y: 1000, duration: 0.01 }, 0);
+      tl.fromTo("#h-dia-wrap", { y: 0, scale: 0.86 }, { y: 0, scale: 0.86, duration: 0.01 }, 0);
+      tl.fromTo("#h-noche-wrap", { scale: 0.78 }, { scale: 0.78, duration: 0.01 }, 0);
+      tl.fromTo("#h-t1 .w", { opacity: 1 }, { opacity: 1, duration: 0.01 }, 0);
+      ["#h-t2", "#h-t-distinta", "#h-t3", "#h-t4"].forEach(s => tl.fromTo(s + " .w", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0));
+      ["#h-n1", "#h-n2", "#h-n3", "#h-n4", "#h-n5"].forEach(s => tl.fromTo(s, { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0));
+      ["#h-b1", "#h-b2", "#h-b3", "#h-b4", "#h-b5", "#h-t-mismo .w"].forEach(s => tl.fromTo(s, { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0));
+
+      // Burbujas: cada mensaje nuevo entra abajo y empuja a los anteriores (máximo tres a la vista).
+      const bubbles = ["#h-b1", "#h-b2", "#h-b3", "#h-b4", "#h-b5"], times = [1.2, 1.8, 2.4, 7.0, 7.5], step = 96;
+      bubbles.forEach((b, i) => {
+        tl.fromTo(b, { opacity: 0, scale: 0.85, y: 0, transformOrigin: "0% 100%" }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.4)" }, times[i]);
+        for (let j = 0; j < i; j++) {
+          const lift = -(i - j) * step;
+          tl.to(bubbles[j], { y: lift, opacity: i - j >= 3 ? 0 : 1, duration: 0.35, ease: "power3.out" }, times[i]);
+        }
+      });
+
+      // Abajo: el título y las notificaciones llegan tranquilas.
+      words("#h-t2", 3.1);
+      const stack = (cards, starts) => cards.forEach((c, i) => {
+        tl.fromTo(c, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.3)" }, starts[i]);
+        if (i > 0) { tl.to(cards[i - 1], { y: 22, scale: 0.94, duration: 0.45, ease: "power3.out" }, starts[i]); tl.to(cards[i - 1] + " > *", { opacity: 0, duration: 0.2, ease: "power3.in" }, starts[i]); }
+        if (i > 1) tl.to(cards[i - 2], { opacity: 0, duration: 0.3, ease: "power3.in" }, starts[i]);
+      });
+      stack(["#h-n1", "#h-n2", "#h-n3"], [4.0, 5.6, 7.2]);
+
+      // Arriba la hora rueda como tragamonedas: 23:14 → 23:41.
+      tl.to("#h-hr1", { y: -40, opacity: 0, filter: "blur(6px)", duration: 0.13, ease: "power3.in" }, 8.6);
+      tl.fromTo("#h-hr2", { y: 40, opacity: 0, filter: "blur(6px)" }, { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 8.7);
+
+      // Sobre la división: «Mismo negocio.» / «Distinta noche.» (antes se van las burbujas)
+      bubbles.forEach(b => tl.to(b, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power3.in" }, 9.1));
+      out("#h-t2 .w", 8.9);
+      words("#h-t-mismo", 9.4, 0.09);
+      words("#h-t-distinta", 9.75, 0.09);
+
+      // Colapso: la mitad de arriba se va, «Ahora» ocupa toda la pantalla.
+      out("#h-t-distinta .w", 12.35);
+      out("#h-t-mismo .w", 12.35);
+      ["#h-n1", "#h-n2", "#h-n3"].forEach(s => tl.to(s, { opacity: 0, duration: 0.2, ease: "power3.in" }, 12.4));
+      tl.to("#h-antes", { y: -1000, filter: "blur(12px)", duration: 0.6, ease: "power3.in" }, 12.6);
+      tl.to("#h-ahora", { y: 0, duration: 0.8, ease: "power2.inOut" }, 12.6);
+      tl.to("#h-dia-wrap", { y: 540, scale: 1.1, duration: 0.8, ease: "power2.inOut" }, 12.6);
+
+      // Pantalla completa.
+      words("#h-t3", 13.6);
+      stack(["#h-n4", "#h-n5"], [14.8, 16.2]);
+      out("#h-t3 .w", 17.0);
+      words("#h-t4", 17.3, 0.09);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["historia"] = tl;
+    })();
+  </script>
+</template>

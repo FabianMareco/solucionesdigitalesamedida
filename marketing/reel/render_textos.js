@@ -6,7 +6,7 @@ const path = require('path');
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   await p.goto('file://' + path.resolve(__dirname, 'textos.html'));
   await p.evaluate(() => document.fonts.ready);
-  for (const id of ['s1', 's2', 's3', 's4', 's5']) {
+  for (const id of ['t1', 't2', 't3', 't4']) {
     await p.locator('#' + id).screenshot({ path: path.join(__dirname, 'build', `texto_${id}.png`), omitBackground: true });
   }
   await b.close();

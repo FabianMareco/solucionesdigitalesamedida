@@ -1,55 +1,47 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8">
 <style>
+  /* Placas de texto del reel (1080x1920, fondo transparente). La escena va en el centro (y 470–1550);
+     zonas libres para la interfaz de Instagram: 200 px arriba, 420 px abajo, 140 px a la derecha. */
   @font-face { font-family: "Hanken Grotesk"; font-weight: 100 900; src: url(../../public/assets/fonts/hanken-grotesk-latin-wght-normal.woff2) format("woff2"); }
   @font-face { font-family: "Big Shoulders Display"; font-weight: 100 900; src: url(../../public/assets/fonts/big-shoulders-display-latin-wght-normal.woff2) format("woff2"); }
   html, body { margin: 0; background: transparent; }
-  /* una placa de texto transparente de 1080x1920; las zonas seguras de Reels: 220 px arriba, 420 abajo, 140 a la derecha */
-  .frame { width: 1080px; height: 1920px; position: relative; font-family: "Hanken Grotesk", sans-serif; color: #fff; }
-  .card { position: absolute; left: 72px; right: 140px; bottom: 440px; padding: 44px 48px 48px; border-radius: 36px;
-    background: rgba(87, 0, 0, .88); box-shadow: 0 24px 60px rgba(30, 0, 0, .35); }
-  .card--top { top: 240px; bottom: auto; }
-  .kicker { margin: 0 0 18px; font-size: 30px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #f6b39a; }
-  h1 { margin: 0; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 112px; line-height: .92; letter-spacing: .005em; }
-  p.sub { margin: 22px 0 0; font-size: 40px; line-height: 1.25; font-weight: 500; color: #fde6df; }
+  .frame { width: 1080px; height: 1920px; position: relative; font-family: "Hanken Grotesk", sans-serif; color: #2a0a0a; }
+  .head { position: absolute; left: 80px; right: 140px; top: 210px; }
+  .brand { display: flex; align-items: center; gap: 16px; margin: 0 0 26px; font-size: 28px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #b10f2e; }
+  .brand svg { width: 44px; height: 44px; }
+  h1 { margin: 0; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 104px; line-height: .9; color: #570000; }
+  h1 em { font-style: normal; color: #b10f2e; }
   /* cierre: fondo de marca completo */
-  .end { position: absolute; inset: 0; background: radial-gradient(120% 80% at 70% 20%, #de7c5a 0%, #b10f2e 45%, #570000 100%); display: grid; align-content: center; padding: 0 140px 0 80px; gap: 0; }
-  .mark { width: 120px; height: 120px; margin-bottom: 48px; }
-  .end h1 { font-size: 150px; }
-  .end .sub { font-size: 46px; margin-top: 30px; color: #fff; }
-  .handle { margin-top: 64px; display: inline-flex; align-items: center; gap: 18px; font-size: 42px; font-weight: 700; background: #fff; color: #570000; padding: 22px 34px; border-radius: 999px; justify-self: start; }
-  .small { margin-top: 26px; font-size: 32px; color: #fde6df; }
+  .end { position: absolute; inset: 0; background: radial-gradient(120% 80% at 70% 18%, #de7c5a 0%, #b10f2e 46%, #570000 100%); color: #fff; }
+  .end .in { position: absolute; left: 80px; right: 140px; top: 360px; }
+  .mark { width: 120px; height: 120px; margin-bottom: 52px; display: block; }
+  .end h1 { color: #fff; font-size: 156px; }
+  .end p { margin: 34px 0 0; font-size: 46px; line-height: 1.25; font-weight: 500; color: #fde6df; }
+  .handle { margin-top: 64px; display: inline-block; font-size: 42px; font-weight: 700; background: #fff; color: #570000; padding: 22px 34px; border-radius: 999px; }
+  .small { margin-top: 30px !important; font-size: 32px !important; }
 </style></head>
 <body>
-<div class="frame" id="s1"><div class="card card--top">
-  <p class="kicker">Soluciones digitales a medida</p>
-  <h1>¿Se te va el día en el WhatsApp?</h1>
-  <p class="sub">Turnos, pedidos, precios, «¿estás?»… y el negocio, esperando.</p>
+<div class="frame" id="t1"><div class="head">
+  <p class="brand"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#b10f2e"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#fdffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Soluciones Digitales a Medida</p>
+  <h1>¿Se te va el día <em>en el WhatsApp?</em></h1>
 </div></div>
 
-<div class="frame" id="s2"><div class="card">
-  <p class="kicker">Caso real · Estética · CABA</p>
-  <h1>Agenda con seña</h1>
-  <p class="sub">Reservan solas, pagan la seña al reservar y les llega el recordatorio. Se terminaron los turnos vacíos.</p>
+<div class="frame" id="t2"><div class="head">
+  <p class="brand"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#b10f2e"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#fdffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Soluciones Digitales a Medida</p>
+  <h1>Que el pedido llegue solo. <em>Vos, a atender.</em></h1>
 </div></div>
 
-<div class="frame" id="s3"><div class="card">
-  <p class="kicker">Caso real · Comercio · Paraguay</p>
-  <h1>Tu flyer de ofertas, en un minuto</h1>
-  <p class="sub">Cargás producto y precio. Sale con tu marca, listo para historias y WhatsApp.</p>
+<div class="frame" id="t3"><div class="head">
+  <p class="brand"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#b10f2e"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#fdffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Soluciones Digitales a Medida</p>
+  <h1>Herramientas web <em>a la medida de tu negocio.</em></h1>
 </div></div>
 
-<div class="frame" id="s4"><div class="card card--top">
-  <p class="kicker">Desarrollo web full stack</p>
-  <h1>Herramientas hechas a tu medida</h1>
-  <p class="sub">No te vendo una web: te pregunto dónde se te va el tiempo.</p>
-</div></div>
-
-<div class="frame" id="s5"><div class="end">
+<div class="frame" id="t4"><div class="end"><div class="in">
   <svg class="mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#fdffff"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#b10f2e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <h1>Contame qué te pasa</h1>
-  <p class="sub">Te respondo en el día. Lo vemos juntos, sin palabras técnicas.</p>
+  <p>Te respondo en el día. Lo vemos juntos, sin palabras técnicas.</p>
   <span class="handle">@solucionesdigitalesamedida</span>
   <p class="small">WhatsApp en el link de la bio · De Buenos Aires al mundo</p>
-</div></div>
+</div></div></div>
 </body></html>

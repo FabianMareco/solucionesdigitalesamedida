@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Big Shoulders Display"; font-weight: 100 900; src: url(assets/fonts/big-shoulders-display-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Big Shoulders Display"; font-weight: 100 900; src: url(assets/fonts/big-shoulders-display-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Hanken Grotesk"; font-weight: 100 900; src: url(assets/fonts/hanken-grotesk-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Hanken Grotesk"; font-weight: 100 900; src: url(assets/fonts/hanken-grotesk-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      :root { --bordo: #570000; --carmesi: #b10f2e; --salmon: #de7c5a; --rosa: #f9e7dc; --crema: #fffaf6; --tinta: #2a0a0f; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1350px; overflow: hidden; background: var(--rosa); }
+      #root { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: "Hanken Grotesk", sans-serif; color: var(--tinta); }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .light { background: radial-gradient(90% 60% at 30% 25%, #fff3ec 0%, var(--rosa) 55%, #f3cfc0 100%); }
+      .dark { background: radial-gradient(120% 60% at 70% 105%, var(--salmon) 0%, var(--carmesi) 45%, var(--bordo) 100%); }
+      .deep { background: radial-gradient(120% 70% at 80% 0%, #8a0f22 0%, var(--bordo) 55%, #2e0006 100%); }
+      .title { position: absolute; left: 90px; right: 90px; top: 110px; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; text-transform: uppercase; line-height: .9; font-size: 104px; color: var(--carmesi); }
+      .dark .title, .deep .title { color: #fff; }
+      .title .w { display: inline-block; }
+      .title .acc { color: var(--salmon); }
+      .light .title .acc { color: var(--bordo); }
+      .grain { position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .34 0 0 0 0 .1 0 0 0 0 .1 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); }
+      .blob { position: absolute; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(222,124,90,.35), rgba(222,124,90,0) 70%); }
+
+      /* burbujas de chat */
+      .bub { position: absolute; left: 0; max-width: 860px; padding: 30px 38px 50px; border-radius: 10px 44px 44px 44px; background: #fff; box-shadow: 0 30px 60px -20px rgba(87,0,0,.28), 0 2px 0 rgba(87,0,0,.05); font-size: 48px; line-height: 1.18; font-weight: 600; color: var(--tinta); }
+      .bub .hora { position: absolute; right: 30px; bottom: 14px; font-size: 24px; font-weight: 500; color: #a07873; }
+      .bub.out { left: auto; right: 0; border-radius: 44px 10px 44px 44px; background: var(--carmesi); color: #fff; }
+      .bub.out .hora { color: #f6c9c1; }
+      #s1-chat { position: absolute; left: 90px; right: 90px; top: 0; height: 2000px; }
+      #s1-typing { position: absolute; left: 90px; top: 560px; display: flex; gap: 12px; padding: 28px 34px; border-radius: 10px 40px 40px 40px; background: #fff; box-shadow: 0 20px 40px -18px rgba(87,0,0,.25); }
+      #s1-input { position: absolute; left: 70px; right: 70px; top: 1000px; height: 104px; display: flex; align-items: center; gap: 18px; }
+      #s1-input span { flex: 1; height: 104px; border-radius: 52px; background: #fff; display: flex; align-items: center; padding: 0 40px; font-size: 34px; color: #b39591; box-shadow: 0 20px 40px -24px rgba(87,0,0,.3); }
+      #s1-input b { width: 104px; height: 104px; border-radius: 50%; background: var(--carmesi); display: grid; place-items: center; }
+      #s1-typing i { width: 16px; height: 16px; border-radius: 50%; background: #c99a93; display: block; }
+      #s1-titles .title { opacity: 0; }
+
+      /* navegador y celular con la web real */
+      .stage3d { position: absolute; inset: 0; perspective: 2200px; }
+      .browser { position: absolute; left: 60px; top: 470px; width: 960px; border-radius: 24px; overflow: hidden; background: #fff; box-shadow: 0 80px 120px -40px rgba(20,0,0,.55); }
+      .chrome { height: 70px; background: #f6efea; display: flex; align-items: center; gap: 14px; padding: 0 24px; border-bottom: 1px solid #ead9d2; }
+      .chrome i { width: 17px; height: 17px; border-radius: 50%; display: block; }
+      .chrome .url { margin-left: 18px; flex: 1; height: 42px; border-radius: 21px; background: #fff; display: flex; align-items: center; padding: 0 22px; font-size: 23px; font-weight: 600; color: #7a5550; white-space: nowrap; overflow: hidden; }
+      .vp { position: relative; width: 960px; height: 640px; overflow: hidden; background: #fff; }
+      .layer { position: absolute; left: 0; top: 0; width: 1600px; transform-origin: 0 0; }
+      .layer img { display: block; width: 1600px; }
+      .ring { position: absolute; border: 6px solid var(--carmesi); border-radius: 22px; box-shadow: 0 0 0 9999px rgba(42,10,15,.0); opacity: 0; }
+      .shot { display: block; width: 100%; }
+      .phone { position: absolute; width: 360px; height: 760px; border-radius: 56px; background: #1b0b0d; padding: 14px; box-shadow: 0 60px 90px -30px rgba(20,0,0,.7); }
+      .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 44px; overflow: hidden; background: #fff; }
+      #s3-browser { left: 60px; top: 420px; width: 1100px; transform-origin: 0% 50%; }
+      #s3-phone { left: 680px; top: 650px; transform-origin: 50% 100%; scale: .82; }
+      #cursor { position: absolute; width: 70px; height: 70px; left: 0; top: 0; }
+      #tap { position: absolute; width: 40px; height: 40px; margin: -20px; border-radius: 50%; background: rgba(255,255,255,.7); opacity: 0; }
+
+      /* cierre */
+      #s10-mark { position: absolute; left: 100px; top: 140px; width: 116px; height: 116px; }
+      #s10-title { top: 290px; font-size: 96px; }
+      #s10-chat { position: absolute; left: 90px; right: 90px; top: 600px; height: 240px; }
+      #s10-chat .bub { font-size: 33px; padding: 20px 28px 38px; white-space: nowrap; }
+      #s10-chat .bub .hora { font-size: 21px; bottom: 10px; }
+      #s10-q { top: 0; }
+      #s10-a { top: 118px; }
+      .redes { position: absolute; left: 100px; right: 100px; top: 870px; display: flex; flex-direction: column; gap: 14px; }
+      .red { display: flex; align-items: center; gap: 18px; padding: 9px 28px 9px 10px; border-radius: 999px; background: #fff; color: var(--bordo); font-size: 31px; font-weight: 800; width: max-content; }
+      .red svg { width: 52px; height: 52px; flex: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="48.5" data-width="1080" data-height="1350">
+
+      <!-- 1 · los problemas, uno tras otro, en un chat -->
+      <section class="scene light" id="s1">
+        <div class="blob" id="s1-blob" style="left:380px;top:800px"></div>
+        <div id="s1-titles">
+          <h1 class="title" id="t1a"><span class="w">¿Te</span> <span class="w">pasa</span> <span class="w">esto?</span></h1>
+          <h1 class="title" id="t1b"><span class="w">¿O</span> <span class="w acc">esto?</span></h1>
+          <h1 class="title" id="t1c"><span class="w">¿O</span> <span class="w">tal</span> <span class="w acc">vez</span> <span class="w acc">esto?</span></h1>
+          <h1 class="title" id="t1d"><span class="w">¿Y</span> <span class="w acc">esto?</span></h1>
+        </div>
+        <div id="s1-chat">
+          <div class="bub" id="b1">Me reservan por WhatsApp y después no vienen.<span class="hora">23:14</span></div>
+          <div class="bub" id="b2">Pierdo horas armando cada flyer de ofertas.<span class="hora">09:02</span></div>
+          <div class="bub" id="b3">No tengo web, o la que tengo no me trae clientes.<span class="hora">12:47</span></div>
+          <div class="bub" id="b4">Repito la misma tarea todos los días.<span class="hora">18:30</span></div>
+        </div>
+        <div id="s1-typing"><i></i><i></i><i></i></div>
+        <div id="s1-input"><span>Escribí un mensaje</span><b><svg viewBox="0 0 24 24" width="40" height="40"><path d="M4 12l16-8-5 16-3-7z" fill="#fff"/></svg></b></div>
+        <div class="grain"></div>
+      </section>
+
+      <!-- 3 · la web aparece -->
+      <section class="scene dark" id="s3">
+        <h1 class="title"><span class="w">Para</span> <span class="w">eso</span> <span class="w acc">existe</span> <span class="w acc">esto.</span></h1>
+        <div class="stage3d">
+          <div class="browser" id="s3-browser"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app</div></div><img class="shot" src="assets/web/d-hero.webp" alt=""></div>
+          <div class="phone" id="s3-phone"><div class="scr"><img class="shot" src="assets/web/m-hero.webp" alt=""></div></div>
+        </div>
+        <div class="grain"></div>
+      </section>
+
+      <!-- 4–9 · recorrido por la web real (cámara dentro del navegador) -->
+      <section class="scene light" id="s4">
+        <h1 class="title"><span class="w">Cada</span> <span class="w">problema,</span> <span class="w acc">una</span> <span class="w acc">herramienta</span> <span class="w acc">a</span> <span class="w acc">tu</span> <span class="w acc">medida.</span></h1>
+        <div class="stage3d"><div class="browser" id="br4"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app/#problemas</div></div>
+          <div class="vp"><div class="layer" id="ly4"><img src="assets/web/d-problemas.webp" alt="">
+            <div class="ring" id="r4a" style="left:70px;top:646px;width:740px;height:212px"></div>
+            <div class="ring" id="r4b" style="left:806px;top:646px;width:710px;height:212px"></div>
+            <div class="ring" id="r4c" style="left:70px;top:860px;width:740px;height:150px"></div>
+            <div class="ring" id="r4d" style="left:806px;top:860px;width:710px;height:150px"></div></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <section class="scene dark" id="s5">
+        <h1 class="title"><span class="w">Me</span> <span class="w">contás.</span> <span class="w acc">Lo</span> <span class="w acc">resolvemos</span> <span class="w acc">paso</span> <span class="w acc">a</span> <span class="w acc">paso.</span></h1>
+        <div class="stage3d"><div class="browser" id="br5"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app/#solucion</div></div>
+          <div class="vp"><div class="layer" id="ly5"><img src="assets/web/d-solucion.webp" alt=""></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <section class="scene light" id="s6">
+        <h1 class="title"><span class="w">Soluciones</span> <span class="w">reales,</span> <span class="w acc">para</span> <span class="w acc">gente</span> <span class="w acc">de</span> <span class="w acc">verdad.</span></h1>
+        <div class="stage3d"><div class="browser" id="br6"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app/#casos</div></div>
+          <div class="vp"><div class="layer" id="ly6"><img src="assets/web/d-casos.webp" alt=""></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <section class="scene deep" id="s7">
+        <h1 class="title" id="t7a"><span class="w">Proyectos</span> <span class="w acc">propios.</span></h1>
+        <h1 class="title" id="t7b"><span class="w">Para</span> <span class="w acc">agencias.</span></h1>
+        <h1 class="title" id="t7c"><span class="w">En</span> <span class="w acc">tres</span> <span class="w acc">idiomas.</span></h1>
+        <div class="stage3d"><div class="browser" id="br7"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url" id="url7">solucionesdigitalesamedida.vercel.app/#proyectos</div></div>
+          <div class="vp">
+            <div class="layer" id="ly7a"><img src="assets/web/d-proyectos.webp" alt=""></div>
+            <div class="layer" id="ly7b"><img src="assets/web/d-agencias.webp" alt=""></div>
+            <div class="layer" id="ly7c"><img src="assets/web/d-hero.webp" alt=""></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <section class="scene light" id="s8">
+        <h1 class="title"><span class="w">Alcance</span> <span class="w">claro.</span> <span class="w acc">Avances</span> <span class="w acc">que</span> <span class="w acc">ves.</span></h1>
+        <div class="stage3d"><div class="browser" id="br8"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app/#proceso</div></div>
+          <div class="vp"><div class="layer" id="ly8"><img src="assets/web/d-proceso.webp" alt=""></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <section class="scene dark" id="s9">
+        <h1 class="title"><span class="w">Traé</span> <span class="w acc">tu</span> <span class="w acc">problema.</span></h1>
+        <div class="stage3d"><div class="browser" id="br9"><div class="chrome"><i style="background:#ef8a76"></i><i style="background:#f2c46b"></i><i style="background:#9cc59a"></i><div class="url">solucionesdigitalesamedida.vercel.app/#contacto</div></div>
+          <div class="vp"><div class="layer" id="ly9"><img src="assets/web/d-contacto.webp" alt="">
+            <div id="tap" style="left:441px;top:408px"></div>
+            <svg id="cursor" viewBox="0 0 24 24" style="left:520px;top:520px"><path d="M5 3l14 8-6 1.6L9.6 19z" fill="#fff" stroke="#2a0a0f" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div></div></div>
+        <div class="grain"></div>
+      </section>
+
+      <!-- 10 · la respuesta y dónde encontrarme -->
+      <section class="scene deep" id="s10">
+        <svg id="s10-mark" viewBox="0 0 32 32" aria-label="Soluciones Digitales a Medida"><rect width="32" height="32" rx="8" fill="#fffaf6"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#b10f2e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h1 class="title" id="s10-title"><span class="w">La</span> <span class="w">solución</span> <span class="w">la</span> <span class="w acc">encontramos</span> <span class="w acc">juntos.</span></h1>
+        <div id="s10-chat">
+          <div class="bub" id="s10-q">Me reservan por WhatsApp y después no vienen.<span class="hora">23:14</span></div>
+          <div class="bub out" id="s10-a">Lo resolvemos juntos ✓<span class="hora">23:15</span></div>
+        </div>
+        <div class="redes">
+          <div class="red" id="rd-ig"><svg viewBox="0 0 52 52"><defs><linearGradient id="igg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".35" stop-color="#fa7e1e"/><stop offset=".6" stop-color="#d62976"/><stop offset=".85" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="52" height="52" rx="14" fill="url(#igg)"/><rect x="12" y="12" width="28" height="28" rx="8.5" fill="none" stroke="#fff" stroke-width="3.4"/><circle cx="26" cy="26" r="6.6" fill="none" stroke="#fff" stroke-width="3.4"/><circle cx="34.6" cy="17.4" r="2.1" fill="#fff"/></svg>@solucionesdigitalesamedida</div>
+          <div class="red" id="rd-tt"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="14" fill="#111"/><path d="M28.5 12h5c.4 3.6 2.9 6.2 6.5 6.6v5.1c-2.4 0-4.6-.7-6.5-2v9.6c0 5.4-4.3 9.7-9.6 9.7S14.3 36.7 14.3 31.4s4.3-9.7 9.6-9.7c.6 0 1.1 0 1.6.1v5.3a4.5 4.5 0 1 0 3 4.3z" fill="#25f4ee" transform="translate(-1.2 -1)"/><path d="M28.5 12h5c.4 3.6 2.9 6.2 6.5 6.6v5.1c-2.4 0-4.6-.7-6.5-2v9.6c0 5.4-4.3 9.7-9.6 9.7S14.3 36.7 14.3 31.4s4.3-9.7 9.6-9.7c.6 0 1.1 0 1.6.1v5.3a4.5 4.5 0 1 0 3 4.3z" fill="#fe2c55" transform="translate(1.2 1)"/><path d="M28.5 12h5c.4 3.6 2.9 6.2 6.5 6.6v5.1c-2.4 0-4.6-.7-6.5-2v9.6c0 5.4-4.3 9.7-9.6 9.7S14.3 36.7 14.3 31.4s4.3-9.7 9.6-9.7c.6 0 1.1 0 1.6.1v5.3a4.5 4.5 0 1 0 3 4.3z" fill="#fff"/></svg>@fabian.mareco.dev</div>
+          <div class="red" id="rd-web"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="14" fill="#b10f2e"/><circle cx="26" cy="26" r="13" fill="none" stroke="#fff" stroke-width="3"/><ellipse cx="26" cy="26" rx="6" ry="13" fill="none" stroke="#fff" stroke-width="3"/><path d="M13 26h26M15.5 19h21M15.5 33h21" stroke="#fff" stroke-width="2.6"/></svg>solucionesdigitalesamedida.vercel.app</div>
+        </div>
+        <div class="grain"></div>
+      </section>
+    </div>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        const VW = 960, VH = 640;
+        const $ = s => document.querySelector(s);
+        // Momentos (segundos). Escena: [entra, sale].
+        const S = { s1: [0, 11.6], s3: [11.6, 15.6], s4: [15.6, 20.8], s5: [20.8, 26.2], s6: [26.2, 31.6], s7: [31.6, 36.2], s8: [36.2, 40.2], s9: [40.2, 44.2], s10: [44.2, null] };
+        Object.entries(S).forEach(([id, [a, b]]) => { tl.set("#" + id, { autoAlpha: 0 }, 0); tl.set("#" + id, { autoAlpha: 1 }, a); if (b != null) tl.set("#" + id, { autoAlpha: 0 }, b + 0.35); });
+        // corte con látigo: la escena nueva entra desde un costado con desenfoque de movimiento
+        const whip = (id, at, from = 1) => { tl.fromTo("#" + id, { xPercent: 100 * from, filter: "blur(18px)" }, { xPercent: 0, filter: "blur(0px)", duration: .45, ease: "expo.out" }, at);
+          tl.set("#" + id, { zIndex: 5 }, at); tl.set("#" + id, { zIndex: 1 }, at + .5); };
+        const words = (sel, at, st = .07) => tl.fromTo(sel + " .w", { yPercent: 110, opacity: 0 }, { yPercent: 0, opacity: 1, duration: .5, ease: "expo.out", stagger: st }, at);
+        const unwords = (sel, at) => tl.to(sel + " .w", { yPercent: -60, opacity: 0, duration: .25, ease: "power2.in", stagger: .03 }, at);
+        // cámara dentro del navegador: encuadra el rectángulo [x, y, w, h] de la captura (en píxeles de la captura de 1600)
+        const focus = (sel, [x, y, w, h], at, dur = 1.2, ease = "power3.inOut", fill = .96) => {
+          const s = Math.min(VW / w, VH / h) * fill;
+          const v = { x: VW / 2 - (x + w / 2) * s, y: VH / 2 - (y + h / 2) * s, scale: s };
+          if (dur === 0) tl.set(sel, v, at); else tl.to(sel, { ...v, duration: dur, ease }, at);
+        };
+        const tilt = (sel, at, d) => tl.fromTo(sel, { rotateY: -10, rotateX: 4, y: 60 }, { rotateY: 4, rotateX: 2, y: 0, duration: d, ease: "sine.inOut" }, at);
+
+        /* 1 · cuatro problemas: cada uno se escribe y empuja al anterior hacia arriba */
+        const B = ["#b1", "#b2", "#b3", "#b4"], T = ["#t1a", "#t1b", "#t1c", "#t1d"], at0 = [0.9, 3.6, 6.2, 8.8];
+        const top = [560, 560, 560, 560];
+        B.forEach((b, i) => {
+          const a = at0[i];
+          tl.set(T[i], { opacity: 1 }, a - .55); words(T[i], a - .55, .08);
+          if (i < 3) { unwords(T[i], at0[i + 1] - .8); tl.set(T[i], { opacity: 0 }, at0[i + 1] - .5); }
+          tl.set(b, { top: top[i] }, 0);
+          tl.fromTo(b, { opacity: 0, y: 40, scale: .9, transformOrigin: "0% 0%" }, { opacity: 1, y: 0, scale: 1, duration: .45, ease: "back.out(1.7)" }, a);
+          // los anteriores suben y se apagan
+          for (let j = 0; j < i; j++) tl.to(B[j], { y: "-=" + 250, opacity: j === i - 1 ? .55 : 0, scale: .92, duration: .45, ease: "power3.out" }, a);
+        });
+        tl.fromTo("#s1-typing", { opacity: 0, scale: .7, transformOrigin: "0% 0%" }, { opacity: 1, scale: 1, duration: .3, ease: "back.out(2)" }, .1);
+        tl.fromTo("#s1-typing i", { y: 0 }, { y: -10, duration: .2, ease: "sine.inOut", yoyo: true, repeat: 3, stagger: .07 }, .15);
+        tl.to("#s1-typing", { opacity: 0, duration: .12 }, .8);
+        tl.fromTo("#s1-blob", { x: 0, y: 0 }, { x: -220, y: -260, duration: 11.6, ease: "sine.inOut" }, 0);
+        // los cuatro se juntan y se aprietan: hay salida
+        tl.to(["#b1", "#b2", "#b3", "#b4"], { opacity: 1, y: (i) => [-750, -500, -250, 0][i] + 0, duration: .01 }, 10.95);
+        tl.to("#s1-chat", { scale: .55, y: -120, transformOrigin: "50% 60%", duration: .6, ease: "power3.in" }, 11.0);
+        tl.to("#t1d", { opacity: 0, duration: .2 }, 11.0);
+
+        /* 3 · la web, en 3D */
+        tl.fromTo("#s3-browser", { rotateY: -38, rotateX: 10, x: 420, z: -400, opacity: 0 }, { rotateY: -14, rotateX: 5, x: 0, z: 0, opacity: 1, duration: 1.0, ease: "expo.out" }, 11.65);
+        tl.to("#s3-browser", { rotateY: -8, x: -40, duration: 3.2, ease: "sine.inOut" }, 12.65);
+        tl.fromTo("#s3-phone", { y: 700, rotate: 8 }, { y: 0, rotate: -4, duration: .9, ease: "expo.out" }, 12.0);
+        tl.to("#s3-phone", { y: -30, duration: 3, ease: "sine.inOut" }, 12.9);
+        words("#s3 .title", 12.15);
+
+        /* 4 · problemas → herramientas: la cámara baja por las cuatro tarjetas */
+        whip("s4", 15.6); tilt("#br4", 15.6, 5.2); words("#s4 .title", 15.9, .05);
+        focus("#ly4", [60, 120, 1480, 900], 15.6, 0);
+        focus("#ly4", [50, 620, 790, 400], 16.4, 1.0);
+        [["#r4a", 17.1], ["#r4c", 17.7], ["#r4b", 18.9], ["#r4d", 19.5]].forEach(([r, t]) => tl.fromTo(r, { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: .3, ease: "back.out(2)" }, t));
+        focus("#ly4", [770, 620, 790, 400], 18.2, 1.0);
+
+        /* 5 · los cuatro pasos, de izquierda a derecha */
+        whip("s5", 20.8, -1); tilt("#br5", 20.8, 5.4); words("#s5 .title", 21.1, .05);
+        focus("#ly5", [60, 80, 1480, 880], 20.8, 0);
+        focus("#ly5", [70, 560, 760, 420], 21.9, 1.0);
+        focus("#ly5", [800, 560, 760, 420], 23.4, 1.1);
+        focus("#ly5", [60, 80, 1480, 880], 25.0, .9);
+
+        /* 6 · casos reales: Thalía y la Despensa */
+        whip("s6", 26.2); tilt("#br6", 26.2, 5.4); words("#s6 .title", 26.5, .05);
+        focus("#ly6", [60, 70, 1480, 920], 26.2, 0);
+        focus("#ly6", [70, 260, 740, 720], 27.2, 1.0);
+        focus("#ly6", [800, 260, 740, 720], 29.0, 1.1);
+
+        /* 7 · montaje: proyectos propios, agencias, tres idiomas */
+        whip("s7", 31.6, -1); tilt("#br7", 31.6, 4.6);
+        tl.set(["#ly7b", "#ly7c"], { opacity: 0 }, 0);
+        tl.set("#t7a", { opacity: 1 }, 31.6); words("#t7a", 31.8); tl.set("#t7a", { opacity: 0 }, 33.1);
+        focus("#ly7a", [70, 300, 1460, 700], 31.6, 0); focus("#ly7a", [70, 320, 740, 380], 32.1, .9);
+        tl.set("#ly7b", { opacity: 1 }, 33.1); tl.set("#ly7a", { opacity: 0 }, 33.1); tl.set("#url7", { textContent: "solucionesdigitalesamedida.vercel.app/#agencias" }, 33.1);
+        tl.set("#t7b", { opacity: 1 }, 33.1); words("#t7b", 33.15); tl.set("#t7b", { opacity: 0 }, 34.6);
+        focus("#ly7b", [60, 60, 1480, 940], 33.1, 0); focus("#ly7b", [60, 90, 760, 600], 33.3, 1.0);
+        tl.set("#ly7c", { opacity: 1 }, 34.6); tl.set("#ly7b", { opacity: 0 }, 34.6); tl.set("#url7", { textContent: "solucionesdigitalesamedida.vercel.app" }, 34.6);
+        tl.set("#t7c", { opacity: 1 }, 34.6); words("#t7c", 34.65);
+        focus("#ly7c", [0, 0, 1600, 1000], 34.6, 0); focus("#ly7c", [1080, 0, 480, 300], 34.8, 1.0, "power3.inOut", .9);
+
+        /* 8 · proceso: alcance claro y avances que ves */
+        whip("s8", 36.2); tilt("#br8", 36.2, 4.4); words("#s8 .title", 36.5, .06);
+        focus("#ly8", [60, 60, 1480, 940], 36.2, 0);
+        focus("#ly8", [60, 380, 1480, 600], 37.2, 2.4, "sine.inOut");
+
+        /* 9 · contacto: el cursor toca «Hablemos» */
+        whip("s9", 40.2, -1); tilt("#br9", 40.2, 4.4); words("#s9 .title", 40.5);
+        focus("#ly9", [60, 60, 1480, 940], 40.2, 0);
+        focus("#ly9", [60, 100, 900, 420], 40.9, 1.0);
+        tl.fromTo("#cursor", { x: 200, y: 120 }, { x: -90, y: -125, duration: .8, ease: "power3.inOut" }, 41.6);
+        tl.to("#cursor", { scale: .85, duration: .08 }, 42.45).to("#cursor", { scale: 1, duration: .15 }, 42.55);
+        tl.fromTo("#tap", { opacity: .9, scale: 1 }, { opacity: 0, scale: 7, duration: .6, ease: "power2.out" }, 42.47);
+
+        /* 10 · la respuesta y las redes */
+        whip("s10", 44.2);
+        tl.fromTo("#s10-mark", { opacity: 0, scale: .6, transformOrigin: "0% 50%" }, { opacity: 1, scale: 1, duration: .5, ease: "back.out(1.6)" }, 44.45);
+        words("#s10-title", 44.55, .08);
+        tl.fromTo("#s10-q", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .4, ease: "expo.out" }, 45.0);
+        tl.fromTo("#s10-a", { opacity: 0, y: 30, scale: .9, transformOrigin: "100% 0%" }, { opacity: 1, y: 0, scale: 1, duration: .45, ease: "back.out(1.8)" }, 45.45);
+        ["#rd-ig", "#rd-tt", "#rd-web"].forEach((r, i) => tl.fromTo(r, { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .45, ease: "expo.out" }, 46.0 + i * .18));
+        tl.to({}, { duration: .01 }, 48.49);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>

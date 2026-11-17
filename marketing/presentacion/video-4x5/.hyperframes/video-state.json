@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "historyId": "cc5270b6-b0b5-45bc-8378-1cb35f5f09ba",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351",
+      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b6/b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351"
+    },
+    "package.json": {
+      "hash": "b9d044353772b4a86e24b9c73493474342434e01cf4f8ad47abf14df6c0f878f",
+      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b9/b9d044353772b4a86e24b9c73493474342434e01cf4f8ad47abf14df6c0f878f"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-9"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-0",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-00-at-4.6s.png",
+        "time": 4.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "5db90fa1cbd0f11d26595ef707b8a9d40e275ca1edfbb4360fc347e5d0cf680d",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-1",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-01-at-10.4s.png",
+        "time": 10.4,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "6d1906d69939b53f8c8bbb6d019583ce28de12b42e9fbbf1837bf6aa34b5e85c",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-2",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-02-at-14s.png",
+        "time": 14,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "4b487b5348c1d544ea62b18bd8adb8c9891f4cd72cfaee8f10e73faff9dd3e8e",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-3",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-03-at-18s.png",
+        "time": 18,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "533c7289d9c76f03bd84732915dde18ae4a466d3f940963ae104161563429756",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-4",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-04-at-23s.png",
+        "time": 23,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "724b65cf4d0434c2eac8a0bbc81f90225fcea8ad396a9210844fbfec3524e9db",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-5",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-05-at-28s.png",
+        "time": 28,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "aa6460927c243400aa2b413bc7122e039e5ed4f25968134009c261dfe380e8d2",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-6",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-06-at-33.5s.png",
+        "time": 33.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "b56096b4014b7715bacd3258fc76cdeb495523db77fbbdf9a35a3a85b3157af9",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-7",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-07-at-38s.png",
+        "time": 38,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "e0ea478097aad5e6c56f8ea4f63241b402ce5c71ac5a582d49f354eb05563fc1",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-8",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-08-at-42.6s.png",
+        "time": 42.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "bf9536d0b8bd240a9fb966a1625f961afabff25b7afd6a4045f3cca52e338ea6",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-9",
+        "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-4x5/frame-09-at-47.5s.png",
+        "time": 47.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1350,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794883066854,
+        "contentHash": "bbd3d483a48dc3b870c083a5632638a9ec1639a08ba1ff0cd370cd186be3cfa1",
+        "revision": null,
+        "inputFingerprint": "47caad51594980020d94386bc490ee46907992db4ea5101e063e186152551ebb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "3bfaeb53-3086-4fae-89b3-3f88b96aac4d",
+      "completedAt": 1794883355397,
+      "output": "/home/user/solucionesdigitalesamedida/marketing/presentacion/salida/imagen-4x5-v2.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

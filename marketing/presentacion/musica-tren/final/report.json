@@ -1,0 +1,260 @@
+{
+  "status": "TECHNICAL_PASS_AUDITION_PENDING",
+  "title": "Tren de la tarde",
+  "version": "1.0.r1",
+  "draft": false,
+  "runtime_seconds": 19.65,
+  "stage_seconds": {
+    "prepare": 0.297,
+    "midi": 0.006,
+    "parts": 3.387,
+    "mix": 5.781,
+    "master": 6.702,
+    "mix_checks": 0.004,
+    "master_check": 0.004,
+    "outputs": 3.4,
+    "sections_and_checks": 0.068
+  },
+  "process_seconds": {
+    "loudness measurement": 7.115,
+    "mix": 4.425,
+    "part processing": 1.434,
+    "mp3": 1.265,
+    "master_chain": 0.415,
+    "flac": 0.401,
+    "delivery limiter": 0.315,
+    "decode_mp3": 0.264
+  },
+  "jobs": 4,
+  "project_sha256": "babe1b01431281615f1dbab9cb2b71da41ef874a27622f99392ecca2c0baa6f5",
+  "renderer_sha256": "aa2c6db2aba7b7ae09064ec01cc032379167e1e85c5d2c6b7fa0fe129de6519b",
+  "validation": {
+    "tracks": 6,
+    "notes": 479,
+    "bars": 18,
+    "seconds": 52.0,
+    "sections": 4,
+    "warnings": []
+  },
+  "checks": {
+    "finite": true,
+    "no_clipping": true,
+    "true_peak_ceiling": true,
+    "duration_exact": true,
+    "stereo_48k_24bit": true,
+    "tail_quiet": true,
+    "midi_note_count": true,
+    "midi_no_stuck_notes": true,
+    "dependency_hashes_verified": true,
+    "mp3_loudness_matches_master": true,
+    "buses_and_returns_add_up_to_premix": true
+  },
+  "chain": "bus",
+  "premaster": {
+    "frames": 2496001,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "format": 3,
+    "seconds": 52.00002083333333,
+    "integrated_lufs": -14.24,
+    "true_peak_dbtp": 1.92,
+    "lra_lu": 12.3,
+    "sample_peak_dbfs": 1.8003354251168167,
+    "clipped_samples": 58,
+    "rms": 0.12184864183906215,
+    "sha256": "8137f6aab0a0c9bae8434bd794d05e9642d588251326381db790d2baa5e5dafb",
+    "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
+  },
+  "master": {
+    "frames": 2496001,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits": 24,
+    "format": 1,
+    "seconds": 52.00002083333333,
+    "integrated_lufs": -16.02,
+    "true_peak_dbtp": -1.1,
+    "lra_lu": 11.6,
+    "sample_peak_dbfs": -1.162984876228153,
+    "clipped_samples": 0,
+    "rms": 0.09772508975928601,
+    "sha256": "dc2358e0253286f5dacd9f83cb135bbb643cd3afe7c92d708680734e31369655",
+    "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
+  },
+  "sections": [
+    {
+      "id": "apertura",
+      "start_bar": 0,
+      "bars": 4,
+      "intent": "Tranquila, una burbuja por compás",
+      "start_seconds": 0.0,
+      "end_seconds": 10.667,
+      "rms_dbfs": -25.229,
+      "side_mid_db": -8.232,
+      "active_tracks": [
+        "bass",
+        "keys",
+        "fx"
+      ]
+    },
+    {
+      "id": "web",
+      "start_bar": 4,
+      "bars": 8,
+      "intent": "Aparece la web: entra el groove y el gancho",
+      "start_seconds": 10.667,
+      "end_seconds": 32.0,
+      "rms_dbfs": -19.376,
+      "side_mid_db": -14.817,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "drums",
+        "keys",
+        "fx"
+      ]
+    },
+    {
+      "id": "recorrido",
+      "start_bar": 12,
+      "bars": 4,
+      "intent": "El gancho sube",
+      "start_seconds": 32.0,
+      "end_seconds": 42.667,
+      "rms_dbfs": -18.426,
+      "side_mid_db": -13.911,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "drums",
+        "keys",
+        "pad"
+      ]
+    },
+    {
+      "id": "cierre",
+      "start_bar": 16,
+      "bars": 2,
+      "intent": "Cadencia y acorde final",
+      "start_seconds": 42.667,
+      "end_seconds": 48.0,
+      "rms_dbfs": -19.152,
+      "side_mid_db": -14.37,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "drums",
+        "keys",
+        "pad"
+      ]
+    }
+  ],
+  "mastering": {
+    "chain": "bus",
+    "rules": 2,
+    "mix_gain_db": -3.76,
+    "master_chain": "volume=-3.760000dB,acompressor=threshold=0.158489:ratio=2:attack=30:release=200:knee=4:makeup=1,highshelf=f=10000:g=2.5:t=q:w=0.7,equalizer=f=3200:t=q:w=1.2:g=0.8",
+    "mixed": {
+      "integrated_lufs": -18.6,
+      "true_peak_dbtp": -2.22,
+      "lra_lu": 11.6
+    },
+    "target_lufs": -16,
+    "true_peak_ceiling_dbtp": -1.0,
+    "limiter_dbtp": -1.1,
+    "limiter": {
+      "release_ms": 60.0,
+      "lookahead_ms": 3.0,
+      "lowest_steady_hz": 27.5,
+      "share_of_time_pct": 1.94,
+      "deepest_db": -1.48
+    },
+    "delivery_chain": "volume=2.600000dB, true-peak limiter to -1.1 dBTP (look-ahead 3 ms, release 60 ms; NumPy)",
+    "passes": [
+      {
+        "gain_db": 2.6,
+        "limit_dbtp": -1.1,
+        "taken_db": 0.022,
+        "lufs": -16.02,
+        "true_peak_dbtp": -1.1
+      }
+    ],
+    "limiting_db": {
+      "apertura": -0.0,
+      "web": 0.02,
+      "recorrido": 0.04,
+      "cierre": -0.0
+    }
+  },
+  "buses": {
+    "assignment": {
+      "lead": "lead",
+      "bass": "bass",
+      "drums": "drums",
+      "keys": "ensemble",
+      "pad": "ensemble",
+      "fx": "fx"
+    },
+    "spaces": {
+      "lead": "plate",
+      "drums": "room",
+      "keys": "hall",
+      "pad": "hall",
+      "fx": "hall"
+    },
+    "returns": [
+      "room_return.wav",
+      "plate_return.wav",
+      "hall_return.wav"
+    ],
+    "rules": {
+      "rules": 2,
+      "lead_threshold_dbfs": -13.5,
+      "reverb": null
+    },
+    "level_change_db": {
+      "drums": -0.18,
+      "bass": -0.05,
+      "ensemble": -0.95,
+      "lead": -1.14,
+      "fx": 0.0
+    },
+    "sum_minus_premix_peak_dbfs": -143.6,
+    "sum_error_share_of_allowance": 0.0254,
+    "adds_up_to_premix": true
+  },
+  "mp3": {
+    "mp3_lufs": -16.02,
+    "mp3_true_peak_dbtp": -1.03,
+    "matches": true,
+    "over_full_scale": false
+  },
+  "cache_hits": 4,
+  "stems_reused": 4,
+  "stem_count": 6,
+  "direct_audio_listening_performed": false,
+  "perceptual_quality": "Not certified by numeric checks; user audition pending",
+  "dependencies": {
+    "fluidsynth": {
+      "sha256": "7a1c066c88e882fa885f2e6eda0eec033ef26d261a2a96a18b269fa974fd3e91",
+      "version": "FluidSynth runtime version 2.3.4",
+      "license": "System package; see its distribution",
+      "source": "User system installation; hash is integrity, not provenance"
+    },
+    "ffmpeg": {
+      "sha256": "ed16af623947494a72e284b6eb8ff225f2da22b38b5d5069c2fd4b4ba3384e41",
+      "version": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "license": "System package; see its distribution",
+      "source": "User system installation; hash is integrity, not provenance"
+    },
+    "soundfonts": {
+      "default": {
+        "sha256": "5ea2375e8bd7d8e71def1036978c1621e85b66934169b6a2744b27b9b3c2d99c",
+        "version": "MuseScore repository commit 32f0a26e5b70d784a891a3637f32124431abed6f",
+        "license": "MIT; retain named sample-author notices",
+        "source": "https://raw.githubusercontent.com/musescore/MuseScore/32f0a26e5b70d784a891a3637f32124431abed6f/share/sound/MS%20Basic.sf3"
+      }
+    }
+  }
+}

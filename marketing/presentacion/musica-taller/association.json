@@ -1,0 +1,21 @@
+{
+ "source": "draw",
+ "seed": 2343842150,
+ "count": 12,
+ "list_words": 1000,
+ "list_sha256": "775bc710dc88fe8e1626a75c6ea4fdc48420e6cfc9f3dd1bfa740e9af2caa727",
+ "words": [
+  "zipper",
+  "gecko",
+  "parch",
+  "sandpaper",
+  "ferry",
+  "olive",
+  "embroider",
+  "matte",
+  "hammock",
+  "clammy",
+  "maple",
+  "slither"
+ ]
+}

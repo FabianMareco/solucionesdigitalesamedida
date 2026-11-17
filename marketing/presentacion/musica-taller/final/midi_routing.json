@@ -1,0 +1,37 @@
+[
+  {
+    "track": "lead",
+    "port": 0,
+    "channel": 0,
+    "program": 12,
+    "bank": 0
+  },
+  {
+    "track": "bass",
+    "port": 0,
+    "channel": 1,
+    "program": 32,
+    "bank": 0
+  },
+  {
+    "track": "drums",
+    "port": 0,
+    "channel": 9,
+    "program": 0,
+    "bank": 128
+  },
+  {
+    "track": "keys",
+    "port": 0,
+    "channel": 2,
+    "program": 24,
+    "bank": 0
+  },
+  {
+    "track": "fx",
+    "port": 0,
+    "channel": 3,
+    "program": 0,
+    "bank": 0
+  }
+]

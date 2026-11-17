@@ -1,0 +1,97 @@
+[
+  {
+    "track": "lead",
+    "soundfont": "default",
+    "cache_key": "a8e6740670f7cdf90a2ec556787c6b6341ac0491b49f24d80181a0d47eb1b64a",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "95b77780bed1c4037307290a1930c24cfeb5882c7c59241b2c609bb3514d3f91",
+    "stem_sha256": "6a420f30598c92b79bb3dc2ee86a0033424c9bc8958e2a84d4742307d2f8f209",
+    "reference_level_dbfs": -39.63380386469592,
+    "gain_db": 20.13380386469592,
+    "processed_stem": "stems/lead.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=20.133803865dB,highpass=f=200,lowpass=f=18000,pan=stereo|c0=0.938083152*c0|c1=1.058300524*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 5,
+    "seconds": {
+      "waiting": 0.0,
+      "synthesis": 0.044,
+      "processing": 0.03
+    }
+  },
+  {
+    "track": "bass",
+    "soundfont": "default",
+    "cache_key": "834ca7c24de80d5c34011fbc21622e26c80e379e39dc6bebeacd063ab336b765",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "d9cd6e1d888f4a5179fa9ef1fbc717dba1db3a818d78e69b80e5c06160f2a800",
+    "stem_sha256": "c49b54c7244012c574cbcfcc81eb0f7e007d0bbbba0d275b50a83cb246db69bd",
+    "reference_level_dbfs": -34.61158730297821,
+    "gain_db": 11.611587302978208,
+    "processed_stem": "stems/bass.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=11.611587303dB,highpass=f=35,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 31,
+    "seconds": {
+      "waiting": 0.004,
+      "synthesis": 0.037,
+      "processing": 0.058
+    }
+  },
+  {
+    "track": "drums",
+    "soundfont": "default",
+    "cache_key": "381e475cc526dda0830db48857fc9e8d6d1d09e669b240aad8693e169dcd1e98",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "4810a0537bebfdde952fc84ab9cb1d106c5e8cad425862b23f390a920401a3db",
+    "stem_sha256": "4cb064dc7eb9ebb5763e5b49ea34d9d7acca82ac1573a98a656a785935ac25e9",
+    "reference_level_dbfs": -40.806173451102325,
+    "gain_db": 20.806173451102325,
+    "processed_stem": "stems/drums.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=20.806173451dB,highpass=f=30,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 112,
+    "seconds": {
+      "waiting": 0.001,
+      "synthesis": 0.042,
+      "processing": 0.051
+    }
+  },
+  {
+    "track": "keys",
+    "soundfont": "default",
+    "cache_key": "8e1300f51b10a90590003ca80a12ade01dcb1960bc516f3757bd159c200613bd",
+    "cache_hit": false,
+    "stem_reused": false,
+    "raw_sha256": "db5f00fcda54be3c02ca7e14ef7e5fc50d4441487fd1260f2fe83373bf1e7c37",
+    "stem_sha256": "9fc4a12327523f5948b8c2d082cbb025e31b0f4db4c0430739aa6a0c79041391",
+    "reference_level_dbfs": -33.811461090890546,
+    "gain_db": 11.811461090890546,
+    "processed_stem": "stems/keys.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=11.811461091dB,highpass=f=110,lowpass=f=18000,pan=stereo|c0=1.072380529*c0|c1=0.921954446*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 73,
+    "seconds": {
+      "waiting": 0.001,
+      "synthesis": 2.211,
+      "processing": 0.568
+    }
+  },
+  {
+    "track": "fx",
+    "soundfont": null,
+    "cache_key": "dd4eb1555d7c455c20226228b6825429f5eff8e89d8f1ed125e840f34b911a47",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "c0e5707501fdbe26384601019847987d7a7a2bc05016f9c4745a14e3eb83eeb5",
+    "stem_sha256": "94ee63efbb640b28d920570853038c013d7931652334c5f75dd5528595a7fbcf",
+    "reference_level_dbfs": -35.07012062320638,
+    "gain_db": 9.070120623206378,
+    "processed_stem": "stems/fx.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=9.070120623dB,highpass=f=200,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 0,
+    "seconds": {
+      "waiting": 0.0,
+      "synthesis": 0.028,
+      "processing": 0.069
+    }
+  }
+]

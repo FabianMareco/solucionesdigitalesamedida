@@ -35,3 +35,10 @@ marketing/presentacion/musica/final/logs/
 marketing/presentacion/musica/final/*.wav
 marketing/presentacion/musica/cache/
 .claude/skills/music-production/scripts/musiclib/__pycache__/
+marketing/presentacion/musica-*/r*/
+marketing/presentacion/musica-*/cache/
+marketing/presentacion/musica-*/final/stems/
+marketing/presentacion/musica-*/final/returns/
+marketing/presentacion/musica-*/final/logs/
+marketing/presentacion/musica-*/final/*.wav
+marketing/presentacion/sonido/banda-*.wav

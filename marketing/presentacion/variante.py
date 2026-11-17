@@ -26,7 +26,7 @@ CFG = {
         ],
         'chords': ['Fm7', 'Dbmaj7', 'Bbm7', 'Eb7sus4',
                    'Ab', 'Fm7', 'Dbadd9', 'Eb', 'Ab', 'Fm7', 'Dbadd9', 'Eb',
-                   'Ab', [(0, 'Cm7'), (2, 'F7')], 'Bbm7', 'Eb7sus4',
+                   'Ab', [(0, 'Cm7'), (2, 'F7')], 'Bbm11', 'Eb7sus4',
                    [(0, 'Dbadd9'), (2, 'Eb')], 'Ab'],
         'lead': {'engine': 'soundfont', 'program': 12, 'name': 'Marimba (gancho)'},
         'keys': {'engine': 'soundfont', 'program': 24, 'name': 'Guitarra criolla', 'figure': 'strum', 'intro': 'broken'},
@@ -74,7 +74,8 @@ project = {
                     'whole': CFG['whole'], 'gives': CFG['gives']},
     'plan': {'identity': CFG['whole'][:120], 'high_point': {'section': 'cierre', 'means': 'la nota más alta del gancho sobre el acorde final'}},
     'tracks': [], 'mix': {'chain': 'bus', 'rules': 2, 'target_lufs': -16},
-    'decisions': ['plan: demo para elegir dirección; el plan por sección queda para la versión elegida'],
+    'decisions': ['plan: demo para elegir dirección; el plan por sección queda para la versión elegida',
+                  'transposed_samples: la marimba transpuesta en el registro agudo es parte del timbre buscado (madera brillante)'],
 }
 chords = CFG['chords']
 project['harmony'] = [{'bar': i + 1, 'beat': b, 'symbol': sym} for i, c in enumerate(chords) for b, sym in (c if isinstance(c, list) else [(0, c)])]
@@ -116,9 +117,9 @@ put([(o, p + O, d) for o, p, d in A], 8, 72, g); put([(o, p + O, d) for o, p, d 
 put([(o, p + O, d) for o, p, d in C], 10, 72, g); put([(o, p + O, d) for o, p, d in D], 11, 74, g)
 up = lambda ph: [(o, p + (4 if p % 12 in (0, 8) else 3 if p % 12 in (5, 1, 10) else 5) + O, d) for o, p, d in ph]
 put([(o, p + O, d) for o, p, d in A], 12, 84, g)
-put([(o, p + O, d) for o, p, d in (B if NOMBRE == 'tren' else B)], 13, 82, g)
+put([(o, p + O, d) for o, p, d in (B if NOMBRE == 'tren' else [(0.0, 72, 1.0), (1.5, 68, .5), (2.0, 69, .5), (2.5, 72, 1.5)])], 13, 82, g)
 put([(o, p + O, d) for o, p, d in C], 14, 84, g)
-put([(0.0, 75 + O, 1.5), (2.0, 72 + O, .5), (2.5, 75 + O, .5), (3.0, 77 + O, 1.0)], 15, 80, g)
+put([(0.0, 75 + O, 1.5), (2.0, (70 if NOMBRE == 'taller' else 72) + O, .5), (2.5, 75 + O, .5), (3.0, 77 + O, 1.0)], 15, 80, g)
 put([(0.5, 77 + O, .5), (1.0, 75 + O, .5), (1.5, 77 + O, .5), (2.0, 79 + O, 1.0), (3.0, 75 + O, .5), (3.5, 77 + O, .5)], 16, 82, g)
 put([(0.0, 80 + O, 4.0)], 17, 86)
 
@@ -151,11 +152,12 @@ blocks.add(bass, keep(line, 4 * BPB, 18 * BPB), 'b')
 # ---------- acordes ----------
 kc = CFG['keys']
 keys = track('keys', kc['name'], 'rhythm' if kc['figure'] == 'strum' else 'harmony', range=[48, 79],
-             mix={'level_dbfs': -22, 'pan': -0.15, 'reverb_db': -16, 'highpass': 110}, **inst(kc))
+             mix={'level_dbfs': -25 if NOMBRE == 'taller' else -22, 'pan': -0.15, 'reverb_db': -16, 'highpass': 110,
+                  'automation': [[0, 5], [15.5, 5], [16, 0]] if NOMBRE == 'taller' else [[0, 0]]}, **inst(kc))
 intro = blocks.accompaniment(chords, [4, 4], seed=s, figure=kc['intro'], complexity=.4, intensity=.42, low=52, high=74, voices=4,
                              push='none', bass=line['notes'])
-comp = blocks.accompaniment(chords, [4, 4], seed=s, figure=kc['figure'], complexity=.5, intensity=.55, low=50, high=74,
-                            voices=4, push='phrase', melody=lead['notes'], bass=line['notes'])
+comp = blocks.accompaniment(chords, [4, 4], seed=s, figure=kc['figure'], complexity=.5, intensity=.55, low=52 if NOMBRE == 'taller' else 50, high=76,
+                            voices=3 if NOMBRE == 'taller' else 4, push='phrase', melody=lead['notes'], bass=line['notes'])
 held = blocks.accompaniment(chords, [4, 4], seed=s, figure='held', complexity=.3, intensity=.5, low=50, high=74, voices=4,
                             push='none', bass=line['notes'])
 blocks.add(keys, keep(intro, 0, 4 * BPB), 'ki')

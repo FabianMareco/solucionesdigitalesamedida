@@ -3,34 +3,33 @@
   "title": "Taller en marcha",
   "version": "1.0.r1",
   "draft": false,
-  "runtime_seconds": 20.17,
+  "runtime_seconds": 16.46,
   "stage_seconds": {
-    "prepare": 0.231,
-    "midi": 0.011,
-    "parts": 2.791,
-    "mix": 7.372,
-    "master": 6.524,
-    "mix_checks": 0.004,
-    "master_check": 0.004,
-    "outputs": 3.169,
-    "sections_and_checks": 0.062
+    "prepare": 0.19,
+    "midi": 0.01,
+    "parts": 0.146,
+    "mix": 6.944,
+    "master": 6.136,
+    "mix_checks": 0.003,
+    "master_check": 0.003,
+    "outputs": 2.965,
+    "sections_and_checks": 0.061
   },
   "process_seconds": {
-    "loudness measurement": 6.672,
-    "mix": 5.929,
-    "mp3": 1.202,
-    "part processing": 0.515,
-    "master_chain": 0.466,
-    "flac": 0.433,
-    "delivery limiter": 0.315,
+    "loudness measurement": 6.306,
+    "mix": 5.326,
+    "mp3": 1.066,
+    "master_chain": 0.415,
+    "delivery limiter": 0.365,
+    "flac": 0.365,
     "decode_mp3": 0.232
   },
   "jobs": 4,
-  "project_sha256": "63906e8367155c59fd2de317c560136e2674a9b5d071b5169e2400f28c054ea8",
+  "project_sha256": "891437069ecfd9e860edb875244590e11e302e744ae194326ae2fec1df9d8750",
   "renderer_sha256": "aa2c6db2aba7b7ae09064ec01cc032379167e1e85c5d2c6b7fa0fe129de6519b",
   "validation": {
     "tracks": 5,
-    "notes": 761,
+    "notes": 691,
     "bars": 18,
     "seconds": 52.0,
     "sections": 4,
@@ -57,13 +56,13 @@
     "bits": 32,
     "format": 3,
     "seconds": 52.00002083333333,
-    "integrated_lufs": -14.0,
-    "true_peak_dbtp": 2.06,
-    "lra_lu": 14.1,
-    "sample_peak_dbfs": 2.06244472765899,
-    "clipped_samples": 168,
-    "rms": 0.12661844933432387,
-    "sha256": "4d7746cc719c54f67fa52345b18da5a06cfb9a0abbb2a6b67736b3a0728613ed",
+    "integrated_lufs": -14.77,
+    "true_peak_dbtp": 1.92,
+    "lra_lu": 11.1,
+    "sample_peak_dbfs": 1.9232041095735428,
+    "clipped_samples": 99,
+    "rms": 0.12252905113575317,
+    "sha256": "e108f4cbdd705ba14702c92733f16951eea2495604a3ebcca42668cd8f7dc4c1",
     "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
   },
   "master": {
@@ -74,12 +73,12 @@
     "format": 1,
     "seconds": 52.00002083333333,
     "integrated_lufs": -16.0,
-    "true_peak_dbtp": -1.42,
-    "lra_lu": 13.1,
-    "sample_peak_dbfs": -1.4575943542430836,
+    "true_peak_dbtp": -1.09,
+    "lra_lu": 10.0,
+    "sample_peak_dbfs": -1.1225227162873477,
     "clipped_samples": 0,
-    "rms": 0.10012213084743965,
-    "sha256": "8ec64e3315dbe004e0abb3d5d366f437d77936f12ee09cc7e09dfa0b6d730672",
+    "rms": 0.1066265623606614,
+    "sha256": "f6073724ee3b3a2adc2a1793cda729f50a39adffafea768449bb8d350eb674d9",
     "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
   },
   "sections": [
@@ -90,8 +89,8 @@
       "intent": "Tranquila, una burbuja por compás",
       "start_seconds": 0.0,
       "end_seconds": 10.667,
-      "rms_dbfs": -29.082,
-      "side_mid_db": -8.233,
+      "rms_dbfs": -25.98,
+      "side_mid_db": -10.346,
       "active_tracks": [
         "bass",
         "keys",
@@ -105,8 +104,8 @@
       "intent": "Aparece la web: entra el groove y el gancho",
       "start_seconds": 10.667,
       "end_seconds": 32.0,
-      "rms_dbfs": -18.616,
-      "side_mid_db": -23.278,
+      "rms_dbfs": -18.226,
+      "side_mid_db": -24.029,
       "active_tracks": [
         "lead",
         "bass",
@@ -122,8 +121,8 @@
       "intent": "El gancho sube",
       "start_seconds": 32.0,
       "end_seconds": 42.667,
-      "rms_dbfs": -18.354,
-      "side_mid_db": -22.747,
+      "rms_dbfs": -17.839,
+      "side_mid_db": -23.468,
       "active_tracks": [
         "lead",
         "bass",
@@ -138,8 +137,8 @@
       "intent": "Cadencia y acorde final",
       "start_seconds": 42.667,
       "end_seconds": 48.0,
-      "rms_dbfs": -19.571,
-      "side_mid_db": -23.025,
+      "rms_dbfs": -18.951,
+      "side_mid_db": -23.448,
       "active_tracks": [
         "lead",
         "bass",
@@ -151,12 +150,12 @@
   "mastering": {
     "chain": "bus",
     "rules": 2,
-    "mix_gain_db": -4.0,
-    "master_chain": "volume=-4.000000dB,acompressor=threshold=0.158489:ratio=2:attack=30:release=200:knee=4:makeup=1,highshelf=f=10000:g=2.5:t=q:w=0.7,equalizer=f=3200:t=q:w=1.2:g=0.8",
+    "mix_gain_db": -3.23,
+    "master_chain": "volume=-3.230000dB,acompressor=threshold=0.158489:ratio=2:attack=30:release=200:knee=4:makeup=1,highshelf=f=10000:g=2.5:t=q:w=0.7,equalizer=f=3200:t=q:w=1.2:g=0.8",
     "mixed": {
-      "integrated_lufs": -18.79,
-      "true_peak_dbtp": -4.21,
-      "lra_lu": 13.2
+      "integrated_lufs": -19.0,
+      "true_peak_dbtp": -3.8,
+      "lra_lu": 10.0
     },
     "target_lufs": -16,
     "true_peak_ceiling_dbtp": -1.0,
@@ -165,17 +164,17 @@
       "release_ms": 60.0,
       "lookahead_ms": 3.0,
       "lowest_steady_hz": 27.5,
-      "share_of_time_pct": 0.0,
-      "deepest_db": -0.0
+      "share_of_time_pct": 0.62,
+      "deepest_db": -0.29
     },
-    "delivery_chain": "volume=2.790000dB, true-peak limiter to -1.1 dBTP (look-ahead 3 ms, release 60 ms; NumPy)",
+    "delivery_chain": "volume=3.000000dB, true-peak limiter to -1.1 dBTP (look-ahead 3 ms, release 60 ms; NumPy)",
     "passes": [
       {
-        "gain_db": 2.79,
+        "gain_db": 3.0,
         "limit_dbtp": -1.1,
-        "taken_db": 0.0,
+        "taken_db": 0.001,
         "lufs": -16.0,
-        "true_peak_dbtp": -1.42
+        "true_peak_dbtp": -1.09
       }
     ],
     "limiting_db": {
@@ -212,22 +211,22 @@
     "level_change_db": {
       "drums": -0.31,
       "bass": -0.06,
-      "rhythm": -1.09,
+      "rhythm": -0.39,
       "lead": -0.64,
       "fx": 0.0
     },
-    "sum_minus_premix_peak_dbfs": -143.3,
-    "sum_error_share_of_allowance": 0.0223,
+    "sum_minus_premix_peak_dbfs": -143.8,
+    "sum_error_share_of_allowance": 0.0224,
     "adds_up_to_premix": true
   },
   "mp3": {
     "mp3_lufs": -16.0,
-    "mp3_true_peak_dbtp": -1.4,
+    "mp3_true_peak_dbtp": -0.76,
     "matches": true,
     "over_full_scale": false
   },
-  "cache_hits": 4,
-  "stems_reused": 4,
+  "cache_hits": 5,
+  "stems_reused": 5,
   "stem_count": 5,
   "direct_audio_listening_performed": false,
   "perceptual_quality": "Not certified by numeric checks; user audition pending",

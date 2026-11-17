@@ -415,7 +415,7 @@
      "id": "lead_b013_08",
      "on": 54.0,
      "duration": 0.5,
-     "pitch": 70
+     "pitch": 69
     },
     {
      "id": "lead_b013_10g",
@@ -475,7 +475,7 @@
      "id": "lead_b015_08",
      "on": 62.0,
      "duration": 0.5,
-     "pitch": 72
+     "pitch": 70
     },
     {
      "id": "lead_b015_10",
@@ -5194,1705 +5194,1279 @@
      "id": "k0",
      "on": 17.0,
      "duration": 1.0,
-     "pitch": 51
+     "pitch": 60
     },
     {
      "id": "k1",
      "on": 17.0,
      "duration": 1.0,
-     "pitch": 56
+     "pitch": 63
     },
     {
      "id": "k2",
      "on": 17.0,
      "duration": 1.0,
-     "pitch": 60
+     "pitch": 68
     },
     {
      "id": "k3",
-     "on": 17.0,
+     "on": 18.0,
      "duration": 1.0,
-     "pitch": 68
+     "pitch": 60
     },
     {
      "id": "k4",
      "on": 18.0,
      "duration": 1.0,
-     "pitch": 51
+     "pitch": 63
     },
     {
      "id": "k5",
      "on": 18.0,
      "duration": 1.0,
-     "pitch": 56
+     "pitch": 68
     },
     {
      "id": "k6",
-     "on": 18.0,
-     "duration": 1.0,
+     "on": 19.0,
+     "duration": 0.5,
      "pitch": 60
     },
     {
      "id": "k7",
-     "on": 18.0,
-     "duration": 1.0,
-     "pitch": 68
+     "on": 19.0,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k8",
      "on": 19.0,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 68
     },
     {
      "id": "k9",
-     "on": 19.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k10",
-     "on": 19.0,
+     "on": 19.5,
      "duration": 0.5,
      "pitch": 60
     },
     {
+     "id": "k10",
+     "on": 19.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
      "id": "k11",
-     "on": 19.0,
+     "on": 19.5,
      "duration": 0.5,
      "pitch": 68
     },
     {
      "id": "k12",
-     "on": 19.5,
+     "on": 20.0,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 56
     },
     {
      "id": "k13",
-     "on": 19.5,
+     "on": 20.0,
      "duration": 0.5,
-     "pitch": 56
+     "pitch": 63
     },
     {
      "id": "k14",
-     "on": 19.5,
-     "duration": 0.5,
-     "pitch": 60
-    },
-    {
-     "id": "k15",
-     "on": 19.5,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k16",
-     "on": 20.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k17",
-     "on": 20.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k18",
-     "on": 20.0,
-     "duration": 0.5,
-     "pitch": 60
-    },
-    {
-     "id": "k19",
      "on": 20.0,
      "duration": 0.5,
      "pitch": 65
     },
     {
-     "id": "k20",
+     "id": "k15",
      "on": 20.5,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 56
+    },
+    {
+     "id": "k16",
+     "on": 20.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k17",
+     "on": 20.5,
+     "duration": 0.5,
+     "pitch": 65
+    },
+    {
+     "id": "k18",
+     "on": 21.0,
+     "duration": 1.0,
+     "pitch": 56
+    },
+    {
+     "id": "k19",
+     "on": 21.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k20",
+     "on": 21.0,
+     "duration": 1.0,
+     "pitch": 65
     },
     {
      "id": "k21",
-     "on": 20.5,
+     "on": 22.0,
      "duration": 0.5,
      "pitch": 56
     },
     {
      "id": "k22",
-     "on": 20.5,
+     "on": 22.0,
      "duration": 0.5,
-     "pitch": 60
+     "pitch": 63
     },
     {
      "id": "k23",
-     "on": 20.5,
+     "on": 22.0,
      "duration": 0.5,
      "pitch": 65
     },
     {
      "id": "k24",
-     "on": 21.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 22.5,
+     "duration": 0.5,
+     "pitch": 56
     },
     {
      "id": "k25",
-     "on": 21.0,
-     "duration": 1.0,
-     "pitch": 56
+     "on": 22.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k26",
-     "on": 21.0,
-     "duration": 1.0,
-     "pitch": 60
+     "on": 22.5,
+     "duration": 0.5,
+     "pitch": 65
     },
     {
      "id": "k27",
-     "on": 21.0,
+     "on": 23.0,
      "duration": 1.0,
-     "pitch": 65
+     "pitch": 56
     },
     {
      "id": "k28",
-     "on": 22.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 23.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k29",
-     "on": 22.0,
-     "duration": 0.5,
-     "pitch": 56
+     "on": 23.0,
+     "duration": 1.0,
+     "pitch": 65
     },
     {
      "id": "k30",
-     "on": 22.0,
-     "duration": 0.5,
-     "pitch": 60
+     "on": 24.0,
+     "duration": 1.0,
+     "pitch": 53
     },
     {
      "id": "k31",
-     "on": 22.0,
-     "duration": 0.5,
-     "pitch": 65
+     "on": 24.0,
+     "duration": 1.0,
+     "pitch": 61
     },
     {
      "id": "k32",
-     "on": 22.5,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 24.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k33",
-     "on": 22.5,
-     "duration": 0.5,
-     "pitch": 56
+     "on": 25.0,
+     "duration": 1.0,
+     "pitch": 53
     },
     {
      "id": "k34",
-     "on": 22.5,
-     "duration": 0.5,
-     "pitch": 60
+     "on": 25.0,
+     "duration": 1.0,
+     "pitch": 61
     },
     {
      "id": "k35",
-     "on": 22.5,
-     "duration": 0.5,
-     "pitch": 65
+     "on": 25.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k36",
-     "on": 23.0,
+     "on": 26.0,
      "duration": 1.0,
-     "pitch": 51
+     "pitch": 53
     },
     {
      "id": "k37",
-     "on": 23.0,
+     "on": 26.0,
      "duration": 1.0,
-     "pitch": 56
+     "pitch": 61
     },
     {
      "id": "k38",
-     "on": 23.0,
+     "on": 26.0,
      "duration": 1.0,
-     "pitch": 60
+     "pitch": 63
     },
     {
      "id": "k39",
-     "on": 23.0,
+     "on": 27.0,
      "duration": 1.0,
-     "pitch": 65
+     "pitch": 53
     },
     {
      "id": "k40",
-     "on": 24.0,
+     "on": 27.0,
      "duration": 1.0,
-     "pitch": 51
+     "pitch": 61
     },
     {
      "id": "k41",
-     "on": 24.0,
+     "on": 27.0,
      "duration": 1.0,
-     "pitch": 56
+     "pitch": 63
     },
     {
      "id": "k42",
-     "on": 24.0,
-     "duration": 1.0,
-     "pitch": 61
+     "on": 28.0,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k43",
-     "on": 24.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 28.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k44",
-     "on": 25.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 28.0,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k45",
-     "on": 25.0,
-     "duration": 1.0,
-     "pitch": 56
+     "on": 28.5,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k46",
-     "on": 25.0,
-     "duration": 1.0,
-     "pitch": 61
+     "on": 28.5,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k47",
-     "on": 25.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 28.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k48",
-     "on": 26.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 29.0,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k49",
-     "on": 26.0,
-     "duration": 1.0,
-     "pitch": 56
+     "on": 29.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k50",
-     "on": 26.0,
-     "duration": 1.0,
-     "pitch": 61
+     "on": 29.0,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k51",
-     "on": 26.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 29.5,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k52",
-     "on": 27.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 29.5,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k53",
-     "on": 27.0,
-     "duration": 1.0,
-     "pitch": 56
+     "on": 29.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k54",
-     "on": 27.0,
-     "duration": 1.0,
-     "pitch": 61
+     "on": 30.0,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k55",
-     "on": 27.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 30.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k56",
-     "on": 28.0,
+     "on": 30.0,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 63
     },
     {
      "id": "k57",
-     "on": 28.0,
+     "on": 30.5,
      "duration": 0.5,
      "pitch": 55
     },
     {
      "id": "k58",
-     "on": 28.0,
+     "on": 30.5,
      "duration": 0.5,
      "pitch": 58
     },
     {
      "id": "k59",
-     "on": 28.0,
+     "on": 30.5,
      "duration": 0.5,
      "pitch": 63
     },
     {
      "id": "k60",
-     "on": 28.5,
+     "on": 31.0,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 55
     },
     {
      "id": "k61",
-     "on": 28.5,
+     "on": 31.0,
      "duration": 0.5,
-     "pitch": 55
+     "pitch": 58
     },
     {
      "id": "k62",
-     "on": 28.5,
+     "on": 31.0,
      "duration": 0.5,
-     "pitch": 58
+     "pitch": 63
     },
     {
      "id": "k63",
-     "on": 28.5,
-     "duration": 0.5,
-     "pitch": 63
+     "on": 31.5,
+     "duration": 1.5,
+     "pitch": 56
     },
     {
      "id": "k64",
-     "on": 29.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 31.5,
+     "duration": 1.5,
+     "pitch": 60
     },
     {
      "id": "k65",
-     "on": 29.0,
-     "duration": 0.5,
-     "pitch": 55
+     "on": 31.5,
+     "duration": 1.5,
+     "pitch": 63
     },
     {
      "id": "k66",
-     "on": 29.0,
+     "on": 33.0,
      "duration": 0.5,
-     "pitch": 58
+     "pitch": 56
     },
     {
      "id": "k67",
-     "on": 29.0,
+     "on": 33.0,
+     "duration": 0.5,
+     "pitch": 60
+    },
+    {
+     "id": "k68",
+     "on": 33.0,
      "duration": 0.5,
      "pitch": 63
     },
     {
-     "id": "k68",
-     "on": 29.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
      "id": "k69",
-     "on": 29.5,
+     "on": 33.5,
      "duration": 0.5,
-     "pitch": 55
+     "pitch": 56
     },
     {
      "id": "k70",
-     "on": 29.5,
+     "on": 33.5,
      "duration": 0.5,
-     "pitch": 58
+     "pitch": 60
     },
     {
      "id": "k71",
-     "on": 29.5,
+     "on": 33.5,
      "duration": 0.5,
      "pitch": 63
     },
     {
      "id": "k72",
-     "on": 30.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 34.0,
+     "duration": 1.0,
+     "pitch": 56
     },
     {
      "id": "k73",
-     "on": 30.0,
-     "duration": 0.5,
-     "pitch": 55
+     "on": 34.0,
+     "duration": 1.0,
+     "pitch": 60
     },
     {
      "id": "k74",
-     "on": 30.0,
-     "duration": 0.5,
-     "pitch": 58
+     "on": 34.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k75",
-     "on": 30.0,
-     "duration": 0.5,
-     "pitch": 63
+     "on": 35.0,
+     "duration": 1.0,
+     "pitch": 56
     },
     {
      "id": "k76",
-     "on": 30.5,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 35.0,
+     "duration": 1.0,
+     "pitch": 60
     },
     {
      "id": "k77",
-     "on": 30.5,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k78",
-     "on": 30.5,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k79",
-     "on": 30.5,
-     "duration": 0.5,
+     "on": 35.0,
+     "duration": 1.0,
      "pitch": 63
     },
     {
+     "id": "k78",
+     "on": 36.0,
+     "duration": 1.0,
+     "pitch": 53
+    },
+    {
+     "id": "k79",
+     "on": 36.0,
+     "duration": 1.0,
+     "pitch": 56
+    },
+    {
      "id": "k80",
-     "on": 31.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 36.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k81",
-     "on": 31.0,
-     "duration": 0.5,
-     "pitch": 55
+     "on": 37.0,
+     "duration": 1.0,
+     "pitch": 53
     },
     {
      "id": "k82",
-     "on": 31.0,
-     "duration": 0.5,
-     "pitch": 58
+     "on": 37.0,
+     "duration": 1.0,
+     "pitch": 56
     },
     {
      "id": "k83",
-     "on": 31.0,
-     "duration": 0.5,
+     "on": 37.0,
+     "duration": 1.0,
      "pitch": 63
     },
     {
      "id": "k84",
-     "on": 31.5,
-     "duration": 1.5,
-     "pitch": 51
+     "on": 38.0,
+     "duration": 0.5,
+     "pitch": 53
     },
     {
      "id": "k85",
-     "on": 31.5,
-     "duration": 1.5,
+     "on": 38.0,
+     "duration": 0.5,
      "pitch": 56
     },
     {
      "id": "k86",
-     "on": 31.5,
-     "duration": 1.5,
-     "pitch": 60
+     "on": 38.0,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k87",
-     "on": 31.5,
-     "duration": 1.5,
-     "pitch": 68
+     "on": 38.5,
+     "duration": 0.5,
+     "pitch": 53
     },
     {
      "id": "k88",
-     "on": 33.0,
+     "on": 38.5,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 56
     },
     {
      "id": "k89",
-     "on": 33.0,
+     "on": 38.5,
      "duration": 0.5,
-     "pitch": 56
+     "pitch": 63
     },
     {
      "id": "k90",
-     "on": 33.0,
-     "duration": 0.5,
-     "pitch": 60
+     "on": 39.0,
+     "duration": 1.0,
+     "pitch": 53
     },
     {
      "id": "k91",
-     "on": 33.0,
-     "duration": 0.5,
-     "pitch": 68
+     "on": 39.0,
+     "duration": 1.0,
+     "pitch": 56
     },
     {
      "id": "k92",
-     "on": 33.5,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 39.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k93",
-     "on": 33.5,
+     "on": 40.0,
      "duration": 0.5,
-     "pitch": 56
+     "pitch": 53
     },
     {
      "id": "k94",
-     "on": 33.5,
-     "duration": 0.5,
-     "pitch": 60
-    },
-    {
-     "id": "k95",
-     "on": 33.5,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k96",
-     "on": 34.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k97",
-     "on": 34.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k98",
-     "on": 34.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k99",
-     "on": 34.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k100",
-     "on": 35.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k101",
-     "on": 35.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k102",
-     "on": 35.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k103",
-     "on": 35.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k104",
-     "on": 36.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k105",
-     "on": 36.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k106",
-     "on": 36.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k107",
-     "on": 36.0,
-     "duration": 1.0,
-     "pitch": 65
-    },
-    {
-     "id": "k108",
-     "on": 37.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k109",
-     "on": 37.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k110",
-     "on": 37.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k111",
-     "on": 37.0,
-     "duration": 1.0,
-     "pitch": 65
-    },
-    {
-     "id": "k112",
-     "on": 38.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k113",
-     "on": 38.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k114",
-     "on": 38.0,
-     "duration": 0.5,
-     "pitch": 60
-    },
-    {
-     "id": "k115",
-     "on": 38.0,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k116",
-     "on": 38.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k117",
-     "on": 38.5,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k118",
-     "on": 38.5,
-     "duration": 0.5,
-     "pitch": 60
-    },
-    {
-     "id": "k119",
-     "on": 38.5,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k120",
-     "on": 39.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k121",
-     "on": 39.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k122",
-     "on": 39.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k123",
-     "on": 39.0,
-     "duration": 1.0,
-     "pitch": 65
-    },
-    {
-     "id": "k124",
-     "on": 40.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k125",
-     "on": 40.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k126",
      "on": 40.0,
      "duration": 0.5,
      "pitch": 61
     },
     {
-     "id": "k127",
+     "id": "k95",
      "on": 40.0,
      "duration": 0.5,
-     "pitch": 65
+     "pitch": 63
+    },
+    {
+     "id": "k96",
+     "on": 40.5,
+     "duration": 0.5,
+     "pitch": 53
+    },
+    {
+     "id": "k97",
+     "on": 40.5,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k98",
+     "on": 40.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k99",
+     "on": 41.0,
+     "duration": 0.5,
+     "pitch": 53
+    },
+    {
+     "id": "k100",
+     "on": 41.0,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k101",
+     "on": 41.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k102",
+     "on": 41.5,
+     "duration": 0.5,
+     "pitch": 53
+    },
+    {
+     "id": "k103",
+     "on": 41.5,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k104",
+     "on": 41.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k105",
+     "on": 42.0,
+     "duration": 1.0,
+     "pitch": 53
+    },
+    {
+     "id": "k106",
+     "on": 42.0,
+     "duration": 1.0,
+     "pitch": 61
+    },
+    {
+     "id": "k107",
+     "on": 42.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k108",
+     "on": 43.0,
+     "duration": 1.0,
+     "pitch": 53
+    },
+    {
+     "id": "k109",
+     "on": 43.0,
+     "duration": 1.0,
+     "pitch": 61
+    },
+    {
+     "id": "k110",
+     "on": 43.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k111",
+     "on": 44.0,
+     "duration": 0.5,
+     "pitch": 55
+    },
+    {
+     "id": "k112",
+     "on": 44.0,
+     "duration": 0.5,
+     "pitch": 58
+    },
+    {
+     "id": "k113",
+     "on": 44.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k114",
+     "on": 44.5,
+     "duration": 0.5,
+     "pitch": 55
+    },
+    {
+     "id": "k115",
+     "on": 44.5,
+     "duration": 0.5,
+     "pitch": 58
+    },
+    {
+     "id": "k116",
+     "on": 44.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k117",
+     "on": 45.0,
+     "duration": 1.0,
+     "pitch": 55
+    },
+    {
+     "id": "k118",
+     "on": 45.0,
+     "duration": 1.0,
+     "pitch": 58
+    },
+    {
+     "id": "k119",
+     "on": 45.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k120",
+     "on": 46.0,
+     "duration": 0.5,
+     "pitch": 55
+    },
+    {
+     "id": "k121",
+     "on": 46.0,
+     "duration": 0.5,
+     "pitch": 58
+    },
+    {
+     "id": "k122",
+     "on": 46.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k123",
+     "on": 46.5,
+     "duration": 0.5,
+     "pitch": 55
+    },
+    {
+     "id": "k124",
+     "on": 46.5,
+     "duration": 0.5,
+     "pitch": 58
+    },
+    {
+     "id": "k125",
+     "on": 46.5,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k126",
+     "on": 47.0,
+     "duration": 0.5,
+     "pitch": 55
+    },
+    {
+     "id": "k127",
+     "on": 47.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k128",
-     "on": 40.5,
+     "on": 47.0,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 63
     },
     {
      "id": "k129",
-     "on": 40.5,
-     "duration": 0.5,
+     "on": 47.5,
+     "duration": 1.0,
      "pitch": 56
     },
     {
      "id": "k130",
-     "on": 40.5,
-     "duration": 0.5,
-     "pitch": 61
+     "on": 47.5,
+     "duration": 1.0,
+     "pitch": 60
     },
     {
      "id": "k131",
-     "on": 40.5,
-     "duration": 0.5,
-     "pitch": 65
+     "on": 47.5,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k132",
-     "on": 41.0,
+     "on": 48.5,
      "duration": 0.5,
-     "pitch": 51
+     "pitch": 56
     },
     {
      "id": "k133",
-     "on": 41.0,
+     "on": 48.5,
      "duration": 0.5,
-     "pitch": 56
+     "pitch": 60
     },
     {
      "id": "k134",
-     "on": 41.0,
+     "on": 48.5,
      "duration": 0.5,
-     "pitch": 61
+     "pitch": 63
     },
     {
      "id": "k135",
-     "on": 41.0,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k136",
-     "on": 41.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k137",
-     "on": 41.5,
+     "on": 49.0,
      "duration": 0.5,
      "pitch": 56
     },
     {
-     "id": "k138",
-     "on": 41.5,
+     "id": "k136",
+     "on": 49.0,
      "duration": 0.5,
-     "pitch": 61
+     "pitch": 60
+    },
+    {
+     "id": "k137",
+     "on": 49.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k138",
+     "on": 49.5,
+     "duration": 0.5,
+     "pitch": 56
     },
     {
      "id": "k139",
-     "on": 41.5,
+     "on": 49.5,
      "duration": 0.5,
-     "pitch": 65
+     "pitch": 60
     },
     {
      "id": "k140",
-     "on": 42.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 49.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k141",
-     "on": 42.0,
+     "on": 50.0,
      "duration": 1.0,
      "pitch": 56
     },
     {
      "id": "k142",
-     "on": 42.0,
+     "on": 50.0,
      "duration": 1.0,
-     "pitch": 61
+     "pitch": 60
     },
     {
      "id": "k143",
-     "on": 42.0,
+     "on": 50.0,
      "duration": 1.0,
-     "pitch": 65
+     "pitch": 63
     },
     {
      "id": "k144",
-     "on": 43.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k145",
-     "on": 43.0,
+     "on": 51.0,
      "duration": 1.0,
      "pitch": 56
     },
     {
-     "id": "k146",
-     "on": 43.0,
+     "id": "k145",
+     "on": 51.0,
      "duration": 1.0,
-     "pitch": 61
+     "pitch": 60
+    },
+    {
+     "id": "k146",
+     "on": 51.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k147",
-     "on": 43.0,
+     "on": 52.0,
      "duration": 1.0,
-     "pitch": 65
+     "pitch": 58
     },
     {
      "id": "k148",
-     "on": 44.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 52.0,
+     "duration": 1.0,
+     "pitch": 60
     },
     {
      "id": "k149",
-     "on": 44.0,
-     "duration": 0.5,
-     "pitch": 55
+     "on": 52.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k150",
-     "on": 44.0,
-     "duration": 0.5,
+     "on": 53.0,
+     "duration": 1.0,
      "pitch": 58
     },
     {
      "id": "k151",
-     "on": 44.0,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k152",
-     "on": 44.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k153",
-     "on": 44.5,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k154",
-     "on": 44.5,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k155",
-     "on": 44.5,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k156",
-     "on": 45.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k157",
-     "on": 45.0,
-     "duration": 1.0,
-     "pitch": 55
-    },
-    {
-     "id": "k158",
-     "on": 45.0,
-     "duration": 1.0,
-     "pitch": 58
-    },
-    {
-     "id": "k159",
-     "on": 45.0,
-     "duration": 1.0,
-     "pitch": 63
-    },
-    {
-     "id": "k160",
-     "on": 46.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k161",
-     "on": 46.0,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k162",
-     "on": 46.0,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k163",
-     "on": 46.0,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k164",
-     "on": 46.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k165",
-     "on": 46.5,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k166",
-     "on": 46.5,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k167",
-     "on": 46.5,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k168",
-     "on": 47.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k169",
-     "on": 47.0,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k170",
-     "on": 47.0,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k171",
-     "on": 47.0,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k172",
-     "on": 47.5,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k173",
-     "on": 47.5,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k174",
-     "on": 47.5,
+     "on": 53.0,
      "duration": 1.0,
      "pitch": 60
     },
     {
-     "id": "k175",
-     "on": 47.5,
+     "id": "k152",
+     "on": 53.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k153",
+     "on": 54.0,
+     "duration": 1.0,
+     "pitch": 57
+    },
+    {
+     "id": "k154",
+     "on": 54.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k155",
+     "on": 54.0,
+     "duration": 1.0,
+     "pitch": 65
+    },
+    {
+     "id": "k156",
+     "on": 55.0,
+     "duration": 1.0,
+     "pitch": 57
+    },
+    {
+     "id": "k157",
+     "on": 55.0,
+     "duration": 1.0,
+     "pitch": 63
+    },
+    {
+     "id": "k158",
+     "on": 55.0,
+     "duration": 1.0,
+     "pitch": 65
+    },
+    {
+     "id": "k159",
+     "on": 56.0,
+     "duration": 0.5,
+     "pitch": 56
+    },
+    {
+     "id": "k160",
+     "on": 56.0,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k161",
+     "on": 56.0,
+     "duration": 0.5,
+     "pitch": 68
+    },
+    {
+     "id": "k162",
+     "on": 56.5,
+     "duration": 0.5,
+     "pitch": 56
+    },
+    {
+     "id": "k163",
+     "on": 56.5,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k164",
+     "on": 56.5,
+     "duration": 0.5,
+     "pitch": 68
+    },
+    {
+     "id": "k165",
+     "on": 57.0,
+     "duration": 0.5,
+     "pitch": 56
+    },
+    {
+     "id": "k166",
+     "on": 57.0,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k167",
+     "on": 57.0,
+     "duration": 0.5,
+     "pitch": 68
+    },
+    {
+     "id": "k168",
+     "on": 57.5,
+     "duration": 0.5,
+     "pitch": 56
+    },
+    {
+     "id": "k169",
+     "on": 57.5,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k170",
+     "on": 57.5,
+     "duration": 0.5,
+     "pitch": 68
+    },
+    {
+     "id": "k171",
+     "on": 58.0,
+     "duration": 1.0,
+     "pitch": 56
+    },
+    {
+     "id": "k172",
+     "on": 58.0,
+     "duration": 1.0,
+     "pitch": 61
+    },
+    {
+     "id": "k173",
+     "on": 58.0,
      "duration": 1.0,
      "pitch": 68
     },
     {
+     "id": "k174",
+     "on": 59.0,
+     "duration": 1.0,
+     "pitch": 56
+    },
+    {
+     "id": "k175",
+     "on": 59.0,
+     "duration": 1.0,
+     "pitch": 61
+    },
+    {
      "id": "k176",
-     "on": 48.5,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 59.0,
+     "duration": 1.0,
+     "pitch": 68
     },
     {
      "id": "k177",
-     "on": 48.5,
-     "duration": 0.5,
+     "on": 60.0,
+     "duration": 1.0,
      "pitch": 56
     },
     {
      "id": "k178",
-     "on": 48.5,
-     "duration": 0.5,
-     "pitch": 60
+     "on": 60.0,
+     "duration": 1.0,
+     "pitch": 61
     },
     {
      "id": "k179",
-     "on": 48.5,
-     "duration": 0.5,
-     "pitch": 68
+     "on": 60.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k180",
-     "on": 49.0,
-     "duration": 0.5,
-     "pitch": 51
+     "on": 61.0,
+     "duration": 1.0,
+     "pitch": 56
     },
     {
      "id": "k181",
-     "on": 49.0,
-     "duration": 0.5,
-     "pitch": 56
+     "on": 61.0,
+     "duration": 1.0,
+     "pitch": 61
     },
     {
      "id": "k182",
-     "on": 49.0,
-     "duration": 0.5,
-     "pitch": 60
+     "on": 61.0,
+     "duration": 1.0,
+     "pitch": 63
     },
     {
      "id": "k183",
-     "on": 49.0,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k184",
-     "on": 49.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k185",
-     "on": 49.5,
+     "on": 62.0,
      "duration": 0.5,
      "pitch": 56
     },
     {
-     "id": "k186",
-     "on": 49.5,
+     "id": "k184",
+     "on": 62.0,
      "duration": 0.5,
-     "pitch": 60
+     "pitch": 61
+    },
+    {
+     "id": "k185",
+     "on": 62.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k186",
+     "on": 62.5,
+     "duration": 0.5,
+     "pitch": 56
     },
     {
      "id": "k187",
-     "on": 49.5,
+     "on": 62.5,
      "duration": 0.5,
-     "pitch": 68
+     "pitch": 61
     },
     {
      "id": "k188",
-     "on": 50.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 62.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k189",
-     "on": 50.0,
-     "duration": 1.0,
+     "on": 63.0,
+     "duration": 0.5,
      "pitch": 56
     },
     {
      "id": "k190",
-     "on": 50.0,
-     "duration": 1.0,
-     "pitch": 60
+     "on": 63.0,
+     "duration": 0.5,
+     "pitch": 61
     },
     {
      "id": "k191",
-     "on": 50.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k192",
-     "on": 51.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k193",
-     "on": 51.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k194",
-     "on": 51.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k195",
-     "on": 51.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k196",
-     "on": 52.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k197",
-     "on": 52.0,
-     "duration": 1.0,
-     "pitch": 58
-    },
-    {
-     "id": "k198",
-     "on": 52.0,
-     "duration": 1.0,
-     "pitch": 60
-    },
-    {
-     "id": "k199",
-     "on": 52.0,
-     "duration": 1.0,
+     "on": 63.0,
+     "duration": 0.5,
      "pitch": 63
     },
     {
+     "id": "k192",
+     "on": 63.5,
+     "duration": 1.5,
+     "pitch": 53
+    },
+    {
+     "id": "k193",
+     "on": 63.5,
+     "duration": 1.5,
+     "pitch": 61
+    },
+    {
+     "id": "k194",
+     "on": 63.5,
+     "duration": 1.5,
+     "pitch": 63
+    },
+    {
+     "id": "k195",
+     "on": 65.0,
+     "duration": 0.5,
+     "pitch": 53
+    },
+    {
+     "id": "k196",
+     "on": 65.0,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
+     "id": "k197",
+     "on": 65.0,
+     "duration": 0.5,
+     "pitch": 63
+    },
+    {
+     "id": "k198",
+     "on": 65.5,
+     "duration": 0.5,
+     "pitch": 53
+    },
+    {
+     "id": "k199",
+     "on": 65.5,
+     "duration": 0.5,
+     "pitch": 61
+    },
+    {
      "id": "k200",
-     "on": 53.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 65.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k201",
-     "on": 53.0,
-     "duration": 1.0,
-     "pitch": 58
+     "on": 66.0,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k202",
-     "on": 53.0,
-     "duration": 1.0,
-     "pitch": 60
+     "on": 66.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k203",
-     "on": 53.0,
-     "duration": 1.0,
+     "on": 66.0,
+     "duration": 0.5,
      "pitch": 63
     },
     {
      "id": "k204",
-     "on": 54.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 66.5,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k205",
-     "on": 54.0,
-     "duration": 1.0,
-     "pitch": 57
+     "on": 66.5,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k206",
-     "on": 54.0,
-     "duration": 1.0,
-     "pitch": 60
+     "on": 66.5,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k207",
-     "on": 54.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 67.0,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k208",
-     "on": 55.0,
-     "duration": 1.0,
-     "pitch": 51
+     "on": 67.0,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k209",
-     "on": 55.0,
-     "duration": 1.0,
-     "pitch": 57
+     "on": 67.0,
+     "duration": 0.5,
+     "pitch": 63
     },
     {
      "id": "k210",
-     "on": 55.0,
-     "duration": 1.0,
-     "pitch": 60
+     "on": 67.5,
+     "duration": 0.5,
+     "pitch": 55
     },
     {
      "id": "k211",
-     "on": 55.0,
-     "duration": 1.0,
-     "pitch": 65
+     "on": 67.5,
+     "duration": 0.5,
+     "pitch": 58
     },
     {
      "id": "k212",
-     "on": 56.0,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k213",
-     "on": 56.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k214",
-     "on": 56.0,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k215",
-     "on": 56.0,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k216",
-     "on": 56.5,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k217",
-     "on": 56.5,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k218",
-     "on": 56.5,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k219",
-     "on": 56.5,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k220",
-     "on": 57.0,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k221",
-     "on": 57.0,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k222",
-     "on": 57.0,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k223",
-     "on": 57.0,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k224",
-     "on": 57.5,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k225",
-     "on": 57.5,
-     "duration": 0.5,
-     "pitch": 56
-    },
-    {
-     "id": "k226",
-     "on": 57.5,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k227",
-     "on": 57.5,
-     "duration": 0.5,
-     "pitch": 65
-    },
-    {
-     "id": "k228",
-     "on": 58.0,
-     "duration": 1.0,
-     "pitch": 53
-    },
-    {
-     "id": "k229",
-     "on": 58.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k230",
-     "on": 58.0,
-     "duration": 1.0,
-     "pitch": 61
-    },
-    {
-     "id": "k231",
-     "on": 58.0,
-     "duration": 1.0,
-     "pitch": 65
-    },
-    {
-     "id": "k232",
-     "on": 59.0,
-     "duration": 1.0,
-     "pitch": 53
-    },
-    {
-     "id": "k233",
-     "on": 59.0,
-     "duration": 1.0,
-     "pitch": 56
-    },
-    {
-     "id": "k234",
-     "on": 59.0,
-     "duration": 1.0,
-     "pitch": 61
-    },
-    {
-     "id": "k235",
-     "on": 59.0,
-     "duration": 1.0,
-     "pitch": 65
-    },
-    {
-     "id": "k236",
-     "on": 60.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k237",
-     "on": 60.0,
-     "duration": 1.0,
-     "pitch": 58
-    },
-    {
-     "id": "k238",
-     "on": 60.0,
-     "duration": 1.0,
-     "pitch": 61
-    },
-    {
-     "id": "k239",
-     "on": 60.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k240",
-     "on": 61.0,
-     "duration": 1.0,
-     "pitch": 51
-    },
-    {
-     "id": "k241",
-     "on": 61.0,
-     "duration": 1.0,
-     "pitch": 58
-    },
-    {
-     "id": "k242",
-     "on": 61.0,
-     "duration": 1.0,
-     "pitch": 61
-    },
-    {
-     "id": "k243",
-     "on": 61.0,
-     "duration": 1.0,
-     "pitch": 68
-    },
-    {
-     "id": "k244",
-     "on": 62.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k245",
-     "on": 62.0,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k246",
-     "on": 62.0,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k247",
-     "on": 62.0,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k248",
-     "on": 62.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k249",
-     "on": 62.5,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k250",
-     "on": 62.5,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k251",
-     "on": 62.5,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k252",
-     "on": 63.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k253",
-     "on": 63.0,
-     "duration": 0.5,
-     "pitch": 58
-    },
-    {
-     "id": "k254",
-     "on": 63.0,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k255",
-     "on": 63.0,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k256",
-     "on": 63.5,
-     "duration": 1.5,
-     "pitch": 51
-    },
-    {
-     "id": "k257",
-     "on": 63.5,
-     "duration": 1.5,
-     "pitch": 53
-    },
-    {
-     "id": "k258",
-     "on": 63.5,
-     "duration": 1.5,
-     "pitch": 61
-    },
-    {
-     "id": "k259",
-     "on": 63.5,
-     "duration": 1.5,
-     "pitch": 68
-    },
-    {
-     "id": "k260",
-     "on": 65.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k261",
-     "on": 65.0,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k262",
-     "on": 65.0,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k263",
-     "on": 65.0,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k264",
-     "on": 65.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k265",
-     "on": 65.5,
-     "duration": 0.5,
-     "pitch": 53
-    },
-    {
-     "id": "k266",
-     "on": 65.5,
-     "duration": 0.5,
-     "pitch": 61
-    },
-    {
-     "id": "k267",
-     "on": 65.5,
-     "duration": 0.5,
-     "pitch": 68
-    },
-    {
-     "id": "k268",
-     "on": 66.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k269",
-     "on": 66.0,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k270",
-     "on": 66.0,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k271",
-     "on": 66.0,
-     "duration": 0.5,
-     "pitch": 70
-    },
-    {
-     "id": "k272",
-     "on": 66.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k273",
-     "on": 66.5,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k274",
-     "on": 66.5,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k275",
-     "on": 66.5,
-     "duration": 0.5,
-     "pitch": 70
-    },
-    {
-     "id": "k276",
-     "on": 67.0,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k277",
-     "on": 67.0,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k278",
-     "on": 67.0,
-     "duration": 0.5,
-     "pitch": 63
-    },
-    {
-     "id": "k279",
-     "on": 67.0,
-     "duration": 0.5,
-     "pitch": 70
-    },
-    {
-     "id": "k280",
-     "on": 67.5,
-     "duration": 0.5,
-     "pitch": 51
-    },
-    {
-     "id": "k281",
-     "on": 67.5,
-     "duration": 0.5,
-     "pitch": 55
-    },
-    {
-     "id": "k282",
      "on": 67.5,
      "duration": 0.5,
      "pitch": 63
-    },
-    {
-     "id": "k283",
-     "on": 67.5,
-     "duration": 0.5,
-     "pitch": 70
     },
     {
      "id": "kf0",
@@ -6909,14 +6483,20 @@
     {
      "id": "kf2",
      "on": 68.0,
-     "duration": 4.0,
-     "pitch": 60
+     "duration": 1.0,
+     "pitch": 61
     },
     {
      "id": "kf3",
      "on": 68.0,
      "duration": 4.0,
      "pitch": 68
+    },
+    {
+     "id": "kf4",
+     "on": 69.0,
+     "duration": 3.0,
+     "pitch": 60
     }
    ],
    "performance": {
@@ -7097,1406 +6677,1051 @@
       "gate": 0.9426
      },
      "k3": {
-      "velocity": 76,
-      "timing_ms": 5.14,
-      "gate": 0.9426
-     },
-     "k4": {
       "velocity": 74,
       "timing_ms": 0.64,
       "gate": 0.9156
      },
-     "k5": {
+     "k4": {
       "velocity": 74,
       "timing_ms": 1.56,
       "gate": 0.9156
      },
-     "k6": {
+     "k5": {
       "velocity": 74,
       "timing_ms": 2.48,
       "gate": 0.9156
      },
-     "k7": {
-      "velocity": 74,
-      "timing_ms": 3.57,
-      "gate": 0.9156
-     },
-     "k8": {
+     "k6": {
       "velocity": 71,
       "timing_ms": 0.09,
       "gate": 0.907
      },
-     "k9": {
+     "k7": {
       "velocity": 71,
       "timing_ms": 1.23,
       "gate": 0.907
      },
-     "k10": {
+     "k8": {
       "velocity": 71,
       "timing_ms": 2.26,
       "gate": 0.907
      },
-     "k11": {
-      "velocity": 71,
-      "timing_ms": 3.34,
-      "gate": 0.907
-     },
-     "k12": {
-      "velocity": 68,
-      "timing_ms": 9.08,
-      "gate": 0.9413
-     },
-     "k13": {
+     "k9": {
       "velocity": 68,
       "timing_ms": 8.28,
       "gate": 0.9413
      },
-     "k14": {
+     "k10": {
       "velocity": 68,
       "timing_ms": 7.49,
       "gate": 0.9413
      },
-     "k15": {
+     "k11": {
       "velocity": 68,
       "timing_ms": 6.67,
       "gate": 0.9413
      },
-     "k16": {
+     "k12": {
       "velocity": 76,
       "timing_ms": 3.65,
       "gate": 0.9453
      },
-     "k17": {
+     "k13": {
       "velocity": 76,
       "timing_ms": 4.55,
       "gate": 0.9453
      },
-     "k18": {
+     "k14": {
       "velocity": 76,
       "timing_ms": 5.58,
       "gate": 0.9453
      },
-     "k19": {
-      "velocity": 76,
-      "timing_ms": 6.66,
-      "gate": 0.9453
-     },
-     "k20": {
-      "velocity": 73,
-      "timing_ms": 5.71,
-      "gate": 0.9794
-     },
-     "k21": {
+     "k15": {
       "velocity": 73,
       "timing_ms": 4.84,
       "gate": 0.9794
      },
-     "k22": {
+     "k16": {
       "velocity": 73,
       "timing_ms": 3.95,
       "gate": 0.9794
      },
-     "k23": {
+     "k17": {
       "velocity": 73,
       "timing_ms": 3.09,
       "gate": 0.9794
      },
-     "k24": {
+     "k18": {
       "velocity": 77,
       "timing_ms": 3.76,
       "gate": 0.9928
      },
-     "k25": {
+     "k19": {
       "velocity": 77,
       "timing_ms": 4.85,
       "gate": 0.9928
      },
-     "k26": {
+     "k20": {
       "velocity": 77,
       "timing_ms": 5.76,
       "gate": 0.9928
      },
-     "k27": {
-      "velocity": 77,
-      "timing_ms": 6.65,
-      "gate": 0.9928
-     },
-     "k28": {
+     "k21": {
       "velocity": 78,
       "timing_ms": 7.52,
       "gate": 1.0183
      },
-     "k29": {
+     "k22": {
       "velocity": 78,
       "timing_ms": 8.52,
       "gate": 1.0183
      },
-     "k30": {
+     "k23": {
       "velocity": 78,
       "timing_ms": 9.59,
       "gate": 1.0183
      },
-     "k31": {
-      "velocity": 78,
-      "timing_ms": 10.72,
-      "gate": 1.0183
-     },
-     "k32": {
-      "velocity": 72,
-      "timing_ms": 3.03,
-      "gate": 1.0177
-     },
-     "k33": {
+     "k24": {
       "velocity": 72,
       "timing_ms": 2.32,
       "gate": 1.0177
      },
-     "k34": {
+     "k25": {
       "velocity": 72,
       "timing_ms": 1.58,
       "gate": 1.0177
      },
-     "k35": {
+     "k26": {
       "velocity": 72,
       "timing_ms": 0.69,
       "gate": 1.0177
      },
-     "k36": {
+     "k27": {
       "velocity": 75,
       "timing_ms": 4.33,
       "gate": 1.0634
      },
-     "k37": {
+     "k28": {
       "velocity": 75,
       "timing_ms": 5.46,
       "gate": 1.0634
      },
-     "k38": {
+     "k29": {
       "velocity": 75,
       "timing_ms": 6.39,
       "gate": 1.0634
      },
-     "k39": {
-      "velocity": 75,
-      "timing_ms": 7.4,
-      "gate": 1.0634
-     },
-     "k40": {
+     "k30": {
       "velocity": 74,
       "timing_ms": 9.5,
       "gate": 1.0333
      },
-     "k41": {
+     "k31": {
       "velocity": 74,
       "timing_ms": 10.47,
       "gate": 1.0333
      },
-     "k42": {
+     "k32": {
       "velocity": 74,
       "timing_ms": 11.38,
       "gate": 1.0333
      },
-     "k43": {
-      "velocity": 74,
-      "timing_ms": 12.26,
-      "gate": 1.0333
-     },
-     "k44": {
+     "k33": {
       "velocity": 80,
       "timing_ms": -3.35,
       "gate": 1.0335
      },
-     "k45": {
+     "k34": {
       "velocity": 80,
       "timing_ms": -2.28,
       "gate": 1.0335
      },
-     "k46": {
+     "k35": {
       "velocity": 80,
       "timing_ms": -1.32,
       "gate": 1.0335
      },
-     "k47": {
-      "velocity": 80,
-      "timing_ms": -0.39,
-      "gate": 1.0335
-     },
-     "k48": {
+     "k36": {
       "velocity": 79,
       "timing_ms": -2.03,
       "gate": 0.9882
      },
-     "k49": {
+     "k37": {
       "velocity": 79,
       "timing_ms": -0.93,
       "gate": 0.9882
      },
-     "k50": {
+     "k38": {
       "velocity": 79,
       "timing_ms": 0.03,
       "gate": 0.9882
      },
-     "k51": {
-      "velocity": 79,
-      "timing_ms": 1.06,
-      "gate": 0.9882
-     },
-     "k52": {
+     "k39": {
       "velocity": 80,
       "timing_ms": -1.15,
       "gate": 0.9693
      },
-     "k53": {
+     "k40": {
       "velocity": 80,
       "timing_ms": -0.17,
       "gate": 0.9693
      },
-     "k54": {
+     "k41": {
       "velocity": 80,
       "timing_ms": 0.9,
       "gate": 0.9693
      },
-     "k55": {
-      "velocity": 80,
-      "timing_ms": 1.99,
-      "gate": 0.9693
-     },
-     "k56": {
+     "k42": {
       "velocity": 75,
       "timing_ms": -0.84,
       "gate": 0.9268
      },
-     "k57": {
+     "k43": {
       "velocity": 75,
       "timing_ms": 0.11,
       "gate": 0.9268
      },
-     "k58": {
+     "k44": {
       "velocity": 75,
       "timing_ms": 0.98,
       "gate": 0.9268
      },
-     "k59": {
-      "velocity": 75,
-      "timing_ms": 1.99,
-      "gate": 0.9268
-     },
-     "k60": {
-      "velocity": 69,
-      "timing_ms": 0.85,
-      "gate": 0.9331
-     },
-     "k61": {
+     "k45": {
       "velocity": 69,
       "timing_ms": 0.03,
       "gate": 0.9331
      },
-     "k62": {
+     "k46": {
       "velocity": 69,
       "timing_ms": -0.69,
       "gate": 0.9331
      },
-     "k63": {
+     "k47": {
       "velocity": 69,
       "timing_ms": -1.41,
       "gate": 0.9331
      },
-     "k64": {
+     "k48": {
       "velocity": 75,
       "timing_ms": 1.17,
       "gate": 0.9096
      },
-     "k65": {
+     "k49": {
       "velocity": 75,
       "timing_ms": 2.26,
       "gate": 0.9096
      },
-     "k66": {
+     "k50": {
       "velocity": 75,
       "timing_ms": 3.21,
       "gate": 0.9096
      },
-     "k67": {
-      "velocity": 75,
-      "timing_ms": 4.2,
-      "gate": 0.9096
-     },
-     "k68": {
-      "velocity": 70,
-      "timing_ms": 5.44,
-      "gate": 0.9263
-     },
-     "k69": {
+     "k51": {
       "velocity": 70,
       "timing_ms": 4.68,
       "gate": 0.9263
      },
-     "k70": {
+     "k52": {
       "velocity": 70,
       "timing_ms": 3.97,
       "gate": 0.9263
      },
-     "k71": {
+     "k53": {
       "velocity": 70,
       "timing_ms": 3.05,
       "gate": 0.9263
      },
-     "k72": {
+     "k54": {
       "velocity": 77,
       "timing_ms": 3.81,
       "gate": 0.9688
      },
-     "k73": {
+     "k55": {
       "velocity": 77,
       "timing_ms": 4.81,
       "gate": 0.9688
      },
-     "k74": {
+     "k56": {
       "velocity": 77,
       "timing_ms": 5.94,
       "gate": 0.9688
      },
-     "k75": {
-      "velocity": 77,
-      "timing_ms": 6.8,
-      "gate": 0.9688
-     },
-     "k76": {
-      "velocity": 69,
-      "timing_ms": 3.39,
-      "gate": 0.9712
-     },
-     "k77": {
+     "k57": {
       "velocity": 69,
       "timing_ms": 2.56,
       "gate": 0.9712
      },
-     "k78": {
+     "k58": {
       "velocity": 69,
       "timing_ms": 1.87,
       "gate": 0.9712
      },
-     "k79": {
+     "k59": {
       "velocity": 69,
       "timing_ms": 0.98,
       "gate": 0.9712
      },
-     "k80": {
+     "k60": {
       "velocity": 72,
       "timing_ms": 2.97,
       "gate": 0.9886
      },
-     "k81": {
+     "k61": {
       "velocity": 72,
       "timing_ms": 4.1,
       "gate": 0.9886
      },
-     "k82": {
+     "k62": {
       "velocity": 72,
       "timing_ms": 5.13,
       "gate": 0.9886
      },
-     "k83": {
-      "velocity": 72,
-      "timing_ms": 6.03,
-      "gate": 0.9886
-     },
-     "k84": {
-      "velocity": 69,
-      "timing_ms": 7.58,
-      "gate": 1.0451
-     },
-     "k85": {
+     "k63": {
       "velocity": 69,
       "timing_ms": 6.73,
       "gate": 1.0451
      },
-     "k86": {
+     "k64": {
       "velocity": 69,
       "timing_ms": 6.0,
       "gate": 1.0451
      },
-     "k87": {
+     "k65": {
       "velocity": 69,
       "timing_ms": 5.25,
       "gate": 1.0451
      },
-     "k88": {
+     "k66": {
       "velocity": 76,
       "timing_ms": 4.42,
       "gate": 0.987
      },
-     "k89": {
+     "k67": {
       "velocity": 76,
       "timing_ms": 5.38,
       "gate": 0.987
      },
-     "k90": {
+     "k68": {
       "velocity": 76,
       "timing_ms": 6.47,
       "gate": 0.987
      },
-     "k91": {
-      "velocity": 76,
-      "timing_ms": 7.59,
-      "gate": 0.987
-     },
-     "k92": {
-      "velocity": 67,
-      "timing_ms": 7.52,
-      "gate": 1.0114
-     },
-     "k93": {
+     "k69": {
       "velocity": 67,
       "timing_ms": 6.73,
       "gate": 1.0114
      },
-     "k94": {
+     "k70": {
       "velocity": 67,
       "timing_ms": 6.0,
       "gate": 1.0114
      },
-     "k95": {
+     "k71": {
       "velocity": 67,
       "timing_ms": 5.27,
       "gate": 1.0114
      },
-     "k96": {
+     "k72": {
       "velocity": 74,
       "timing_ms": 4.96,
       "gate": 1.0369
      },
-     "k97": {
+     "k73": {
       "velocity": 74,
       "timing_ms": 5.96,
       "gate": 1.0369
      },
-     "k98": {
+     "k74": {
       "velocity": 74,
       "timing_ms": 6.84,
       "gate": 1.0369
      },
-     "k99": {
-      "velocity": 74,
-      "timing_ms": 7.84,
-      "gate": 1.0369
-     },
-     "k100": {
+     "k75": {
       "velocity": 78,
       "timing_ms": 1.83,
       "gate": 0.9861
      },
-     "k101": {
+     "k76": {
       "velocity": 78,
       "timing_ms": 2.9,
       "gate": 0.9861
      },
-     "k102": {
+     "k77": {
       "velocity": 78,
       "timing_ms": 3.81,
       "gate": 0.9861
      },
-     "k103": {
-      "velocity": 78,
-      "timing_ms": 4.67,
-      "gate": 0.9861
-     },
-     "k104": {
+     "k78": {
       "velocity": 75,
       "timing_ms": 3.83,
       "gate": 1.0157
      },
-     "k105": {
+     "k79": {
       "velocity": 75,
       "timing_ms": 4.87,
       "gate": 1.0157
      },
-     "k106": {
+     "k80": {
       "velocity": 75,
       "timing_ms": 5.73,
       "gate": 1.0157
      },
-     "k107": {
-      "velocity": 75,
-      "timing_ms": 6.63,
-      "gate": 1.0157
-     },
-     "k108": {
+     "k81": {
       "velocity": 80,
       "timing_ms": 2.56,
       "gate": 0.988
      },
-     "k109": {
+     "k82": {
       "velocity": 80,
       "timing_ms": 3.46,
       "gate": 0.988
      },
-     "k110": {
+     "k83": {
       "velocity": 80,
       "timing_ms": 4.42,
       "gate": 0.988
      },
-     "k111": {
-      "velocity": 80,
-      "timing_ms": 5.28,
-      "gate": 0.988
-     },
-     "k112": {
+     "k84": {
       "velocity": 78,
       "timing_ms": 7.19,
       "gate": 0.972
      },
-     "k113": {
+     "k85": {
       "velocity": 78,
       "timing_ms": 8.33,
       "gate": 0.972
      },
-     "k114": {
+     "k86": {
       "velocity": 78,
       "timing_ms": 9.38,
       "gate": 0.972
      },
-     "k115": {
-      "velocity": 78,
-      "timing_ms": 10.35,
-      "gate": 0.972
-     },
-     "k116": {
-      "velocity": 70,
-      "timing_ms": 0.02,
-      "gate": 0.9698
-     },
-     "k117": {
+     "k87": {
       "velocity": 70,
       "timing_ms": -0.78,
       "gate": 0.9698
      },
-     "k118": {
+     "k88": {
       "velocity": 70,
       "timing_ms": -1.66,
       "gate": 0.9698
      },
-     "k119": {
+     "k89": {
       "velocity": 70,
       "timing_ms": -2.43,
       "gate": 0.9698
      },
-     "k120": {
+     "k90": {
       "velocity": 76,
       "timing_ms": 1.75,
       "gate": 1.0067
      },
-     "k121": {
+     "k91": {
       "velocity": 76,
       "timing_ms": 2.72,
       "gate": 1.0067
      },
-     "k122": {
+     "k92": {
       "velocity": 76,
       "timing_ms": 3.65,
       "gate": 1.0067
      },
-     "k123": {
-      "velocity": 76,
-      "timing_ms": 4.74,
-      "gate": 1.0067
-     },
-     "k124": {
+     "k93": {
       "velocity": 77,
       "timing_ms": 6.77,
       "gate": 1.0173
      },
-     "k125": {
+     "k94": {
       "velocity": 77,
       "timing_ms": 7.91,
       "gate": 1.0173
      },
-     "k126": {
+     "k95": {
       "velocity": 77,
       "timing_ms": 8.96,
       "gate": 1.0173
      },
-     "k127": {
-      "velocity": 77,
-      "timing_ms": 10.07,
-      "gate": 1.0173
-     },
-     "k128": {
-      "velocity": 67,
-      "timing_ms": 4.73,
-      "gate": 0.996
-     },
-     "k129": {
+     "k96": {
       "velocity": 67,
       "timing_ms": 3.84,
       "gate": 0.996
      },
-     "k130": {
+     "k97": {
       "velocity": 67,
       "timing_ms": 3.08,
       "gate": 0.996
      },
-     "k131": {
+     "k98": {
       "velocity": 67,
       "timing_ms": 2.16,
       "gate": 0.996
      },
-     "k132": {
+     "k99": {
       "velocity": 75,
       "timing_ms": 2.72,
       "gate": 0.9966
      },
-     "k133": {
+     "k100": {
       "velocity": 75,
       "timing_ms": 3.8,
       "gate": 0.9966
      },
-     "k134": {
+     "k101": {
       "velocity": 75,
       "timing_ms": 4.8,
       "gate": 0.9966
      },
-     "k135": {
-      "velocity": 75,
-      "timing_ms": 5.93,
-      "gate": 0.9966
-     },
-     "k136": {
-      "velocity": 76,
-      "timing_ms": 7.63,
-      "gate": 0.9873
-     },
-     "k137": {
+     "k102": {
       "velocity": 76,
       "timing_ms": 6.91,
       "gate": 0.9873
      },
-     "k138": {
+     "k103": {
       "velocity": 76,
       "timing_ms": 6.06,
       "gate": 0.9873
      },
-     "k139": {
+     "k104": {
       "velocity": 76,
       "timing_ms": 5.23,
       "gate": 0.9873
      },
-     "k140": {
+     "k105": {
       "velocity": 79,
       "timing_ms": -0.2,
       "gate": 0.9953
      },
-     "k141": {
+     "k106": {
       "velocity": 79,
       "timing_ms": 0.72,
       "gate": 0.9953
      },
-     "k142": {
+     "k107": {
       "velocity": 79,
       "timing_ms": 1.59,
       "gate": 0.9953
      },
-     "k143": {
-      "velocity": 79,
-      "timing_ms": 2.46,
-      "gate": 0.9953
-     },
-     "k144": {
+     "k108": {
       "velocity": 77,
       "timing_ms": 3.18,
       "gate": 1.001
      },
-     "k145": {
+     "k109": {
       "velocity": 77,
       "timing_ms": 4.23,
       "gate": 1.001
      },
-     "k146": {
+     "k110": {
       "velocity": 77,
       "timing_ms": 5.28,
       "gate": 1.001
      },
-     "k147": {
-      "velocity": 77,
-      "timing_ms": 6.22,
-      "gate": 1.001
-     },
-     "k148": {
+     "k111": {
       "velocity": 76,
       "timing_ms": 7.36,
       "gate": 0.9791
      },
-     "k149": {
+     "k112": {
       "velocity": 76,
       "timing_ms": 8.35,
       "gate": 0.9791
      },
-     "k150": {
+     "k113": {
       "velocity": 76,
       "timing_ms": 9.4,
       "gate": 0.9791
      },
-     "k151": {
-      "velocity": 76,
-      "timing_ms": 10.32,
-      "gate": 0.9791
-     },
-     "k152": {
-      "velocity": 69,
-      "timing_ms": 11.46,
-      "gate": 0.973
-     },
-     "k153": {
+     "k114": {
       "velocity": 69,
       "timing_ms": 10.69,
       "gate": 0.973
      },
-     "k154": {
+     "k115": {
       "velocity": 69,
       "timing_ms": 9.85,
       "gate": 0.973
      },
-     "k155": {
+     "k116": {
       "velocity": 69,
       "timing_ms": 8.94,
       "gate": 0.973
      },
-     "k156": {
+     "k117": {
       "velocity": 80,
       "timing_ms": 6.46,
       "gate": 1.0009
      },
-     "k157": {
+     "k118": {
       "velocity": 80,
       "timing_ms": 7.42,
       "gate": 1.0009
      },
-     "k158": {
+     "k119": {
       "velocity": 80,
       "timing_ms": 8.55,
       "gate": 1.0009
      },
-     "k159": {
-      "velocity": 80,
-      "timing_ms": 9.6,
-      "gate": 1.0009
-     },
-     "k160": {
+     "k120": {
       "velocity": 82,
       "timing_ms": 2.35,
       "gate": 0.9598
      },
-     "k161": {
+     "k121": {
       "velocity": 82,
       "timing_ms": 3.36,
       "gate": 0.9598
      },
-     "k162": {
+     "k122": {
       "velocity": 82,
       "timing_ms": 4.43,
       "gate": 0.9598
      },
-     "k163": {
-      "velocity": 82,
-      "timing_ms": 5.32,
-      "gate": 0.9598
-     },
-     "k164": {
-      "velocity": 73,
-      "timing_ms": 8.18,
-      "gate": 0.9702
-     },
-     "k165": {
+     "k123": {
       "velocity": 73,
       "timing_ms": 7.48,
       "gate": 0.9702
      },
-     "k166": {
+     "k124": {
       "velocity": 73,
       "timing_ms": 6.67,
       "gate": 0.9702
      },
-     "k167": {
+     "k125": {
       "velocity": 73,
       "timing_ms": 5.88,
       "gate": 0.9702
      },
-     "k168": {
+     "k126": {
       "velocity": 77,
       "timing_ms": 1.94,
       "gate": 0.9745
      },
-     "k169": {
+     "k127": {
       "velocity": 77,
       "timing_ms": 2.85,
       "gate": 0.9745
      },
-     "k170": {
+     "k128": {
       "velocity": 77,
       "timing_ms": 3.82,
       "gate": 0.9745
      },
-     "k171": {
-      "velocity": 77,
-      "timing_ms": 4.79,
-      "gate": 0.9745
-     },
-     "k172": {
-      "velocity": 70,
-      "timing_ms": 7.43,
-      "gate": 1.0067
-     },
-     "k173": {
+     "k129": {
       "velocity": 70,
       "timing_ms": 6.53,
       "gate": 1.0067
      },
-     "k174": {
+     "k130": {
       "velocity": 70,
       "timing_ms": 5.66,
       "gate": 1.0067
      },
-     "k175": {
+     "k131": {
       "velocity": 70,
       "timing_ms": 4.88,
       "gate": 1.0067
      },
-     "k176": {
-      "velocity": 70,
-      "timing_ms": 3.72,
-      "gate": 0.9476
-     },
-     "k177": {
+     "k132": {
       "velocity": 70,
       "timing_ms": 2.9,
       "gate": 0.9476
      },
-     "k178": {
+     "k133": {
       "velocity": 70,
       "timing_ms": 2.02,
       "gate": 0.9476
      },
-     "k179": {
+     "k134": {
       "velocity": 70,
       "timing_ms": 1.27,
       "gate": 0.9476
      },
-     "k180": {
+     "k135": {
       "velocity": 76,
       "timing_ms": 1.65,
       "gate": 0.9327
      },
-     "k181": {
+     "k136": {
       "velocity": 76,
       "timing_ms": 2.63,
       "gate": 0.9327
      },
-     "k182": {
+     "k137": {
       "velocity": 76,
       "timing_ms": 3.66,
       "gate": 0.9327
      },
-     "k183": {
-      "velocity": 76,
-      "timing_ms": 4.62,
-      "gate": 0.9327
-     },
-     "k184": {
-      "velocity": 69,
-      "timing_ms": 4.23,
-      "gate": 0.9195
-     },
-     "k185": {
+     "k138": {
       "velocity": 69,
       "timing_ms": 3.4,
       "gate": 0.9195
      },
-     "k186": {
+     "k139": {
       "velocity": 69,
       "timing_ms": 2.69,
       "gate": 0.9195
      },
-     "k187": {
+     "k140": {
       "velocity": 69,
       "timing_ms": 1.83,
       "gate": 0.9195
      },
-     "k188": {
+     "k141": {
       "velocity": 75,
       "timing_ms": -1.2,
       "gate": 0.9657
      },
-     "k189": {
+     "k142": {
       "velocity": 75,
       "timing_ms": -0.27,
       "gate": 0.9657
      },
-     "k190": {
+     "k143": {
       "velocity": 75,
       "timing_ms": 0.61,
       "gate": 0.9657
      },
-     "k191": {
-      "velocity": 75,
-      "timing_ms": 1.49,
-      "gate": 0.9657
-     },
-     "k192": {
+     "k144": {
       "velocity": 74,
       "timing_ms": -3.26,
       "gate": 1.0401
      },
-     "k193": {
+     "k145": {
       "velocity": 74,
       "timing_ms": -2.27,
       "gate": 1.0401
      },
-     "k194": {
+     "k146": {
       "velocity": 74,
       "timing_ms": -1.4,
       "gate": 1.0401
      },
-     "k195": {
-      "velocity": 74,
-      "timing_ms": -0.43,
-      "gate": 1.0401
-     },
-     "k196": {
+     "k147": {
       "velocity": 77,
       "timing_ms": -0.78,
       "gate": 1.0155
      },
-     "k197": {
+     "k148": {
       "velocity": 77,
       "timing_ms": 0.11,
       "gate": 1.0155
      },
-     "k198": {
+     "k149": {
       "velocity": 77,
       "timing_ms": 0.98,
       "gate": 1.0155
      },
-     "k199": {
-      "velocity": 77,
-      "timing_ms": 1.94,
-      "gate": 1.0155
-     },
-     "k200": {
+     "k150": {
       "velocity": 79,
       "timing_ms": -1.03,
       "gate": 1.0343
      },
-     "k201": {
+     "k151": {
       "velocity": 79,
       "timing_ms": 0.03,
       "gate": 1.0343
      },
-     "k202": {
+     "k152": {
       "velocity": 79,
       "timing_ms": 1.0,
       "gate": 1.0343
      },
-     "k203": {
-      "velocity": 79,
-      "timing_ms": 1.95,
-      "gate": 1.0343
-     },
-     "k204": {
+     "k153": {
       "velocity": 76,
       "timing_ms": 0.2,
       "gate": 0.9818
      },
-     "k205": {
+     "k154": {
       "velocity": 76,
       "timing_ms": 1.17,
       "gate": 0.9818
      },
-     "k206": {
+     "k155": {
       "velocity": 76,
       "timing_ms": 2.31,
       "gate": 0.9818
      },
-     "k207": {
-      "velocity": 76,
-      "timing_ms": 3.23,
-      "gate": 0.9818
-     },
-     "k208": {
+     "k156": {
       "velocity": 75,
       "timing_ms": -3.59,
       "gate": 1.0464
      },
-     "k209": {
+     "k157": {
       "velocity": 75,
       "timing_ms": -2.63,
       "gate": 1.0464
      },
-     "k210": {
+     "k158": {
       "velocity": 75,
       "timing_ms": -1.49,
       "gate": 1.0464
      },
-     "k211": {
-      "velocity": 75,
-      "timing_ms": -0.46,
-      "gate": 1.0464
-     },
-     "k212": {
+     "k159": {
       "velocity": 74,
       "timing_ms": -0.29,
       "gate": 0.9624
      },
-     "k213": {
+     "k160": {
       "velocity": 74,
       "timing_ms": 0.64,
       "gate": 0.9624
      },
-     "k214": {
+     "k161": {
       "velocity": 74,
       "timing_ms": 1.72,
       "gate": 0.9624
      },
-     "k215": {
-      "velocity": 74,
-      "timing_ms": 2.58,
-      "gate": 0.9624
-     },
-     "k216": {
-      "velocity": 67,
-      "timing_ms": 1.08,
-      "gate": 0.9454
-     },
-     "k217": {
+     "k162": {
       "velocity": 67,
       "timing_ms": 0.32,
       "gate": 0.9454
      },
-     "k218": {
+     "k163": {
       "velocity": 67,
       "timing_ms": -0.57,
       "gate": 0.9454
      },
-     "k219": {
+     "k164": {
       "velocity": 67,
       "timing_ms": -1.37,
       "gate": 0.9454
      },
-     "k220": {
+     "k165": {
       "velocity": 76,
       "timing_ms": -5.06,
       "gate": 0.9492
      },
-     "k221": {
+     "k166": {
       "velocity": 76,
       "timing_ms": -4.13,
       "gate": 0.9492
      },
-     "k222": {
+     "k167": {
       "velocity": 76,
       "timing_ms": -3.26,
       "gate": 0.9492
      },
-     "k223": {
-      "velocity": 76,
-      "timing_ms": -2.39,
-      "gate": 0.9492
-     },
-     "k224": {
-      "velocity": 71,
-      "timing_ms": -3.44,
-      "gate": 0.9659
-     },
-     "k225": {
+     "k168": {
       "velocity": 71,
       "timing_ms": -4.17,
       "gate": 0.9659
      },
-     "k226": {
+     "k169": {
       "velocity": 71,
       "timing_ms": -4.88,
       "gate": 0.9659
      },
-     "k227": {
+     "k170": {
       "velocity": 71,
       "timing_ms": -5.65,
       "gate": 0.9659
      },
-     "k228": {
+     "k171": {
       "velocity": 78,
       "timing_ms": 0.91,
       "gate": 0.9892
      },
-     "k229": {
+     "k172": {
       "velocity": 78,
       "timing_ms": 1.85,
       "gate": 0.9892
      },
-     "k230": {
+     "k173": {
       "velocity": 78,
       "timing_ms": 2.85,
       "gate": 0.9892
      },
-     "k231": {
-      "velocity": 78,
-      "timing_ms": 3.86,
-      "gate": 0.9892
-     },
-     "k232": {
+     "k174": {
       "velocity": 79,
       "timing_ms": 0.95,
       "gate": 0.982
      },
-     "k233": {
+     "k175": {
       "velocity": 79,
       "timing_ms": 1.93,
       "gate": 0.982
      },
-     "k234": {
+     "k176": {
       "velocity": 79,
       "timing_ms": 2.87,
       "gate": 0.982
      },
-     "k235": {
-      "velocity": 79,
-      "timing_ms": 3.94,
-      "gate": 0.982
-     },
-     "k236": {
+     "k177": {
       "velocity": 77,
       "timing_ms": -0.72,
       "gate": 0.9776
      },
-     "k237": {
+     "k178": {
       "velocity": 77,
       "timing_ms": 0.17,
       "gate": 0.9776
      },
-     "k238": {
+     "k179": {
       "velocity": 77,
       "timing_ms": 1.12,
       "gate": 0.9776
      },
-     "k239": {
-      "velocity": 77,
-      "timing_ms": 1.98,
-      "gate": 0.9776
-     },
-     "k240": {
+     "k180": {
       "velocity": 77,
       "timing_ms": -9.37,
       "gate": 0.9773
      },
-     "k241": {
+     "k181": {
       "velocity": 77,
       "timing_ms": -8.46,
       "gate": 0.9773
      },
-     "k242": {
+     "k182": {
       "velocity": 77,
       "timing_ms": -7.45,
       "gate": 0.9773
      },
-     "k243": {
-      "velocity": 77,
-      "timing_ms": -6.43,
-      "gate": 0.9773
-     },
-     "k244": {
+     "k183": {
       "velocity": 77,
       "timing_ms": -7.25,
       "gate": 0.9697
      },
-     "k245": {
+     "k184": {
       "velocity": 77,
       "timing_ms": -6.36,
       "gate": 0.9697
      },
-     "k246": {
+     "k185": {
       "velocity": 77,
       "timing_ms": -5.36,
       "gate": 0.9697
      },
-     "k247": {
-      "velocity": 77,
-      "timing_ms": -4.25,
-      "gate": 0.9697
-     },
-     "k248": {
-      "velocity": 70,
-      "timing_ms": -2.03,
-      "gate": 0.9691
-     },
-     "k249": {
+     "k186": {
       "velocity": 70,
       "timing_ms": -2.83,
       "gate": 0.9691
      },
-     "k250": {
+     "k187": {
       "velocity": 70,
       "timing_ms": -3.63,
       "gate": 0.9691
      },
-     "k251": {
+     "k188": {
       "velocity": 70,
       "timing_ms": -4.52,
       "gate": 0.9691
      },
-     "k252": {
+     "k189": {
       "velocity": 73,
       "timing_ms": -0.48,
       "gate": 0.9647
      },
-     "k253": {
+     "k190": {
       "velocity": 73,
       "timing_ms": 0.42,
       "gate": 0.9647
      },
-     "k254": {
+     "k191": {
       "velocity": 73,
       "timing_ms": 1.48,
       "gate": 0.9647
      },
-     "k255": {
-      "velocity": 73,
-      "timing_ms": 2.44,
-      "gate": 0.9647
-     },
-     "k256": {
-      "velocity": 71,
-      "timing_ms": -1.52,
-      "gate": 1.0204
-     },
-     "k257": {
+     "k192": {
       "velocity": 71,
       "timing_ms": -2.34,
       "gate": 1.0204
      },
-     "k258": {
+     "k193": {
       "velocity": 71,
       "timing_ms": -3.06,
       "gate": 1.0204
      },
-     "k259": {
+     "k194": {
       "velocity": 71,
       "timing_ms": -3.81,
       "gate": 1.0204
      },
-     "k260": {
+     "k195": {
       "velocity": 77,
       "timing_ms": -8.96,
       "gate": 0.9421
      },
-     "k261": {
+     "k196": {
       "velocity": 77,
       "timing_ms": -8.05,
       "gate": 0.9421
      },
-     "k262": {
+     "k197": {
       "velocity": 77,
       "timing_ms": -7.1,
       "gate": 0.9421
      },
-     "k263": {
-      "velocity": 77,
-      "timing_ms": -6.0,
-      "gate": 0.9421
-     },
-     "k264": {
-      "velocity": 69,
-      "timing_ms": -3.76,
-      "gate": 0.9374
-     },
-     "k265": {
+     "k198": {
       "velocity": 69,
       "timing_ms": -4.64,
       "gate": 0.9374
      },
-     "k266": {
+     "k199": {
       "velocity": 69,
       "timing_ms": -5.43,
       "gate": 0.9374
      },
-     "k267": {
+     "k200": {
       "velocity": 69,
       "timing_ms": -6.35,
       "gate": 0.9374
      },
-     "k268": {
+     "k201": {
       "velocity": 76,
       "timing_ms": -0.79,
       "gate": 0.9802
      },
-     "k269": {
+     "k202": {
       "velocity": 76,
       "timing_ms": 0.29,
       "gate": 0.9802
      },
-     "k270": {
+     "k203": {
       "velocity": 76,
       "timing_ms": 1.23,
       "gate": 0.9802
      },
-     "k271": {
-      "velocity": 76,
-      "timing_ms": 2.25,
-      "gate": 0.9802
-     },
-     "k272": {
-      "velocity": 74,
-      "timing_ms": -2.61,
-      "gate": 1.0149
-     },
-     "k273": {
+     "k204": {
       "velocity": 74,
       "timing_ms": -3.39,
       "gate": 1.0149
      },
-     "k274": {
+     "k205": {
       "velocity": 74,
       "timing_ms": -4.11,
       "gate": 1.0149
      },
-     "k275": {
+     "k206": {
       "velocity": 74,
       "timing_ms": -5.01,
       "gate": 1.0149
      },
-     "k276": {
+     "k207": {
       "velocity": 78,
       "timing_ms": -9.94,
       "gate": 0.9957
      },
-     "k277": {
+     "k208": {
       "velocity": 78,
       "timing_ms": -8.98,
       "gate": 0.9957
      },
-     "k278": {
+     "k209": {
       "velocity": 78,
       "timing_ms": -7.96,
       "gate": 0.9957
      },
-     "k279": {
-      "velocity": 78,
-      "timing_ms": -7.11,
-      "gate": 0.9957
-     },
-     "k280": {
-      "velocity": 69,
-      "timing_ms": -7.66,
-      "gate": 1.0073
-     },
-     "k281": {
+     "k210": {
       "velocity": 69,
       "timing_ms": -8.48,
       "gate": 1.0073
      },
-     "k282": {
+     "k211": {
       "velocity": 69,
       "timing_ms": -9.35,
       "gate": 1.0073
      },
-     "k283": {
+     "k212": {
       "velocity": 69,
       "timing_ms": -10.03,
       "gate": 1.0073
@@ -8514,12 +7739,17 @@
      "kf2": {
       "velocity": 74,
       "timing_ms": -7.25,
-      "gate": 1.0141
+      "gate": 0.9991
      },
      "kf3": {
       "velocity": 74,
       "timing_ms": -6.37,
       "gate": 1.0141
+     },
+     "kf4": {
+      "velocity": 71,
+      "timing_ms": -0.41,
+      "gate": 1.0018
      }
     },
     "swing": {
@@ -8528,10 +7758,24 @@
     }
    },
    "mix": {
-    "level_dbfs": -22,
+    "level_dbfs": -25,
     "pan": -0.15,
     "reverb_db": -16,
-    "highpass": 110
+    "highpass": 110,
+    "automation": [
+     [
+      0,
+      5
+     ],
+     [
+      15.5,
+      5
+     ],
+     [
+      16,
+      0
+     ]
+    ]
    },
    "range": [
     48,
@@ -8592,7 +7836,8 @@
   "target_lufs": -16
  },
  "decisions": [
-  "plan: demo para elegir dirección; el plan por sección queda para la versión elegida"
+  "plan: demo para elegir dirección; el plan por sección queda para la versión elegida",
+  "transposed_samples: la marimba transpuesta en el registro agudo es parte del timbre buscado (madera brillante)"
  ],
  "harmony": [
   {
@@ -8673,7 +7918,7 @@
   {
    "bar": 15,
    "beat": 0,
-   "symbol": "Bbm7"
+   "symbol": "Bbm11"
   },
   {
    "bar": 16,

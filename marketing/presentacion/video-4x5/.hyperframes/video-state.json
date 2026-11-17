@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "cc5270b6-b0b5-45bc-8378-1cb35f5f09ba",
-  "currentRevision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+  "currentRevision": "a66a94bc-1be9-4195-b4d7-208c89de4350",
   "pendingChanges": false,
   "files": {
     "hyperframes.json": {
@@ -9,8 +9,8 @@
       "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
     },
     "index.html": {
-      "hash": "6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf",
-      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/6e/6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf"
+      "hash": "2e77a2f73a61e4dc3466f93a713a4b6579a18a5ed22d6e966b22a284d2230ea2",
+      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/2e/2e77a2f73a61e4dc3466f93a713a4b6579a18a5ed22d6e966b22a284d2230ea2"
     },
     "package.json": {
       "hash": "b9d044353772b4a86e24b9c73493474342434e01cf4f8ad47abf14df6c0f878f",
@@ -30,6 +30,21 @@
         "index.html": {
           "before": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b6/b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351",
           "after": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/6e/6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf"
+        }
+      }
+    },
+    "a66a94bc-1be9-4195-b4d7-208c89de4350": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794927409403,
+      "endedAt": 1794927409404,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/6e/6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf",
+          "after": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/2e/2e77a2f73a61e4dc3466f93a713a4b6579a18a5ed22d6e966b22a284d2230ea2"
         }
       }
     }
@@ -353,13 +368,14 @@
   },
   "renders": {
     "latest": {
-      "id": "c714b190-d9a5-433f-a19c-b290b5723f44",
-      "completedAt": 1794925311013,
-      "output": "/home/user/solucionesdigitalesamedida/marketing/presentacion/salida/imagen-4x5-v3.mp4",
+      "id": "1b1211d5-0593-484d-a21b-39b23bc5bc39",
+      "completedAt": 1794927587016,
+      "output": "/home/user/solucionesdigitalesamedida/marketing/presentacion/salida/imagen-4x5-v4.mp4",
       "status": "completed",
-      "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655"
+      "revision": "a66a94bc-1be9-4195-b4d7-208c89de4350"
     },
     "retainedRevisions": [
+      "a66a94bc-1be9-4195-b4d7-208c89de4350",
       "af7a783b-d761-47a1-8ba3-ffb20a7b1655"
     ]
   },

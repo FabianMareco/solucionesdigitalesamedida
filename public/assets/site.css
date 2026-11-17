@@ -437,3 +437,9 @@ main > :is(section, .section):not(.hero):not([data-moment]) > .wrap { height: au
 }
 /* portugués en las notebooks más angostas: medio punto menos de letra en el menú */
 @media (min-width: 1024px) and (max-width: 1099px) { html[lang^="pt"] .nav--centre .nav__link { font-size: 13.5px; } }
+
+/* MUEVETE: captura real del sitio (plataformamuevete.vercel.app) en vez de la maqueta */
+.mv-real { background: #1c1917; }
+.mv-real picture, .mv-real img { display: block; width: 100%; height: 100%; }
+.mv-real img { object-fit: cover; object-position: top center; }
+.mv-real .badge { top: auto; left: auto; right: 14px; bottom: 14px; }   /* que no tape el logo de MUEVETE en la captura */

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/root/.music-skill/.venv/bin/python",
+    "/home/user/solucionesdigitalesamedida/.claude/skills/music-production/scripts/surge_host.py",
+    "/home/user/solucionesdigitalesamedida/marketing/presentacion/musica/cache/48537bbc686f4c7d8a855ce5f5d65624b30975bfd4ea6340e45834750722b8af/surge_job.json"
+  ],
+  "returncode": 0,
+  "seconds": 1.465,
+  "pid": 1940,
+  "launch_mode": "no stdin; no GUI arguments",
+  "log": "/home/user/solucionesdigitalesamedida/marketing/presentacion/musica/cache/48537bbc686f4c7d8a855ce5f5d65624b30975bfd4ea6340e45834750722b8af/surge.log"
+}

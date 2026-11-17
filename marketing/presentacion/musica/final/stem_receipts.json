@@ -1,0 +1,146 @@
+[
+  {
+    "track": "lead",
+    "soundfont": null,
+    "cache_key": "0d6d1753410682329498667205b39db74b2e2af52a2cd4767ad992345e1f3e1d",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "332fcad01bfc4299d7aad9dc91bb34a1be5cbb24927134e757214ef4feff7991",
+    "stem_sha256": "7c6e83a02cd6216bb3508ce8253476c37d7ce155b82ee5cea3e3c836597c0719",
+    "reference_level_dbfs": -17.020444239458772,
+    "gain_db": -2.4795557605412277,
+    "processed_stem": "stems/lead.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=-2.479555761dB,highpass=f=180,lowpass=f=18000,pan=stereo|c0=0.938083152*c0|c1=1.058300524*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 0,
+    "surge": {
+      "preset": "late_fall",
+      "tempo_synced": {
+        "bpm": 90.0,
+        "parameters": [
+          "fx5_p0",
+          "fx5_p1"
+        ]
+      },
+      "rendered_with": "Surge XT"
+    },
+    "seconds": {
+      "waiting": 0.0,
+      "synthesis": 0.039,
+      "processing": 0.055
+    }
+  },
+  {
+    "track": "bass",
+    "soundfont": null,
+    "cache_key": "07dcad97dd0e90c8f7bca7d793ebcc24a52f459d3a29acaf90cc856e3b7a457d",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "90cf071ae31054a19a1e018239d015aa162a7ba06dd8008707bf8c6659985c01",
+    "stem_sha256": "66cd5f1531cf38ad22aec137c16a3adb1e5345baf0cf9bb629b1f46098eaadb1",
+    "reference_level_dbfs": -26.344061279475785,
+    "gain_db": 3.3440612794757847,
+    "processed_stem": "stems/bass.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=3.344061279dB,highpass=f=35,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 34,
+    "surge": {
+      "preset": "fingered_bass",
+      "rendered_with": "Surge XT"
+    },
+    "seconds": {
+      "waiting": 0.002,
+      "synthesis": 0.034,
+      "processing": 0.038
+    }
+  },
+  {
+    "track": "keys",
+    "soundfont": null,
+    "cache_key": "e5383fd471817b029a17c977230b3fa06438bdb8b5c68d85c18efa785c6da82b",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "8fc6f6fe08fccad2d3e507360e77d7f2a9da2c48d610f1e6adca4166b3a7cfc6",
+    "stem_sha256": "525683fdc226226cfb33b9d9eb09bfd785223a33f754d7d6eb112f22fc05ce81",
+    "reference_level_dbfs": -23.133682258420016,
+    "gain_db": 2.1336822584200164,
+    "processed_stem": "stems/keys.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=2.133682258dB,highpass=f=120,lowpass=f=18000,pan=stereo|c0=1.072380529*c0|c1=0.921954446*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 7,
+    "surge": {
+      "preset": "soft_suitcase",
+      "rendered_with": "Surge XT"
+    },
+    "seconds": {
+      "waiting": 0.001,
+      "synthesis": 0.037,
+      "processing": 0.048
+    }
+  },
+  {
+    "track": "pad",
+    "soundfont": null,
+    "cache_key": "392ef12f5346fef869329d23134058106acbb3572b2c6135b39cf7e0d4022450",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "9573267f27cdcb8832b908eb3e2d39d2bbea7ec2ec614918e14e357bf6ac5cd6",
+    "stem_sha256": "5415a36a73a8e9438b8f5c65cff1c84a4dbaf0c810cc90f3a059ef6e502f52ce",
+    "reference_level_dbfs": -14.594482447291714,
+    "gain_db": -13.405517552708286,
+    "processed_stem": "stems/pad.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=-13.405517553dB,highpass=f=150,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 10,
+    "surge": {
+      "preset": "moody_pad",
+      "tempo_synced": {
+        "bpm": 90.0,
+        "parameters": [
+          "fx5_p0",
+          "fx5_p1"
+        ]
+      },
+      "rendered_with": "Surge XT"
+    },
+    "seconds": {
+      "waiting": 0.001,
+      "synthesis": 0.039,
+      "processing": 0.058
+    }
+  },
+  {
+    "track": "drums",
+    "soundfont": "default",
+    "cache_key": "b2bcb52baadc459656dae2569ad599cccfa0f0e1a859a5381f3756632fffa976",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "3bee5f15453e1ccd923e98eb27e25b780b2a2eee12c5be55dc9ab5733f3070dc",
+    "stem_sha256": "ebd3417ecb5c4a983697ae336ea4ef2692f645f7249c8803c2b893ee6dcd42bc",
+    "reference_level_dbfs": -37.34583064840724,
+    "gain_db": 17.345830648407237,
+    "processed_stem": "stems/drums.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=17.345830648dB,highpass=f=30,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 9,
+    "seconds": {
+      "waiting": 0.001,
+      "synthesis": 0.034,
+      "processing": 0.045
+    }
+  },
+  {
+    "track": "fx",
+    "soundfont": null,
+    "cache_key": "c4cc4dc6eb67022838fee0f65a83ad6402705bfa712b6548af511fec31349234",
+    "cache_hit": true,
+    "stem_reused": true,
+    "raw_sha256": "c0e5707501fdbe26384601019847987d7a7a2bc05016f9c4745a14e3eb83eeb5",
+    "stem_sha256": "94ee63efbb640b28d920570853038c013d7931652334c5f75dd5528595a7fbcf",
+    "reference_level_dbfs": -35.07012062320638,
+    "gain_db": 9.070120623206378,
+    "processed_stem": "stems/fx.wav",
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=9.070120623dB,highpass=f=200,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001",
+    "same_pitch_retrigger_trims": 0,
+    "seconds": {
+      "waiting": 0.002,
+      "synthesis": 0.023,
+      "processing": 0.043
+    }
+  }
+]

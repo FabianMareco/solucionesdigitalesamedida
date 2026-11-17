@@ -1,0 +1,10 @@
+{
+  "key": "25f8752ba44f1bf33924e02d812ed4d935560b3bb883bbdfa9ef1fcb7584c2dc",
+  "sha256": "66cd5f1531cf38ad22aec137c16a3adb1e5345baf0cf9bb629b1f46098eaadb1",
+  "track": "bass",
+  "processing": {
+    "reference_level_dbfs": -26.344061279475785,
+    "gain_db": 3.3440612794757847,
+    "filter_chain": "apad,atrim=end_sample=2496001,volume=3.344061279dB,highpass=f=35,lowpass=f=18000,pan=stereo|c0=1.000000000*c0|c1=1.000000000*c1,apad,atrim=end_sample=2496001"
+  }
+}

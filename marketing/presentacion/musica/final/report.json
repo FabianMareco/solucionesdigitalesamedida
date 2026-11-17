@@ -1,0 +1,261 @@
+{
+  "status": "TECHNICAL_PASS_AUDITION_PENDING",
+  "title": "Horno encendido",
+  "version": "1.0.r1",
+  "draft": false,
+  "runtime_seconds": 19.35,
+  "stage_seconds": {
+    "prepare": 0.372,
+    "midi": 0.007,
+    "parts": 0.158,
+    "mix": 7.274,
+    "master": 7.726,
+    "mix_checks": 0.006,
+    "master_check": 0.003,
+    "outputs": 3.692,
+    "sections_and_checks": 0.104
+  },
+  "process_seconds": {
+    "loudness measurement": 7.795,
+    "mix": 5.631,
+    "mp3": 1.466,
+    "master_chain": 0.516,
+    "flac": 0.465,
+    "delivery limiter": 0.416,
+    "decode_mp3": 0.315
+  },
+  "jobs": 4,
+  "project_sha256": "fb7f5d899136f9f7444413d5f3b815f011597087346c6d78671e0a0442f0786b",
+  "renderer_sha256": "aa2c6db2aba7b7ae09064ec01cc032379167e1e85c5d2c6b7fa0fe129de6519b",
+  "validation": {
+    "tracks": 6,
+    "notes": 472,
+    "bars": 18,
+    "seconds": 52.0,
+    "sections": 4,
+    "warnings": []
+  },
+  "checks": {
+    "finite": true,
+    "no_clipping": true,
+    "true_peak_ceiling": true,
+    "duration_exact": true,
+    "stereo_48k_24bit": true,
+    "tail_quiet": true,
+    "midi_note_count": true,
+    "midi_no_stuck_notes": true,
+    "dependency_hashes_verified": true,
+    "mp3_loudness_matches_master": true,
+    "buses_and_returns_add_up_to_premix": true
+  },
+  "chain": "bus",
+  "premaster": {
+    "frames": 2496001,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "format": 3,
+    "seconds": 52.00002083333333,
+    "integrated_lufs": -13.98,
+    "true_peak_dbtp": 1.89,
+    "lra_lu": 7.7,
+    "sample_peak_dbfs": 1.6684598825449863,
+    "clipped_samples": 143,
+    "rms": 0.1355433476030095,
+    "sha256": "d131355338ccc4d483e05fa776ca35ebecf0da7b220e358be73f965a865b1ef8",
+    "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
+  },
+  "master": {
+    "frames": 2496001,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits": 24,
+    "format": 1,
+    "seconds": 52.00002083333333,
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.28,
+    "lra_lu": 7.2,
+    "sample_peak_dbfs": -1.293209210938485,
+    "clipped_samples": 0,
+    "rms": 0.10632356884903314,
+    "sha256": "a790d3a2c95cf7df5a50e3747238c21bcca1fcc398b57ed19ae145fd59659741",
+    "meter": "FFmpeg loudnorm input analysis; BS.1770/EBU R128"
+  },
+  "sections": [
+    {
+      "id": "nublado",
+      "start_bar": 0,
+      "bars": 4,
+      "intent": "Tarde nublada: teclado y colchón solos, una burbuja por compás",
+      "start_seconds": 0.0,
+      "end_seconds": 10.667,
+      "rms_dbfs": -22.431,
+      "side_mid_db": -12.825,
+      "active_tracks": [
+        "bass",
+        "keys",
+        "pad",
+        "fx"
+      ]
+    },
+    {
+      "id": "horno",
+      "start_bar": 4,
+      "bars": 8,
+      "intent": "Se enciende el horno: entra el groove y el gancho del punteo",
+      "start_seconds": 10.667,
+      "end_seconds": 32.0,
+      "rms_dbfs": -19.194,
+      "side_mid_db": -20.573,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "keys",
+        "drums",
+        "fx"
+      ]
+    },
+    {
+      "id": "locomotora",
+      "start_bar": 12,
+      "bars": 4,
+      "intent": "El recorrido sigue andando: el gancho sube una tercera",
+      "start_seconds": 32.0,
+      "end_seconds": 42.667,
+      "rms_dbfs": -17.779,
+      "side_mid_db": -17.662,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "keys",
+        "pad",
+        "drums"
+      ]
+    },
+    {
+      "id": "cierre",
+      "start_bar": 16,
+      "bars": 2,
+      "intent": "Cierre: un último giro y el acorde final que respira",
+      "start_seconds": 42.667,
+      "end_seconds": 48.0,
+      "rms_dbfs": -17.674,
+      "side_mid_db": -17.898,
+      "active_tracks": [
+        "lead",
+        "bass",
+        "keys",
+        "pad",
+        "drums"
+      ]
+    }
+  ],
+  "mastering": {
+    "chain": "bus",
+    "rules": 2,
+    "mix_gain_db": -4.02,
+    "master_chain": "volume=-4.020000dB,acompressor=threshold=0.158489:ratio=2:attack=30:release=200:knee=4:makeup=1,highshelf=f=10000:g=2.5:t=q:w=0.7,equalizer=f=3200:t=q:w=1.2:g=0.8",
+    "mixed": {
+      "integrated_lufs": -18.65,
+      "true_peak_dbtp": -3.93,
+      "lra_lu": 7.1
+    },
+    "target_lufs": -16,
+    "true_peak_ceiling_dbtp": -1.0,
+    "limiter_dbtp": -1.1,
+    "limiter": {
+      "release_ms": 60.0,
+      "lookahead_ms": 3.0,
+      "lowest_steady_hz": 27.5,
+      "share_of_time_pct": 0.0,
+      "deepest_db": -0.0
+    },
+    "delivery_chain": "volume=2.650000dB, true-peak limiter to -1.1 dBTP (look-ahead 3 ms, release 60 ms; NumPy)",
+    "passes": [
+      {
+        "gain_db": 2.65,
+        "limit_dbtp": -1.1,
+        "taken_db": 0.0,
+        "lufs": -16.0,
+        "true_peak_dbtp": -1.28
+      }
+    ],
+    "limiting_db": {
+      "nublado": 0.0,
+      "horno": -0.0,
+      "locomotora": -0.0,
+      "cierre": 0.0
+    }
+  },
+  "buses": {
+    "assignment": {
+      "lead": "lead",
+      "bass": "bass",
+      "keys": "ensemble",
+      "pad": "ensemble",
+      "drums": "drums",
+      "fx": "fx"
+    },
+    "spaces": {
+      "lead": "plate",
+      "keys": "hall",
+      "pad": "hall",
+      "drums": "room",
+      "fx": "hall"
+    },
+    "returns": [
+      "room_return.wav",
+      "plate_return.wav",
+      "hall_return.wav",
+      "delay_return.wav"
+    ],
+    "rules": {
+      "rules": 2,
+      "lead_threshold_dbfs": -13.5,
+      "reverb": null
+    },
+    "level_change_db": {
+      "drums": -0.5,
+      "bass": -0.09,
+      "ensemble": -1.1,
+      "lead": -0.26,
+      "fx": 0.0
+    },
+    "sum_minus_premix_peak_dbfs": -143.6,
+    "sum_error_share_of_allowance": 0.0231,
+    "adds_up_to_premix": true
+  },
+  "mp3": {
+    "mp3_lufs": -16.0,
+    "mp3_true_peak_dbtp": -0.93,
+    "matches": true,
+    "over_full_scale": false
+  },
+  "cache_hits": 6,
+  "stems_reused": 6,
+  "stem_count": 6,
+  "direct_audio_listening_performed": false,
+  "perceptual_quality": "Not certified by numeric checks; user audition pending",
+  "dependencies": {
+    "fluidsynth": {
+      "sha256": "7a1c066c88e882fa885f2e6eda0eec033ef26d261a2a96a18b269fa974fd3e91",
+      "version": "FluidSynth runtime version 2.3.4",
+      "license": "System package; see its distribution",
+      "source": "User system installation; hash is integrity, not provenance"
+    },
+    "ffmpeg": {
+      "sha256": "ed16af623947494a72e284b6eb8ff225f2da22b38b5d5069c2fd4b4ba3384e41",
+      "version": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "license": "System package; see its distribution",
+      "source": "User system installation; hash is integrity, not provenance"
+    },
+    "soundfonts": {
+      "default": {
+        "sha256": "5ea2375e8bd7d8e71def1036978c1621e85b66934169b6a2744b27b9b3c2d99c",
+        "version": "MuseScore repository commit 32f0a26e5b70d784a891a3637f32124431abed6f",
+        "license": "MIT; retain named sample-author notices",
+        "source": "https://raw.githubusercontent.com/musescore/MuseScore/32f0a26e5b70d784a891a3637f32124431abed6f/share/sound/MS%20Basic.sf3"
+      }
+    }
+  }
+}

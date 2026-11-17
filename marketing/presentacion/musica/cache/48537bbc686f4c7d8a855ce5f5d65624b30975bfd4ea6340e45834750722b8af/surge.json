@@ -1,0 +1,11 @@
+{
+  "preset": "late_fall",
+  "tempo_synced": {
+    "bpm": 90.0,
+    "parameters": [
+      "fx5_p0",
+      "fx5_p1"
+    ]
+  },
+  "rendered_with": "Surge XT"
+}

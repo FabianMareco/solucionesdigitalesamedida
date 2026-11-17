@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "cc5270b6-b0b5-45bc-8378-1cb35f5f09ba",
-  "currentRevision": null,
+  "currentRevision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
   "pendingChanges": false,
   "files": {
     "hyperframes.json": {
@@ -9,15 +9,31 @@
       "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
     },
     "index.html": {
-      "hash": "b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351",
-      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b6/b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351"
+      "hash": "6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf",
+      "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/6e/6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf"
     },
     "package.json": {
       "hash": "b9d044353772b4a86e24b9c73493474342434e01cf4f8ad47abf14df6c0f878f",
       "content": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b9/b9d044353772b4a86e24b9c73493474342434e01cf4f8ad47abf14df6c0f878f"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "af7a783b-d761-47a1-8ba3-ffb20a7b1655": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794924019354,
+      "endedAt": 1794924019355,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/b6/b6afeffeb676c29bc79b6d6d6369b6de73dcb352b0b889d608d826901596b351",
+          "after": "/root/.cache/hyperframes/history/cc5270b6-b0b5-45bc-8378-1cb35f5f09ba/blobs/6e/6e7539db513fc20238a04d734bb613e6b8cee190a52d6b7f421bbc9dea286dbf"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": null,
     "revisions": {},
@@ -25,10 +41,113 @@
   },
   "snapshots": {
     "latest": {
-      "revision": null,
-      "id": "11d79eb0-57ee-4a61-a5fc-be3e64f0c9b7-9"
+      "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+      "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-4"
     },
-    "revisions": {},
+    "revisions": {
+      "af7a783b-d761-47a1-8ba3-ffb20a7b1655": [
+        {
+          "scope": "full",
+          "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-0",
+          "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-video-4x5-op/frame-00-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1350,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794924024754,
+          "contentHash": "ee6b7720d476cecd2995201c3f19c0c0dd843aaf4703565680c7fce41dd9dea4",
+          "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+          "inputFingerprint": "a9d983c8142f4d76ee1f6c42ddfa5675b32ec85230e80bdf59ce339bef9a9625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-1",
+          "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-video-4x5-op/frame-01-at-5s.png",
+          "time": 5,
+          "metadata": {
+            "width": 1080,
+            "height": 1350,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794924024755,
+          "contentHash": "6a23364311a2f3ddafe2765fc23178a58552151b942d9156382318937e761f0c",
+          "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+          "inputFingerprint": "a9d983c8142f4d76ee1f6c42ddfa5675b32ec85230e80bdf59ce339bef9a9625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-2",
+          "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-video-4x5-op/frame-02-at-7.6s.png",
+          "time": 7.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1350,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794924024755,
+          "contentHash": "d1f898d0e2a87b633d57179ce7d6123d10cd98da9f3ad5fcdef8922f38b96645",
+          "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+          "inputFingerprint": "a9d983c8142f4d76ee1f6c42ddfa5675b32ec85230e80bdf59ce339bef9a9625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-3",
+          "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-video-4x5-op/frame-03-at-10.3s.png",
+          "time": 10.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1350,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794924024755,
+          "contentHash": "761f2e077432964f5bb46a61426f380c6e59cc0c01d4e10411e954f124059134",
+          "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+          "inputFingerprint": "a9d983c8142f4d76ee1f6c42ddfa5675b32ec85230e80bdf59ce339bef9a9625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "05dc4dae-4179-4c7f-b392-1641e6e49858-4",
+          "image": "/home/user/solucionesdigitalesamedida/marketing/presentacion/stills-video-4x5-op/frame-04-at-47.5s.png",
+          "time": 47.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1350,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794924024755,
+          "contentHash": "fbaecc6bc36aec44e0157f358a41e6cbc5074749c8f2f649f0052a7f3d5497ee",
+          "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655",
+          "inputFingerprint": "a9d983c8142f4d76ee1f6c42ddfa5675b32ec85230e80bdf59ce339bef9a9625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
     "unversioned": [
       {
         "scope": "full",
@@ -234,13 +353,15 @@
   },
   "renders": {
     "latest": {
-      "id": "3bfaeb53-3086-4fae-89b3-3f88b96aac4d",
-      "completedAt": 1794883355397,
-      "output": "/home/user/solucionesdigitalesamedida/marketing/presentacion/salida/imagen-4x5-v2.mp4",
+      "id": "c714b190-d9a5-433f-a19c-b290b5723f44",
+      "completedAt": 1794925311013,
+      "output": "/home/user/solucionesdigitalesamedida/marketing/presentacion/salida/imagen-4x5-v3.mp4",
       "status": "completed",
-      "revision": null
+      "revision": "af7a783b-d761-47a1-8ba3-ffb20a7b1655"
     },
-    "retainedRevisions": []
+    "retainedRevisions": [
+      "af7a783b-d761-47a1-8ba3-ffb20a7b1655"
+    ]
   },
   "pendingArtifactCleanup": []
 }

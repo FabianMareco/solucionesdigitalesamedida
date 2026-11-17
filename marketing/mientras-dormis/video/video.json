@@ -1,0 +1,17 @@
+{
+  "title": "Lo que pasa mientras dormís",
+  "theme": "look.json",
+  "size": "reels",
+  "language": "es",
+  "voice": "em_alex",
+  "music": { "style": "calm", "volume": 0.5 },
+  "captions": false,
+  "watermark": false,
+  "transition": "cut",
+  "cover": "dia@11.8",
+  "fonts": [
+    { "family": "Caveat", "src": "assets/fonts/Caveat.ttf", "weight": 600 },
+    { "family": "InterV", "src": "assets/fonts/Inter-var.woff", "weight": 600 }
+  ],
+  "defaults": "0.6"
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "paper",
+  "name": "papel-sdm",
+  "bg": "#F4EFE4",
+  "ink": "#1D1A17",
+  "accent": "red",
+  "colors": { "red": "#B10F2E", "green": "#7C9A7E", "yellow": "#E8B04A" },
+  "fonts": { "hand": { "family": "Caveat", "weight": 600 }, "body": { "family": "InterV", "weight": 600 } },
+  "transition": "cut",
+  "music": "calm"
+}

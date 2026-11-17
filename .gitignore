@@ -12,3 +12,10 @@ marketing/dia-01/video/.hyperframes/
 marketing/una-linea/stills/
 marketing/una-linea/out/
 marketing/explicacion/build/
+marketing/mientras-dormis/motor/*
+!marketing/mientras-dormis/motor/eras_dormis.js
+marketing/mientras-dormis/motor/scenes/*
+!marketing/mientras-dormis/motor/scenes/dm_noche.js
+marketing/mientras-dormis/render/
+marketing/mientras-dormis/video/build/
+marketing/mientras-dormis/video/out/

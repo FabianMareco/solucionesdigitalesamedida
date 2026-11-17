@@ -1,0 +1,32 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Hanken Grotesk", sans-serif; }
+    #c-flood { position: absolute; inset: 0; background: radial-gradient(120% 80% at 75% 15%, var(--salmon) 0%, var(--carmesi) 48%, var(--tinta) 100%); }
+    #c-mark { position: absolute; left: 120px; top: 300px; width: 130px; height: 130px; }
+    #c-title { position: absolute; left: 120px; right: 192px; top: 480px; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 124px; line-height: .9; color: #ffffff; }
+    #c-title .w { display: inline-block; }
+    #c-handle { position: absolute; left: 120px; top: 900px; padding: 22px 32px; border-radius: 999px; background: #ffffff; color: var(--tinta); font-size: 38px; font-weight: 700; }
+    #c-sub { position: absolute; left: 120px; right: 300px; top: 1030px; color: #fde6df; font-size: 34px; font-weight: 500; }
+  </style>
+  <div id="root" data-composition-id="cierre" data-width="1080" data-height="1920">
+    <div id="c-flood"></div>
+    <svg id="c-mark" viewBox="0 0 32 32" aria-label="Soluciones Digitales a Medida"><rect width="32" height="32" rx="8" fill="#fdffff"/><path d="M11.5 10.5 6 16l5.5 5.5M20.5 10.5 26 16l-5.5 5.5M18 8.5l-4 15" fill="none" stroke="#b10f2e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h1 id="c-title"><span class="w">Contame</span> <span class="w">qué</span> <span class="w">te</span> <span class="w">quita</span> <span class="w">el</span> <span class="w">tiempo.</span></h1>
+    <div id="c-handle">@solucionesdigitalesamedida</div>
+    <p id="c-sub">WhatsApp en el link de la bio</p>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      // La última notificación (n5: x 70, y 560, 860 × 150) crece hasta ser la pantalla entera.
+      tl.fromTo("#c-flood", { clipPath: "inset(640px 300px 1140px 120px round 28px)" },
+        { clipPath: "inset(0px 0px 0px 0px round 0px)", duration: 0.65, ease: "power2.inOut" }, 0.1);
+      tl.fromTo("#c-mark", { opacity: 0, scale: 0.6, transformOrigin: "0% 50%" }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 0.75);
+      tl.fromTo("#c-title .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, ease: "power4.out", stagger: 0.09 }, 0.95);
+      tl.fromTo("#c-handle", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "expo.out" }, 1.75);
+      tl.fromTo("#c-sub", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 2.05);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["cierre"] = tl;
+    })();
+  </script>
+</template>
